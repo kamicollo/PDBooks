@@ -16,6 +16,7 @@ class BookSeeder extends Seeder
             'author' => "Lewis Carroll",
             'first_publication_date' => date_create("1865-11-26"),
             'genre' => "Children's literature",
+            'isbn' => '9781904808169',
             'illustrator' => "John Tenniel",
             'goodreads_avg_rating' => 3.99,
             'goodread__countof_ratings' => 78595,
