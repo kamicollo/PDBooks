@@ -58,7 +58,8 @@
 					<ul class="metadata">
 						<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}}</li>
 						<li><b>Genre:</b> {{$book->genre}}</li>
-						<li><b>Illustrator:</b> {{$book->illustrator}}</li>
+					@if ($book->illustrator != "")	<li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
+					@if ($book->translator != "")	<li><b>Translator:</b> {{$book->translator}}</li> @endif
 					</ul>
 					
 					<p><?php echo $book->description; ?></p>
@@ -102,7 +103,7 @@
 			
             <div class="books row">
             @foreach ($affiliates as $aff)
-				<div class="@if ($loop->iteration > 3){{'hidden-xs'}}@endif @if ($loop->iteration > 4){{'hidden-sm'}}@endif 4col-xs-4 col-sm-3 col-md-2">
+				<div class="@if ($loop->iteration > 3){{'hidden-xs'}}@endif @if ($loop->iteration > 4){{'hidden-sm'}}@endif col-xs-4 col-sm-3 col-md-2">
 					<img src="{{ URL::to($aff->cover_image) }}" alt="{{$aff->title}}" class="img-thumbnail img-responsive">
 			    </div>
             @endforeach</div>
