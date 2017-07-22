@@ -1,12 +1,13 @@
-<<<<<<< HEAD
-# OS Files
+# Mac OS X
 .DS_Store
 .Trashes
 Thumbs.db
 
-# Editor stuff
+# Espresso
 *.espressostorage
-=======
+
+
+# Laravel
 /node_modules
 /public/hot
 /public/storage
@@ -18,4 +19,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
->>>>>>> laravel
+
+# Composer
+composer.phar
