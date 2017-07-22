@@ -104,13 +104,12 @@
             @foreach ($affiliates as $aff)
 				<div class="@if ($loop->iteration > 3){{'hidden-xs'}}@endif @if ($loop->iteration > 4){{'hidden-sm'}}@endif 4col-xs-4 col-sm-3 col-md-2">
 					<img src="{{ URL::to($aff->cover_image) }}" alt="{{$aff->title}}" class="img-thumbnail img-responsive">
-				</div>
-            @endforeach
-            </div>
+			    </div>
+            @endforeach</div>
 			
 			<div class="row">
 				<div class="col-xs-12">
-					<a type="button" class="btn pull-right" href="{{ URL::to('book/' . $book->id . '/chapter/1')}}">Start Reading</button>
+					<button type="button" class="btn pull-right" href="{{ URL::to('book/' . $book->id . '/chapter/1')}}">Start Reading</button>
 				</div>
 			</div>
 		</div>
