@@ -56,51 +56,21 @@
 					</p>
 					
 					<ul class="metadata">
-						<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}}</li>
+						<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}} <span id="copyright" class="glyphicon glyphicon-question-sign" data-toggle="popover" data-trigger="hover" data-placement="top" title="Book Copyright" data-content="This book may be freely used in the US. If you live elsewhere, you must check the copyright laws of your country before reading the books on this website." aria-hidden="true"></span></li>
 						<li><b>Genre:</b> {{$book->genre}}</li>
 					@if ($book->illustrator != "")	<li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
 					@if ($book->translator != "")	<li><b>Translator:</b> {{$book->translator}}</li> @endif
 					</ul>
+					
+					<blockquote>
+						<p>“No wise fish would go anywhere without a porpoise.”</p>
+					</blockquote>
 					
 					<p><?php echo $book->description; ?></p>
 				</div>
 			</div>
 			
 			<h2>Beautiful Books</h2>
-			
-			
-			<!--<figure class="book">
-				<!-- Front --*>
-				<ul class="hardcover_front">
-					<li>
-						<img src="1.jpg" alt="" width="100%" height="100%">
-					</li>
-					<li></li>
-				</ul>
-			
-				<!-- Pages --*>
-				<ul class="page">
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-
-				<!-- Back --*>
-				<ul class="hardcover_back">
-					<li></li>
-					<li></li>
-				</ul>
-				
-				<!-- Spine --*>
-				<ul class="book_spine">
-					<li></li>
-					<li></li>
-				</ul>
-			</figure>-->
-			
-			
             <div class="books row">
             @foreach ($affiliates as $aff)
 				<div class="@if ($loop->iteration > 3){{'hidden-xs'}}@endif @if ($loop->iteration > 4){{'hidden-sm'}}@endif col-xs-4 col-sm-3 col-md-2">
