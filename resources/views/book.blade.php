@@ -58,7 +58,8 @@
 					<ul class="metadata">
 						<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}}</li>
 						<li><b>Genre:</b> {{$book->genre}}</li>
-						<li><b>Illustrator:</b> {{$book->illustrator}}</li>
+					@if ($book->illustrator != "")	<li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
+					@if ($book->translator != "")	<li><b>Translator:</b> {{$book->translator}}</li> @endif
 					</ul>
 					
 					<p><?php echo $book->description; ?></p>
