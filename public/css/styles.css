@@ -109,6 +109,12 @@ h2 {
 	color: #eaeff3; /* light(er) blue */
 }
 
+.btn:hover,
+.btn:focus {
+	background-color: #dde5ec; /* ligh blue */
+	color: #2c3f50; /* dark blue */
+}
+
 .metadata {
 	color: #395267;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
