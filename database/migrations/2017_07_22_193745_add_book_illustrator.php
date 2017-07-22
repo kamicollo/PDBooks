@@ -14,7 +14,7 @@ class AddBookIllustrator extends Migration
     public function up()
     {
         Schema::table('books', function (Blueprint $table) {
-            $table->string('translator', 200);
+            $table->string('translator', 200)->nullable();
         });
     }
 
