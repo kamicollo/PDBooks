@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OS Files
 .DS_Store
 .Trashes
@@ -5,3 +6,16 @@ Thumbs.db
 
 # Editor stuff
 *.espressostorage
+=======
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+>>>>>>> laravel
