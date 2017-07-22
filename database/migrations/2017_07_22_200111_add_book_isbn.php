@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddBookIllustrator extends Migration
+class AddBookIsbn extends Migration
 {
     /**
      * Run the migrations.
@@ -14,7 +14,7 @@ class AddBookIllustrator extends Migration
     public function up()
     {
         Schema::table('books', function (Blueprint $table) {
-            $table->string('translator', 200)->nullable();
+            $table->string('isbn', 20);
         });
     }
 
@@ -26,7 +26,7 @@ class AddBookIllustrator extends Migration
     public function down()
     {
         Schema::table('books', function (Blueprint $table) {
-            $table->dropColumn('translator');
+            $table->dropColumn('isbn');
         });
     }
 }
