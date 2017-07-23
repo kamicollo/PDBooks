@@ -3,15 +3,16 @@
 		<div class="container center-block">
 			<div class="chapter">CHAPTER {{$chapter->number}}</div>
 			<h2>{{$chapter->title}}</h2>
+			<div id="readability">
+				<span class="label label-default">11 min read</span>
+				<span class="label label-default">2,136 words</span>
+				<span class="label label-default">Readability score 8.9</span>
+			</div>
         <?php echo $chapter->description; ?>
         
 	        <nav class="contents" aria-label="Chapters">
 	        	<ul class="pagination">
-	        		<li class="disabled">
-	        			<a href="#" aria-label="Previous">
-	        				<span aria-hidden="true">&laquo;</span>
-	        			</a>
-	        		</li>
+	        		<li class="disabled"><span aria-hidden="true">&laquo;</span></li>
 	        		<li class="active"><a href="">1</a></li>
 	        		<li><a href="">2</a></li>
 	        		<li><a href="">3</a></li>

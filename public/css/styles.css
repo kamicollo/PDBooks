@@ -5,7 +5,7 @@ body {
 
 h2 {
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	text-align: center;
 }
 
@@ -213,7 +213,16 @@ blockquote {
 }
 
 
+/* CHAPTER */
+#readability {
+	margin-bottom: 30px;
+	text-align: center;
+}
 
+.label-default {
+	background-color: #dde5ec; /* ligh blue */
+	color: #2c3f50; /* dark blue */
+}
 
 
 /* ///////////////////////////////////////////////////
