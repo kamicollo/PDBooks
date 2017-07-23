@@ -11,8 +11,11 @@ body {
 	margin-bottom: 20px;
 }
 
-h2 {
+h2, h3 {
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+h2 {
 	text-align: center;
 }
 
@@ -86,8 +89,8 @@ a:hover {
 	max-width: 1000px;
 }
 
-.book h2 {
-	text-align: left;
+.book > div > h3 {
+	margin-bottom: 20px;
 }
 
 /* Jumbatron */
@@ -272,6 +275,13 @@ p.goodreads {
 	margin: 0;
 }
 
+.flippy-page div {
+	padding-top: 20px;
+	margin: auto;
+	width: 140px;
+}
+
+
 /* 2: Background and color */
 /* Front */
 .flippy-front li:first-child {
@@ -375,7 +385,7 @@ p.goodreads {
 	transform: rotateY(-36deg);
 }
 
-/* Positions, transforms and transitions */
+/* 4: Positions, transforms and transitions */
 .flippy-front,
 .flippy-back,
 .flippy-spine,

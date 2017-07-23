@@ -25,7 +25,12 @@
 				<!-- Pages -->
 				<ul class="flippy-page">
 					<li></li>
-					<li></li>
+					<li>
+						<div>
+							<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="" width="100%" height="100%">
+							<img src="{{URL::to('images/signature.svg')}}" alt="" width="100%" height="100%">
+						</div>
+					</li>
 					<li></li>
 					<li></li>
 					<li></li>
@@ -59,21 +64,24 @@
 			<ul class="metadata">
 				<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}} <span id="copyright" class="glyphicon glyphicon-question-sign" data-toggle="popover" data-trigger="hover" data-placement="top" title="A Note on Book Copyright" data-content="This book may be freely used in the US. If you live elsewhere, you must check the copyright laws of your country before reading the book." aria-hidden="true"></span></li>
 				<li><b>Genre:</b> {{$book->genre}}</li>
-			@if ($book->illustrator != "")	<li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
-			@if ($book->translator != "")	<li><b>Translator:</b> {{$book->translator}}</li> @endif
+				@if ($book->illustrator != "") <li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
+				@if ($book->translator != "") <li><b>Translator:</b> {{$book->translator}}</li> @endif
 			</ul>
 			
 			<p><?php echo $book->description; ?></p>
 		</div>
 	</div>
 	
-	<h2>Beautiful Books</h2>
-    <div class="books row">
-    @foreach ($affiliates as $affiliate)
+	<h3>Beautiful Books</h3>
+    <div class="row">
+		@foreach ($affiliates as $affiliate)
 		<div class="@if ($loop->iteration > 3){{'hidden-xs'}}@endif @if ($loop->iteration > 4){{'hidden-sm'}}@endif col-xs-4 col-sm-3 col-md-2">
-			<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+			<a href="#" target="_blank">
+				<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+			</a>
 	    </div>
-    @endforeach</div>
+		@endforeach
+	</div>
 	
 	<div class="row">
 		<div class="col-xs-12">
