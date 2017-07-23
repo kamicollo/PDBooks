@@ -62,7 +62,7 @@
 					@if ($book->translator != "")	<li><b>Translator:</b> {{$book->translator}}</li> @endif
 					</ul>
 					
-					<?php echo $book->description; ?>
+					<p><?php echo $book->description; ?></p>
 				</div>
 			</div>
 			

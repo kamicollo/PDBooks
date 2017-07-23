@@ -10,10 +10,13 @@
 					</button>
                 @endif
 					<a class="navbar-brand" href="">
-						<img alt="Books" src="{{ URL::to("assets/logo.png") }}">
+						<img alt="Books" src="{{ URL::to('assets/logo.png') }}">
 					</a>
                 @if ($bodyclass == 'read') 
 					<p class="navbar-text hidden-xs">{{$book->title}} by <i>{{$book->author}}</i></p>
+                @endif
+                @if ($bodyclass == 'overview') 
+                	<p class="navbar-text">Laika Reads</i></p>
                 @endif
 				</div>
 
