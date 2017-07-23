@@ -1,13 +1,45 @@
+/* GENERAL */
 body {
-	color: #1e2b36;
+	color: #1e2b36; /* dark grey blue */
 	padding-top: 50px;
+}
+
+.container p {
+	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
+	font-size: 18px;
+	line-height: 1.7;
+	margin-bottom: 20px;
 }
 
 h2 {
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-	/*margin-bottom: 30px;*/
 	text-align: center;
 }
+
+a {
+	color: #395267;
+}
+
+a:hover {
+	color: #395267;
+}
+
+.btn {
+	background-color: #2c3f50; /* dark blue */
+	color: #eaeff3; /* white blue */
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #dde5ec; /* grey blue */
+	color: #2c3f50; /* dark blue */
+}
+
+.label-default {
+	background-color: #dde5ec; /* grey blue */
+	color: #2c3f50; /* dark blue */
+}
+
 
 /* NAVIGATION */
 /* Navigation bar */
@@ -19,23 +51,23 @@ h2 {
 .navbar-default .navbar-brand,
 .navbar-default .navbar-text,
 .navbar-default .navbar-nav > li > a {
-	color: #eaeff3; /* light(er) blue */
+	color: #eaeff3; /* white blue */
 }
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-	background-color: #dde5ec; /* ligh blue */
+	background-color: #dde5ec; /* grey blue */
 	color: #2c3f50; /* dark blue */
 }
 
-/* Expandable button */
+/* Menu toggle */
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #dde5ec; /* ligh blue */
+	background-color: #dde5ec; /* grey blue */
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background-color: #dde5ec; /* ligh blue */
+	background-color: #dde5ec; /* grey blue */
 }
 
 .navbar-default .navbar-toggle:hover .icon-bar,
@@ -48,36 +80,17 @@ h2 {
 	padding: 5px 15px;
 }
 
-/* PAGINATION */
-.contents {
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.pagination li a,
-.pagination li a:hover,
-.pagination li a:focus {
-	color: #2c3f50;
-}
-
-.pagination li a:hover,
-.pagination li a:focus {
-	background-color: #dde5ec;
-}
-
-.pagination .active a,
-.pagination .active a:hover,
-.pagination .active a:focus {
-	background-color: #2c3f50;
-}
-
-.pagination .disabled a,
-.pagination .disabled a:hover,
-.pagination .disabled a:focus {
-	color: #2c3f50;
-}
 
 /* TITLE PAGE */
+.book .container {
+	max-width: 1000px;
+}
+
+.book h2 {
+	text-align: left;
+}
+
+/* Jumbatron */
 .jumbotron {
 	background-attachment: fixed;
 	background-image: url("bg.svg");
@@ -90,6 +103,26 @@ h2 {
 	box-shadow: inset 0 0 10px #000000;
 }
 
+.jumbotron h1 {
+	color: #eaeff3; /* white blue */
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 54px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+}
+
+.jumbotron .author {
+	color: #eaeff3; /* white blue */
+	font-family: "Dancing Script", cursive;
+	font-size: 36px;
+	text-align: center;
+}
+
 .overlay {
 	background: rgba(103, 130, 72, 0.80);
 	height: 100%;
@@ -97,57 +130,9 @@ h2 {
 	padding: 48px 0;
 }
 
-.jumbotron h1 {
-	color: #eaeff3; /* light(er) blue */
-	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-	font-size: 60px;
-	text-align: center;
-}
-
-.jumbotron .author {
-	color: #eaeff3; /* light(er) blue */
-	font-family: "Dancing Script", cursive;
-	font-size: 36px;
-	text-align: center;
-}
-
-.overview h2 {
-	text-align: left;
-}
-
-.overview .container {
-	max-width: 1000px;
-}
-
-.read .container {
-	max-width: 700px;
-}
-
-.container p {
-	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
-	font-size: 18px;
-	line-height: 1.7;
-	margin-bottom: 20px;
-}
-
-.chapter {
-	margin-top: 30px;
-	text-align: center;
-}
-
-.navbar-brand img {
-	border-radius: 5px;
-}
-
-.btn {
-	background-color: #2c3f50; /* dark blue */
-	color: #eaeff3; /* light(er) blue */
-}
-
-.btn:hover,
-.btn:focus {
-	background-color: #dde5ec; /* ligh blue */
-	color: #2c3f50; /* dark blue */
+blockquote {
+	border-left-color: #395267;
+	font-style: italic;
 }
 
 .metadata {
@@ -170,26 +155,59 @@ p.goodreads {
 	margin-right: 8px;
 }
 
-/* Stars */
+
+/* CHAPTER */
+.chapter .container {
+	max-width: 700px;
+}
+
+.order {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.readability {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+/* PAGINATION */
+.contents {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.pagination li a,
+.pagination li a:hover,
+.pagination li a:focus {
+	color: #2c3f50;
+}
+
+.pagination li a:hover,
+.pagination li a:focus {
+	background-color: #dde5ec; /* grey blue */
+}
+
+.pagination .active a,
+.pagination .active a:hover,
+.pagination .active a:focus {
+	background-color: #2c3f50;
+}
+
+.pagination .disabled a,
+.pagination .disabled a:hover,
+.pagination .disabled a:focus {
+	color: #2c3f50;
+}
+
+
+/* STARS */
 .gfc-star {
 	background-size: 15px;
 	float: left;
 	height: 15px;
 	width: 15px;
-}
-
-a {
-	color: #395267;
-}
-
-a:hover {
-	/*color: #1e2b36;*/
-	color: #395267;
-}
-
-blockquote {
-	border-left-color: #395267;
-	font-style: italic;
 }
 
 /* Empty star */
@@ -213,27 +231,9 @@ blockquote {
 }
 
 
-/* CHAPTER */
-#readability {
-	margin-bottom: 30px;
-	text-align: center;
-}
-
-.label-default {
-	background-color: #dde5ec; /* ligh blue */
-	color: #2c3f50; /* dark blue */
-}
-
-
-/* ///////////////////////////////////////////////////
-Books
-/////////////////////////////////////////////////////*/
-
-/*
-	1. container
-*/
-
-.book {
+/* FLIPPY BOOK */
+/* 1: Container */
+.flippy-book {
 	position: relative;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
@@ -246,90 +246,83 @@ Books
 }
 
 @media (min-width: 768px) {
-	.book {
+	.flippy-book {
 		width: 155.2px;
 		height: 213.4px;
-		/*margin-left: 16.15px;*/
 	}
 }
 
 @media (min-width: 992px) {
-	.book {
+	.flippy-book {
 		width: 155.2px;
 		height: 213.4px;
-		/*margin-left: 43.65px;*/
 	}
 }
 
 @media (min-width: 1200px) {
-	.book {
+	.flippy-book {
 		width: 160px;
 		height: 220px;
-		/*margin-left: 45px;*/
 	}
 }
 
-.book ul {
+.flippy-book ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-/*
-	2. background & color
-*/
-
-/* HARDCOVER FRONT */
-.hardcover_front li:first-child {
+/* 2: Background and color */
+/* Front */
+.flippy-front li:first-child {
 	background-color: #eee;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
-/* reverse */
-.hardcover_front li:last-child {
+.flippy-front li:last-child {
 	background: #fffbec;
 }
 
-/* HARDCOVER BACK */
-.hardcover_back li:first-child {
+/* Back */
+.flippy-back li:first-child {
 	background: #fffbec;
 }
 
-/* reverse */
-.hardcover_back li:last-child {
+.flippy-back li:last-child {
 	background: #fffbec;
 }
 
-.book_spine li:first-child {
+/* Spine */
+.flippy-spine li:first-child {
 	background: #eee;
 	background: #2c3f50;
 }
-.book_spine li:last-child {
+
+.flippy-spine li:last-child {
 	background: #333;
 	background: #2c3f50;
 }
 
-/* thickness of cover */
-
-.hardcover_front li:first-child:after,
-.hardcover_front li:first-child:before,
-.hardcover_front li:last-child:after,
-.hardcover_front li:last-child:before,
-.hardcover_back li:first-child:after,
-.hardcover_back li:first-child:before,
-.hardcover_back li:last-child:after,
-.hardcover_back li:last-child:before,
-.book_spine li:first-child:after,
-.book_spine li:first-child:before,
-.book_spine li:last-child:after,
-.book_spine li:last-child:before {
+/* Thickness of cover */
+.flippy-front li:first-child:after,
+.flippy-front li:first-child:before,
+.flippy-front li:last-child:after,
+.flippy-front li:last-child:before,
+.flippy-back li:first-child:after,
+.flippy-back li:first-child:before,
+.flippy-back li:last-child:after,
+.flippy-back li:last-child:before,
+.flippy-spine li:first-child:after,
+.flippy-spine li:first-child:before,
+.flippy-spine li:last-child:after,
+.flippy-spine li:last-child:before {
 	background: #999;
 }
 
-/* page */
-.page > li {
+/* Page */
+.flippy-page > li {
 	background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
 	background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
 	background: -ms-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
@@ -338,63 +331,57 @@ Books
 	border-radius: 0px 5px 5px 0px;
 }
 
-/*
-	3. opening cover, back cover and pages
-*/
-
-.hardcover_front {
+/* 3: Opening the book */
+.flippy-front {
 	-webkit-transform: rotateY(-34deg) translateZ(8px);
 	-moz-transform: rotateY(-34deg) translateZ(8px);
 	transform: rotateY(-34deg) translateZ(8px);
 	z-index: 100;
 }
 
-.hardcover_back {
+.flippy-back {
 	-webkit-transform: rotateY(-15deg) translateZ(-8px);
 	-moz-transform: rotateY(-15deg) translateZ(-8px);
 	transform: rotateY(-15deg) translateZ(-8px);
 }
 
-.page li:nth-child(1) {
+.flippy-page li:nth-child(1) {
 	-webkit-transform: rotateY(-28deg);
 	-moz-transform: rotateY(-28deg);
 	transform: rotateY(-28deg);
 }
 
-.page li:nth-child(2) {
+.flippy-page li:nth-child(2) {
 	-webkit-transform: rotateY(-30deg);
 	-moz-transform: rotateY(-30deg);
 	transform: rotateY(-30deg);
 }
 
-.page li:nth-child(3) {
+.flippy-page li:nth-child(3) {
 	-webkit-transform: rotateY(-32deg);
 	-moz-transform: rotateY(-32deg);
 	transform: rotateY(-32deg);
 }
 
-.page li:nth-child(4) {
+.flippy-page li:nth-child(4) {
 	-webkit-transform: rotateY(-34deg);
 	-moz-transform: rotateY(-34deg);
 	transform: rotateY(-34deg);
 }
 
-.page li:nth-child(5) {
+.flippy-page li:nth-child(5) {
 	-webkit-transform: rotateY(-36deg);
 	-moz-transform: rotateY(-36deg);
 	transform: rotateY(-36deg);
 }
 
-/*
-	4. position, transform & transition
-*/
-
-.hardcover_front,
-.hardcover_back,
-.book_spine,
-.hardcover_front li,
-.hardcover_back li,
-.book_spine li {
+/* Positions, transforms and transitions */
+.flippy-front,
+.flippy-back,
+.flippy-spine,
+.flippy-front li,
+.flippy-back li,
+.flippy-spine li {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -405,21 +392,21 @@ Books
 	transform-style: preserve-3d;
 }
 
-.hardcover_front,
-.hardcover_back {
+.flippy-front,
+.flippy-back {
 	-webkit-transform-origin: 0% 100%;
 	-moz-transform-origin: 0% 100%;
 	transform-origin: 0% 100%;
 }
 
-.hardcover_front {
+.flippy-front {
 	-webkit-transition: all 0.8s ease, z-index 0.6s;
 	-moz-transition: all 0.8s ease, z-index 0.6s;
 	transition: all 0.8s ease, z-index 0.6s;
 }
 
-/* HARDCOVER front */
-.hardcover_front li:first-child {
+/* Front */
+.flippy-front li:first-child {
 	cursor: default;
 	-webkit-user-select: none;
 	-moz-user-select: none;
@@ -429,120 +416,121 @@ Books
 	transform: translateZ(2px);
 }
 
-.hardcover_front li:last-child {
+.flippy-front li:last-child {
 	-webkit-transform: rotateY(180deg) translateZ(2px);
 	-moz-transform: rotateY(180deg) translateZ(2px);
 	transform: rotateY(180deg) translateZ(2px);
 }
 
-/* HARDCOVER back */
-.hardcover_back li:first-child {
+/* Back */
+.flippy-back li:first-child {
 	-webkit-transform: translateZ(2px);
 	-moz-transform: translateZ(2px);
 	transform: translateZ(2px);
 }
 
-.hardcover_back li:last-child {
+.flippy-back li:last-child {
 	-webkit-transform: translateZ(-2px);
 	-moz-transform: translateZ(-2px);
 	transform: translateZ(-2px);
 }
 
-/* thickness of cover */
-.hardcover_front li:first-child:after,
-.hardcover_front li:first-child:before,
-.hardcover_front li:last-child:after,
-.hardcover_front li:last-child:before,
-.hardcover_back li:first-child:after,
-.hardcover_back li:first-child:before,
-.hardcover_back li:last-child:after,
-.hardcover_back li:last-child:before,
-.book_spine li:first-child:after,
-.book_spine li:first-child:before,
-.book_spine li:last-child:after,
-.book_spine li:last-child:before {
+/* Thickness of cover */
+.flippy-front li:first-child:after,
+.flippy-front li:first-child:before,
+.flippy-front li:last-child:after,
+.flippy-front li:last-child:before,
+.flippy-back li:first-child:after,
+.flippy-back li:first-child:before,
+.flippy-back li:last-child:after,
+.flippy-back li:last-child:before,
+.flippy-spine li:first-child:after,
+.flippy-spine li:first-child:before,
+.flippy-spine li:last-child:after,
+.flippy-spine li:last-child:before {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-/* HARDCOVER front */
-.hardcover_front li:first-child:after,
-.hardcover_front li:first-child:before {
+/* Front */
+.flippy-front li:first-child:after,
+.flippy-front li:first-child:before {
 	width: 4px;
 	height: 100%;
 }
 
-.hardcover_front li:first-child:after {
+.flippy-front li:first-child:after {
 	-webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	-moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 }
 
-.hardcover_front li:first-child:before {
+.flippy-front li:first-child:before {
 	-webkit-transform: rotateY(90deg) translateZ(158px) translateX(2px);
 	-moz-transform: rotateY(90deg) translateZ(158px) translateX(2px);
 	transform: rotateY(90deg) translateZ(158px) translateX(2px);
 }
 
-.hardcover_front li:last-child:after,
-.hardcover_front li:last-child:before {
+.flippy-front li:last-child:after,
+.flippy-front li:last-child:before {
 	width: 4px;
 	height: 160px;
 }
 
-.hardcover_front li:last-child:after {
+.flippy-front li:last-child:after {
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
 }
-.hardcover_front li:last-child:before {
+
+.flippy-front li:last-child:before {
 	box-shadow: 0px 0px 30px 5px #333;
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 }
 
-/* thickness of cover */
-
-.hardcover_back li:first-child:after,
-.hardcover_back li:first-child:before {
+/* Thickness of cover */
+.flippy-back li:first-child:after,
+.flippy-back li:first-child:before {
 	width: 4px;
 	height: 100%;
 }
 
-.hardcover_back li:first-child:after {
+.flippy-back li:first-child:after {
 	-webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	-moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 }
-.hardcover_back li:first-child:before {
+
+.flippy-back li:first-child:before {
 	-webkit-transform: rotateY(90deg) translateZ(158px) translateX(2px);
 	-moz-transform: rotateY(90deg) translateZ(158px) translateX(2px);
 	transform: rotateY(90deg) translateZ(158px) translateX(2px);
 }
 
-.hardcover_back li:last-child:after,
-.hardcover_back li:last-child:before {
+.flippy-back li:last-child:after,
+.flippy-back li:last-child:before {
 	width: 4px;
 	height: 160px;
 }
 
-.hardcover_back li:last-child:after {
+.flippy-back li:last-child:after {
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(2px) translateY(-78px);
 }
 
-.hardcover_back li:last-child:before {
+.flippy-back li:last-child:before {
 	box-shadow: 10px -1px 80px 20px #666;
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 }
 
-/* BOOK SPINE */
-.book_spine {
+/* Spine */
+.flippy-spine {
 	-webkit-transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
 	-moz-transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
 	transform: rotateY(60deg) translateX(-5px) translateZ(-12px);
@@ -550,58 +538,59 @@ Books
 	z-index: 0;
 }
 
-.book_spine li:first-child {
+.flippy-spine li:first-child {
 	-webkit-transform: translateZ(2px);
 	-moz-transform: translateZ(2px);
 	transform: translateZ(2px);
 }
 
-.book_spine li:last-child {
+.flippy-spine li:last-child {
 	-webkit-transform: translateZ(-2px);
 	-moz-transform: translateZ(-2px);
 	transform: translateZ(-2px);
 }
 
-/* thickness of book spine */
-.book_spine li:first-child:after,
-.book_spine li:first-child:before {
+/* Thickness of spine */
+.flippy-spine li:first-child:after,
+.flippy-spine li:first-child:before {
 	width: 4px;
 	height: 100%;
 }
 
-.book_spine li:first-child:after {
+.flippy-spine li:first-child:after {
 	-webkit-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	-moz-transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 	transform: rotateY(90deg) translateZ(-2px) translateX(2px);
 }
 
-.book_spine li:first-child:before {
+.flippy-spine li:first-child:before {
 	-webkit-transform: rotateY(-90deg) translateZ(-12px);
 	-moz-transform: rotateY(-90deg) translateZ(-12px);
 	transform: rotateY(-90deg) translateZ(-12px);
 }
 
-.book_spine li:last-child:after,
-.book_spine li:last-child:before {
+.flippy-spine li:last-child:after,
+.flippy-spine li:last-child:before {
 	width: 4px;
 	height: 16px;
 }
 
-.book_spine li:last-child:after {
+.flippy-spine li:last-child:after {
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(8px) translateX(2px) translateY(-6px);
 }
 
-.book_spine li:last-child:before {
+.flippy-spine li:last-child:before {
 	box-shadow: 5px -1px 100px 40px rgba(0, 0, 0, 0.2);
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 }
 
-.page,
-.page > li {
+/* Page */
+.flippy-page,
+.flippy-page > li {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -610,7 +599,7 @@ Books
 	transform-style: preserve-3d;
 }
 
-.page {
+.flippy-page {
 	width: 100%;
 	height: 98%;
 	top: 1%;
@@ -618,7 +607,7 @@ Books
 	z-index: 10;
 }
 
-.page > li {
+.flippy-page > li {
 	width: 100%;
 	height: 100%;
 	-webkit-transform-origin: left center;
@@ -632,48 +621,45 @@ Books
 	transition-timing-function: ease;
 }
 
-.page > li:nth-child(1) {
+.flippy-page > li:nth-child(1) {
 	-webkit-transition-duration: 0.6s;
 	-moz-transition-duration: 0.6s;
 	transition-duration: 0.6s;
 }
 
-.page > li:nth-child(2) {
+.flippy-page > li:nth-child(2) {
 	-webkit-transition-duration: 0.6s;
 	-moz-transition-duration: 0.6s;
 	transition-duration: 0.6s;
 }
 
-.page > li:nth-child(3) {
+.flippy-page > li:nth-child(3) {
 	-webkit-transition-duration: 0.4s;
 	-moz-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 }
 
-.page > li:nth-child(4) {
+.flippy-page > li:nth-child(4) {
 	-webkit-transition-duration: 0.5s;
 	-moz-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
 
-.page > li:nth-child(5) {
+.flippy-page > li:nth-child(5) {
 	-webkit-transition-duration: 0.6s;
 	-moz-transition-duration: 0.6s;
 	transition-duration: 0.6s;
 }
 
-/*
-	5. events
-*/
-
-.book:hover > .hardcover_front {
+/* 5: Events */
+.flippy-book:hover > .flippy-front {
 	-webkit-transform: rotateY(-145deg) translateZ(0);
 	-moz-transform: rotateY(-145deg) translateZ(0);
 	transform: rotateY(-145deg) translateZ(0);
 	z-index: 0;
 }
 
-.book:hover > .page li:nth-child(1) {
+.flippy-book:hover > .flippy-page li:nth-child(1) {
 	-webkit-transform: rotateY(-30deg);
 	-moz-transform: rotateY(-30deg);
 	transform: rotateY(-30deg);
@@ -682,7 +668,7 @@ Books
 	transition-duration: 1.5s;
 }
 
-.book:hover > .page li:nth-child(2) {
+.flippy-book:hover > .flippy-page li:nth-child(2) {
 	-webkit-transform: rotateY(-35deg);
 	-moz-transform: rotateY(-35deg);
 	transform: rotateY(-35deg);
@@ -691,7 +677,7 @@ Books
 	transition-duration: 1.8s;
 }
 
-.book:hover > .page li:nth-child(3) {
+.flippy-book:hover > .flippy-page li:nth-child(3) {
 	-webkit-transform: rotateY(-118deg);
 	-moz-transform: rotateY(-118deg);
 	transform: rotateY(-118deg);
@@ -700,7 +686,7 @@ Books
 	transition-duration: 1.6s;
 }
 
-.book:hover > .page li:nth-child(4) {
+.flippy-book:hover > .flippy-page li:nth-child(4) {
 	-webkit-transform: rotateY(-130deg);
 	-moz-transform: rotateY(-130deg);
 	transform: rotateY(-130deg);
@@ -709,7 +695,7 @@ Books
 	transition-duration: 1.4s;
 }
 
-.book:hover > .page li:nth-child(5) {
+.flippy-book:hover > .flippy-page li:nth-child(5) {
 	-webkit-transform: rotateY(-140deg);
 	-moz-transform: rotateY(-140deg);
 	transform: rotateY(-140deg);
