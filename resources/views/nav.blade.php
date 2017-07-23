@@ -9,8 +9,8 @@
 						<span class="icon-bar"></span>
 					</button>
                 @endif
-					<a class="navbar-brand" href="">BIB
-						<!--<img alt="Books" src="brand2.png">-->
+					<a class="navbar-brand" href="">
+						<img alt="Books" src="{{ URL::to("assets/logo.png") }}">
 					</a>
                 @if ($bodyclass == 'read') 
 					<p class="navbar-text hidden-xs">{{$book->title}} by <i>{{$book->author}}</i></p>
