@@ -1,6 +1,12 @@
 @extends("app")
 @section("content")
 
+<progress value="0">
+	<div class="progress-container">
+		<span class="progress-bar"></span>
+	</div>
+</progress>
+
 <div class="container center-block">
 	<div class="order">CHAPTER {{$chapter->number}}</div>
 	<h2>{{$chapter->title}}</h2>
