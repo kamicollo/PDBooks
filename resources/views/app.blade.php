@@ -11,25 +11,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		
-		<title>Down the Rabbit-Hole | Alice's Adventures in Wonderland by Lewis Carroll | Laika Reads</title>
-		<meta name="description" content="Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’" />
+		<title>{{$object->web_pageTitle(true)}}</title>
+		<meta name="description" content="{{$object->web_description()}}" />
 		
 		<!-- Twitter (https://cards-dev.twitter.com/validator) -->
-		<meta name="twitter:card" content="summary" /> <!-- If image, then summary_large_image -->
+		@if ($object->web_image() != '')
+		<meta name="twitter:card" content="summary_large_image" /> 
+		@else
+		<meta name="twitter:card" content="summary" /> 
+		@endif
 		<meta name="twitter:site" content="@LaikaReads" />
-		<meta name="twitter:title" content="Alice's Adventures in Wonderland by Lewis Carroll" /> <!-- Max 70 characters -->
-		<meta name="twitter:description" content="Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’" /> <!-- Max 200 characters -->
-		<meta name="twitter:image" content="" /> <!-- Max 5MB -->
-		<meta name="twitter:image:alt" content="Alice's Adventures in Wonderland by Lewis Carroll">
+		<meta name="twitter:title" content="{{$object->web_pageTitle(false)}}" /> <!-- Max 70 characters -->
+		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
+		 
+		 @if ($object->web_image() != '')
+		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" /> <!-- Max 5MB -->
+		<meta name="twitter:image:alt" content="{{$object->web_pageTitle(false)}}">
+		@endif
 		
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
 		<meta property="fb:app_id" content="229883360868841" />
 		<meta property="og:site_name" content="Laika Reads"/>
-		<meta property="og:url" content="" />
+		<meta property="og:url" content="{{$object->web_url()}}" />
+		<!-- canonical url -->
 		<meta property="og:type" content="book" /> <!-- https://developers.facebook.com/docs/reference/opengraph#object-type -->
-		<meta property="og:title" content="Down the Rabbit-Hole | Alice's Adventures in Wonderland by Lewis Carroll" />
-		<meta property="og:description" content="Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?’" />
-		<meta property="og:image" content="" />
+		<meta property="og:title" content="{{$object->web_pageTitle(false)}}" />
+		<meta property="og:description" content="{{$object->web_description()}}" />
+
+		@if ($object->web_image() != '')
+		<meta property="og:image" content="{{URL::to($object->web_image())}}" />
+		@endif
 		
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
