@@ -15,4 +15,12 @@ class Book extends Model
     {
         return $this->hasMany('App\Affiliate');
     }
+	
+	public function firstChapter() {
+		return $this->chapters()->orderBy('order', 'asc')->first()->order;
+	}
+	
+	public function allChapters() {
+		return $this->chapters()->orderby('order', 'asc')->pluck('order');
+	}
 }

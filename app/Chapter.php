@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
+
 
 class Chapter extends Model
 {
@@ -14,12 +16,22 @@ class Chapter extends Model
     }
 
     public function isNext() {
-        return true;
-        $this->book()->get()->chapters()->min('order') == $this->order;
+        return $this->book()->first()->chapters()->max('order') != $this->order;
     }
 
     public function isPrevious() {
-        return false;
-        $this->book()->chapters()->max('order') == $this->order;
+        return $this->book()->first()->chapters()->min('order') != $this->order;
     }
+	
+	public function getNext() {
+		return $this->book()->first()
+			->chapters()->where('order', '>', $this->order)
+			->orderBy('order', 'asc')->first()->order;
+	}
+	
+	public function getPrevious() {
+		return $this->book()->first()
+			->chapters()->where('order', '<', $this->order)
+			->orderBy('order', 'desc')->first()->order;
+	}
 }
