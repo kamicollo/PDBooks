@@ -11,18 +11,22 @@
 			</button>
 			@endif
 			
-			<a class="navbar-brand" href="">
+			<a class="navbar-brand" href="{{URL::to('')}}">
 				<img alt="Books" src="{{URL::to('assets/logo.png')}}">
 			</a>
 			
-			@if ($bodyclass == "chapter")
-			<a href="{{route('book', $book->id)}}">
-				<p class="navbar-text hidden-xs">{{$book->title}} by <i>{{$book->author}}</i></p>
-			</a>
+			@if ($bodyclass == "book")
+			<p class="navbar-text">
+				<a href="{{URL::to('')}}">Laika Reads</a>
+			</p>
 			@endif
 			
-			@if ($bodyclass == "book")
-        	<p class="navbar-text">Laika Reads</i></p>
+			@if ($bodyclass == "chapter")
+			<p class="navbar-text hidden-xs">
+				<a class="navbar-link hidden-xs" href="{{route('book', $book->id)}}">
+					{{$book->title}} by <i>{{$book->author}}</i>
+				</a>
+			</p>
 			@endif
 		</div>
 
@@ -43,6 +47,11 @@
 					</a>
 				</li>
 				@endif
+				<li class="visible-xs-inline">
+					<a href="{{route('book', $book->id)}}">
+						Title Page
+					</a>
+				</li>
 				@if ($chapter->IsPrevious())
 				<li class="visible-xs-inline">
 					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}">
