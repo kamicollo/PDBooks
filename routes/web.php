@@ -12,16 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ['bodyclass' => 'home']);
 });
 
 Route::get('book/{id?}', function($id = 1) {
-    return view('book', ['bodyclass' => 'overview', 'book' => App\Book::find($id), 'affiliates' => App\Book::find($id)->affiliates()->orderBy('order', 'asc')->get()]);
-});
+	$book = App\Book::find($id);
+    return view('book', 
+			[	'bodyclass' => 'book', 
+				'book' => $book,
+				'object' => $book,
+				'affiliates' => App\Book::find($id)->affiliates()->orderBy('order', 'asc')->get()
+			]);
+})->name('book');
 
-Route::get('book/{id}/chapter/{number}', function($id, $number) {
-    return view('chapter', ['bodyclass' => 'read', 'book' => App\Book::find($id), 'chapter' => App\Book::find($id)->chapters()->find($number)]);
-});
+
+Route::get('book/{id}/chapter/{order}', function($id, $order) {
+	$chapter = App\Book::find($id)->chapters()->where('order', '=', $order)->first();
+    return view('chapter', 
+			[	'bodyclass' => 'chapter',
+				'book' => App\Book::find($id),
+				'chapter' => $chapter,
+				'object' => $chapter
+			]);
+})->name('chapter');
 
 Route::get('book/{id}/goodreads', function($id) {
     $book = App\Book::find($id);
