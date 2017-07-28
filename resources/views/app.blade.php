@@ -23,7 +23,7 @@
 		<meta name="twitter:image:alt" content="Alice's Adventures in Wonderland by Lewis Carroll">
 		
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
-		<meta property="fb:app_id" content="" />
+		<meta property="fb:app_id" content="229883360868841" />
 		<meta property="og:site_name" content="Laika Reads"/>
 		<meta property="og:url" content="" />
 		<meta property="og:type" content="book" /> <!-- https://developers.facebook.com/docs/reference/opengraph#object-type -->
@@ -57,5 +57,17 @@
 		<script src="{{URL::to('js/modernizr-custom.js')}}" type="text/javascript"></script>
 		<!-- JavaScript -->
 		<script src="{{URL::to('js/script.js')}}" type="text/javascript"></script>
+		<!-- Twitter -->
+		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<!-- Facebook -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=229883360868841";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 	</body>
 </html>

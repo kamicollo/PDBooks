@@ -170,6 +170,14 @@ p.goodreads {
 	margin-right: 8px;
 }
 
+.book .sharing {
+	height: 20px;
+}
+
+.book .sharing .facebook {
+	line-height: 10px;
+}
+
 
 /* CHAPTER */
 .chapter .container {
