@@ -65,8 +65,11 @@ a:hover {
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-text,
+.navbar-default .navbar-text a,
+.navbar-default .navbar-text a:hover,
 .navbar-default .navbar-nav > li > a {
 	color: #eaeff3; /* white blue */
+	text-decoration: none;
 }
 
 .navbar-default .navbar-nav > li > a:hover,

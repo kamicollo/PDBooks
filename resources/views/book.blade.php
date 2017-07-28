@@ -74,7 +74,6 @@
 				<div class="facebook fb-like" data-href="http://laikareads.com" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
 			</div>
 			
-			
 			<p><?php echo $book->description; ?></p>			
 		</div>
 	</div>
