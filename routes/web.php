@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home', ['bodyclass' => 'home']);
 });
 
 Route::get('book/{id?}', function($id = 1) {
