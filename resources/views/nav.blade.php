@@ -16,7 +16,9 @@
 			</a>
 			
 			@if ($bodyclass == "chapter")
-			<p class="navbar-text hidden-xs">{{$book->title}} by <i>{{$book->author}}</i></p>
+			<a href="{{route('book', $book->id)}}">
+				<p class="navbar-text hidden-xs">{{$book->title}} by <i>{{$book->author}}</i></p>
+			</a>
 			@endif
 			
 			@if ($bodyclass == "book")
@@ -27,18 +29,33 @@
 		@if ($bodyclass == "chapter") 
 		<div class="collapse navbar-collapse" id="navigator">
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="">Title Page</a></li>
 				@if ($chapter->IsPrevious())
-				<li class="hidden-xs"><a href=""><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a></li>
+				<li class="hidden-xs">
+					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}">
+						<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+					</a>
+				</li>
 				@endif
 				@if ($chapter->IsNext())
-				<li class="hidden-xs"><a href=""><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></li>
+				<li class="hidden-xs">
+					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}">
+						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+					</a>
+				</li>
 				@endif
 				@if ($chapter->IsPrevious())
-				<li class="visible-xs-inline"><a href="">Previous Chapter</a></li>
+				<li class="visible-xs-inline">
+					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}">
+						Previous Chapter
+					</a>
+				</li>
 				@endif
 				@if ($chapter->IsNext())
-				<li class="visible-xs-inline"><a href="">Next Chapter</a></li>
+				<li class="visible-xs-inline">
+					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}">
+						Next Chapter
+					</a>
+				</li>
 				@endif
 			</ul>
 		</div>

@@ -20,23 +20,33 @@
 	
     <nav class="contents" aria-label="Chapters">
     	<ul class="pagination">
-    		<li class="disabled"><span aria-hidden="true">&laquo;</span></li>
-    		<li class="active"><a href="">1</a></li>
-    		<li><a href="">2</a></li>
-    		<li><a href="">3</a></li>
-    		<li><a href="">4</a></li>
-    		<li><a href="">5</a></li>
-    		<li><a href="">6</a></li>
-    		<li><a href="">7</a></li>
-    		<li><a href="">8</a></li>
-    		<li><a href="">9</a></li>
-    		<li><a href="">10</a></li>
-    		<li><a href="">11</a></li>
-    		<li><a href="">12</a></li>
-    		<li>
-    			<a href="#" aria-label="Next">
+    		<li class="@if (!$chapter->isPrevious()) {{"disabled"}} @endif">
+				@if ($chapter->isPrevious())
+				<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}" 
+				   aria-label="Previous"
+				>@endif
+					<span aria-hidden="true">&laquo;</span>
+				@if ($chapter->isPrevious())
+				</a>
+				@endif
+			</li>
+			@foreach ($book->allChapters() as $ch)
+    		<li class="@if ($ch == $chapter->order) {{"active"}} @endif">
+				<a href="{{route('chapter', ['id' => $book->id, 'order' => $ch])}}">
+					{{$ch}}
+				</a>
+			</li>
+			@endforeach
+    		
+    		<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
+				@if ($chapter->isNext())
+    			<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}" 
+				   aria-label="Next"
+				> @endif
     				<span aria-hidden="true">&raquo;</span>
+				@if ($chapter->isNext())
     			</a>
+				@endif
     		</li>
     	</ul>
     </nav>
