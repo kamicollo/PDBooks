@@ -8,7 +8,7 @@
 </progress>
 
 <div class="container center-block">
-	<div class="order">CHAPTER {{$chapter->number}}</div>
+	<div class="order">Chapter {{$chapter->number}}</div>
 	<h2>{{$chapter->title}}</h2>
 	<div class="readability">
 		<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Based on an average reading speed of 250 words per minute.">9 min read</span>

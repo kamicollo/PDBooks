@@ -68,7 +68,14 @@
 				@if ($book->translator != "") <li><b>Translator:</b> {{$book->translator}}</li> @endif
 			</ul>
 			
-			<p><?php echo $book->description; ?></p>
+			<div class="sharing">
+				<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="Alice&#39;s Adventures in Wonderland by Lewis Carroll" data-url="http://laikareads.com" data-via="LaikaReads" data-related="ernestao" data-dnt="true" data-show-count="false"></a>
+				
+				<div class="facebook fb-like" data-href="http://laikareads.com" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+			</div>
+			
+			
+			<p><?php echo $book->description; ?></p>			
 		</div>
 	</div>
 	
@@ -89,5 +96,4 @@
 		</div>
 	</div>
 </div>
-
 @endsection
