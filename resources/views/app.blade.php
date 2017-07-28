@@ -47,7 +47,7 @@
 		<!-- Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
 		<!-- CSS -->
-        <link rel="stylesheet" href="<?php echo URL::to('css/styles.css');?>" />
+        <link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
 		<!-- HTML5 shim -->
 		<!-- Respond.js -->
 		<!--[if lt IE 9]>
