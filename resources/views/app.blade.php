@@ -35,7 +35,6 @@
 		<meta property="fb:app_id" content="229883360868841" />
 		<meta property="og:site_name" content="Laika Reads"/>
 		<meta property="og:url" content="{{$object->web_url()}}" />
-		<!-- canonical url -->
 		<meta property="og:type" content="book" /> <!-- https://developers.facebook.com/docs/reference/opengraph#object-type -->
 		<meta property="og:title" content="{{$object->web_pageTitle(false)}}" />
 		<meta property="og:description" content="{{$object->web_description()}}" />

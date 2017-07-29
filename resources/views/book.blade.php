@@ -52,10 +52,10 @@
 		
 		<div class="col-xs-12 col-sm-9">
 			<p class="goodreads">
-				<span class="gfc-star gfc-p10"></span>
-				<span class="gfc-star gfc-p10"></span>
-				<span class="gfc-star gfc-p10"></span>
+				<span class="gfc-star gfc-p0"></span>
+				<span class="gfc-star gfc-p3"></span>
 				<span class="gfc-star gfc-p6"></span>
+				<span class="gfc-star gfc-p10"></span>
 				<span class="gfc-star gfc-p0"></span>
 				<span class="rating">{{$book->goodreads_avg_rating}}</span>
 				<span><a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a></span>
