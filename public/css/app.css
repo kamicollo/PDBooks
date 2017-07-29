@@ -104,24 +104,55 @@ a:hover {
 	max-width: 1000px;
 }
 
+.home {
+	padding-top: 0;
+}
+
+.home nav {
+	display: none;
+}
+
 .page-header {
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
-	background-position: center center;
+	background-position: top center;
 	background-size: cover;
-	bottom: 0;
-	height: 100%;
-	margin: 0;
+	color: #FFFFFF;
+	height: 100vh;
+	margin-top: 0;
 	max-height: 1050px;
 	padding: 0;
 	position: relative;
-	right: 0;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.page-header:after,
+.page-header:before {
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
 	top: 0;
+	z-index: 0;
+	width: 100%;
+}
+
+.page-header .container {
+	box-sizing: border-box;
+	display: block;
+	height: 100%;
+	position: relative;
+    z-index: 2;
 }
 
 .page-header .page-header-image {
-	background-position: center center;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-image: url("../assets/background.jpg");
+	background-position: top center;
 	background-size: cover;
 	height: 100%;
 	position: absolute;
@@ -129,6 +160,32 @@ a:hover {
 	z-index: -1;
 }
 
+.page-header .content-center {
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	left: 50%;
+	margin: 0 40x;
+	max-width: 1000px;
+	padding: 0 15px;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;	
+}
+
+.page-header .content-center img {
+	width: 40px;
+	margin-top: 22px;
+	margin-right: 15px;
+}
+
+.page-header .content-center h1 {
+	
+}
+
+.page-header .content-center h3 {
+	line-height: 36px;
+}
 
 /* TITLE PAGE */
 .book .container {
@@ -172,7 +229,7 @@ a:hover {
 }
 
 .overlay {
-	background: rgba(103, 130, 72, 0.80);
+	background-color: rgba(103, 130, 72, 0.80);
 	height: 100%;
 	overflow: hidden;
 	padding: 48px 0;

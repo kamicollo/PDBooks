@@ -1,20 +1,16 @@
 @extends("app")
 @section("content")
 
-<!--<div class="jumbotron">
-	<div class="container">
-		<h1>Laika Reads</h1>
-		<p>Something or other about books and Laika and reading.</p>
-	</div>
-</div>-->
-
 <div class="wrapper">
 	<div class="page-header">
-		<div class="page-header-image" style="background-image: url('{{URL::to('images/bg.jpeg')}}');"></div>
+		<div class="page-header-image"></div>
 		<div class="container">
-			<div>
-				<h1>Laika Reads</h1>
-				<h3>This or that about books or reading or maybe dogs. You know how it goes.</h3>
+			<div class="content-center">
+				<div class="brand clearfix">
+					<img class="pull-left" src="{{URL::to('assets/small-logo.png')}}" alt="" />
+					<h1 class="pull-left">Laika Reads</h1>
+				</div>
+				<h3>This or that about books or reading or maybe dogs. You know how it goes. This or that about books or reading or maybe dogs. You know how it goes.</h3>
 			</div>
 		</div>
 	</div>
@@ -41,3 +37,5 @@
 		</div>
 	</div>
 </div>
+
+@endsection
