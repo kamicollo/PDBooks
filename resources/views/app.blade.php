@@ -1,3 +1,5 @@
+<?php if (!isset($object)) $object = App\Page::create(); ?>
+<?php if (!isset($bodyclass)) $bodyclass = 'unknown'; ?>
 <!DOCTYPE html>
 <html lang="en">
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# book: http://ogp.me/ns/book#">
