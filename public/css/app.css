@@ -1,5 +1,6 @@
 /* GENERAL */
 body {
+	-webkit-text-size-adjust: 100%;
 	color: #1e2b36; /* dark grey blue */
 	padding-top: 50px;
 }
