@@ -35,6 +35,11 @@ class Chapter extends Model
 			->orderBy('order', 'desc')->first()->order;
 	}
 	
+	public function getReadingTime() {
+		$text = strip_tags($this->description);
+		return str_word_count($text) / 250;
+	}
+	
 	use \web_helpers;
 	
 	public function web_pageTitle($site_name = FALSE) {

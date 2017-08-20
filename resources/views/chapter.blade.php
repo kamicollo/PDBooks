@@ -11,7 +11,7 @@
 	<div class="order">Chapter {{$chapter->number}}</div>
 	<h2>{{$chapter->title}}</h2>
 	<div class="readability">
-		<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Based on an average reading speed of 250 words per minute.">9 min read</span>
+		<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Based on an average reading speed of 250 words per minute.">{{ceil($chapter->getReadingTime())}}min read</span>
 		<span class="label label-default">2,136 words</span>
 		<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Easily understood by an average 7th or 8th-grade student (Dale–Chall readability formula).">Readability score 6.6</span>
 	</div>

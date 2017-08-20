@@ -76,7 +76,10 @@
 				</div>
 			</div>
 
-			<p><?php echo $book->description; ?></p>
+			<p>
+			<blockquote><?php echo $book->descr_quote; ?></blockquote>
+				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
+			</p>
 		</div>
 	</div>
 

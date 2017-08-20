@@ -43,9 +43,7 @@ class Book extends Model
 	}
 	
 	public function web_description() {
-		$descr = preg_replace('/<a .+?<\/a>/', '', $this->description);
-		$clean_descr = preg_replace('/<blockquote>.+<\/blockquote>/', '', $descr);
-		return strip_tags($clean_descr);
+		return strip_tags($this->description);
 	}
 	
 	public function web_star_rating() {
