@@ -12,7 +12,7 @@
 			@endif
 
 			<a class="navbar-brand" href="{{URL::to('')}}">
-				<img alt="Books" src="{{URL::to('assets/small-logo-border.png')}}">
+				<img src="{{URL::to('assets/small-logo-border.png')}}" alt="LaikaReads">
 			</a>
 
 			@if ($bodyclass == "book")

@@ -17,7 +17,7 @@
 				<!-- Front -->
 				<ul class="flippy-front">
 					<li>
-						<img src="{{URL::to($book->cover_image)}}" alt="" width="100%" height="100%">
+						<img src="{{URL::to($book->cover_image)}}" alt="Book cover" width="100%" height="100%">
 					</li>
 					<li></li>
 				</ul>
@@ -27,8 +27,8 @@
 					<li></li>
 					<li>
 						<div>
-							<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="" width="100%" height="100%">
-							<img src="{{URL::to('images/signature.svg')}}" alt="" width="100%" height="100%">
+							<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="Author portrait" width="100%" height="100%">
+							<img src="{{URL::to('images/signature.svg')}}" alt="Author signature" width="100%" height="100%">
 						</div>
 					</li>
 					<li></li>
