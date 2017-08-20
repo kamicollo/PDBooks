@@ -52,12 +52,10 @@
 
 		<div class="col-xs-12 col-sm-9">
 			<p class="goodreads">
-				<span class="gfc-star gfc-p0"></span>
-				<span class="gfc-star gfc-p3"></span>
-				<span class="gfc-star gfc-p6"></span>
-				<span class="gfc-star gfc-p10"></span>
-				<span class="gfc-star gfc-p0"></span>
-				<span class="rating">{{$book->goodreads_avg_rating}}</span>
+				@foreach ($book->web_star_rating() as $star)
+				<span class="gfc-star {{$star}}"></span>
+				@endforeach				
+				<span class="rating">{{number_format($book->goodreads_avg_rating, 2)}}</span>
 				<span>
 					<a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a>
 				</span>
@@ -80,7 +78,11 @@
 				</div>
 			</div>
 
-			<p><?php echo $book->description; ?></p>
+			<p>
+			<blockquote><?php echo $book->descr_quote; ?></blockquote>
+				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
+			</p>
+
 
 			<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
 
