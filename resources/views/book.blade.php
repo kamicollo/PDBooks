@@ -77,7 +77,7 @@
 					<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.com%2F&amp;src=sdkpreparse"></a>
 				</div>
 			</div>
-			
+
 			<p>
 				<blockquote><?php echo $book->descr_quote; ?></blockquote>
 				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
@@ -115,12 +115,6 @@
 	<div class="row">
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<table class="metadata table table-hover">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Title</th>
-					</tr>
-				<thead>
 				<tbody>
 					<tr>
 						<td>1</td>
@@ -138,7 +132,24 @@
 			</table>
 		</div>
 
-		<div class="clearfix visible-xs"></div>
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<table class="metadata table table-hover">
+				<tbody>
+					<tr>
+						<td>4</td>
+						<td><a href="">The Rabbit Sends a Little Bill</a></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><a href="">Advice from a Caterpillar</a></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><a href="">Pig and Pepper</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 </div>
 

@@ -284,6 +284,10 @@ p.goodreads {
 	margin-right: 8px;
 }
 
+.book table {
+	margin-bottom: 0;
+}
+
 
 /* CHAPTER */
 .chapter .container {
