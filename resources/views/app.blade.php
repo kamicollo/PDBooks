@@ -96,18 +96,30 @@
 		<!-- Modernizr -->
 		<script src="{{URL::to('js/modernizr-custom.js')}}" type="text/javascript"></script>
 		<!-- JavaScript -->
-		<script src="{{URL::to('js/script.js')}}" type="text/javascript"></script>
+		<script src="{{URL::to('js/app.js')}}" type="text/javascript"></script>
 		<!-- Twitter -->
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<!-- Facebook -->
 		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=229883360868841";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
+		<script>
+			// window.fbAsyncInit = function() {
+			// 	FB.init({
+			// 		appId: "229883360868841",
+			// 		autoLogAppEvents: false,
+			// 		xfbml: true,
+			// 		version: "v2.10"
+			// 	});
+			//
+			// 	FB.Event.subscribe("xfbml.render", displayInstagram);
+			// };
+			//
+			// (function(d, s, id) {
+			// var js, fjs = d.getElementsByTagName(s)[0];
+			// if (d.getElementById(id)) return;
+			// js = d.createElement(s); js.id = id;
+			// js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=229883360868841";
+			// fjs.parentNode.insertBefore(js, fjs);
+			// }(document, 'script', 'facebook-jssdk'));
 		</script>
 	</body>
 </html>

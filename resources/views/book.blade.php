@@ -54,7 +54,7 @@
 			<p class="goodreads">
 				@foreach ($book->web_star_rating() as $star)
 				<span class="gfc-star {{$star}}"></span>
-				@endforeach				
+				@endforeach
 				<span class="rating">{{number_format($book->goodreads_avg_rating, 2)}}</span>
 				<span>
 					<a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a>
@@ -77,12 +77,11 @@
 					<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.com%2F&amp;src=sdkpreparse"></a>
 				</div>
 			</div>
-
+			
 			<p>
-			<blockquote><?php echo $book->descr_quote; ?></blockquote>
+				<blockquote><?php echo $book->descr_quote; ?></blockquote>
 				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
 			</p>
-
 
 			<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
 
