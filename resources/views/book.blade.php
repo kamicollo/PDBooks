@@ -58,7 +58,9 @@
 				<span class="gfc-star gfc-p10"></span>
 				<span class="gfc-star gfc-p0"></span>
 				<span class="rating">{{$book->goodreads_avg_rating}}</span>
-				<span><a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a></span>
+				<span>
+					<a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a>
+				</span>
 			</p>
 
 			<ul class="metadata">
@@ -79,10 +81,12 @@
 			</div>
 
 			<p><?php echo $book->description; ?></p>
+
+			<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
 		</div>
 	</div>
 
-	<h3>Beautiful Books</h3>
+	<h3>Top Editions</h3>
 	<div class="row">
 		@foreach ($affiliates as $affiliate)
 		<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
@@ -93,10 +97,15 @@
 		@endforeach
 	</div>
 
+	<h3>You Might Also Like</h3>
 	<div class="row">
-		<div class="col-xs-12">
-			<a class="btn pull-right" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
-		</div>
+		@foreach ($affiliates as $affiliate)
+		<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
+			<a href="#" target="_blank">
+				<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+			</a>
+	    </div>
+		@endforeach
 	</div>
 </div>
 
