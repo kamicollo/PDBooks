@@ -70,7 +70,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
 		<link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
-		
+
 		<!-- HTML5 shim -->
 		<!-- Respond.js -->
 		<!--[if lt IE 9]>
@@ -83,8 +83,14 @@
 	    @include("nav")
 	    @yield("content")
 
+		<footer class="footer">
+			<div class="container">
+				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernesta</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="">Learn more</a>.</p>
+			</div>
+		</footer>
+
 		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<!-- Modernizr -->

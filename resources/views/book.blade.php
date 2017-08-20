@@ -17,7 +17,7 @@
 				<!-- Front -->
 				<ul class="flippy-front">
 					<li>
-						<img src="{{URL::to($book->cover_image)}}" alt="" width="100%" height="100%">
+						<img src="{{URL::to($book->cover_image)}}" alt="Book cover" width="100%" height="100%">
 					</li>
 					<li></li>
 				</ul>
@@ -27,8 +27,8 @@
 					<li></li>
 					<li>
 						<div>
-							<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="" width="100%" height="100%">
-							<img src="{{URL::to('images/signature.svg')}}" alt="" width="100%" height="100%">
+							<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="Author portrait" width="100%" height="100%">
+							<img src="{{URL::to('images/signature.svg')}}" alt="Author signature" width="100%" height="100%">
 						</div>
 					</li>
 					<li></li>
@@ -56,7 +56,9 @@
 				<span class="gfc-star {{$star}}"></span>
 				@endforeach				
 				<span class="rating">{{number_format($book->goodreads_avg_rating, 2)}}</span>
-				<span><a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a></span>
+				<span>
+					<a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a>
+				</span>
 			</p>
 
 			<ul class="metadata">
@@ -80,10 +82,15 @@
 			<blockquote><?php echo $book->descr_quote; ?></blockquote>
 				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
 			</p>
+
+
+			<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
+
+			<a class="btn pull-left" href="#chapters">See Chapters</a>
 		</div>
 	</div>
 
-	<h3>Beautiful Books</h3>
+	<h3>Top Editions</h3>
 	<div class="row">
 		@foreach ($affiliates as $affiliate)
 		<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
@@ -94,10 +101,45 @@
 		@endforeach
 	</div>
 
+	<h3>You Might Also Like...</h3>
 	<div class="row">
-		<div class="col-xs-12">
-			<a class="btn pull-right" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
+		@foreach ($affiliates as $affiliate)
+		<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
+			<a href="#" target="_blank">
+				<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+			</a>
+	    </div>
+		@endforeach
+	</div>
+
+	<h3 id="chapters">Chapters</h3>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<table class="metadata table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Title</th>
+					</tr>
+				<thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><a href="">Down the Rabbit-Hole</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href="">The Pool of Tears</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="">A Caucus-Race and a Long Tale</a></td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
+
+		<div class="clearfix visible-xs"></div>
 	</div>
 </div>
 
