@@ -33,7 +33,8 @@ window.fbAsyncInit = function() {
 
 // FUNCTIONS //
 function displayInstagram() {
-	if ($("body").attr("class") === "book") {
+	var page = $("body").attr("class");
+	if (page === "book" || page === "home") {
 		$("a.instagram").removeClass("hidden");
 	}
 }

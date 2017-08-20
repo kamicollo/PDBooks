@@ -85,7 +85,7 @@
 
 		<footer class="footer">
 			<div class="container">
-				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernesta</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="">Learn more</a>.</p>
+				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernes7a</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="">Learn more</a>.</p>
 			</div>
 		</footer>
 
@@ -101,25 +101,5 @@
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<!-- Facebook -->
 		<div id="fb-root"></div>
-		<script>
-			// window.fbAsyncInit = function() {
-			// 	FB.init({
-			// 		appId: "229883360868841",
-			// 		autoLogAppEvents: false,
-			// 		xfbml: true,
-			// 		version: "v2.10"
-			// 	});
-			//
-			// 	FB.Event.subscribe("xfbml.render", displayInstagram);
-			// };
-			//
-			// (function(d, s, id) {
-			// var js, fjs = d.getElementsByTagName(s)[0];
-			// if (d.getElementById(id)) return;
-			// js = d.createElement(s); js.id = id;
-			// js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=229883360868841";
-			// fjs.parentNode.insertBefore(js, fjs);
-			// }(document, 'script', 'facebook-jssdk'));
-		</script>
 	</body>
 </html>
