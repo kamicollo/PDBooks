@@ -4,28 +4,28 @@
 <html lang="en">
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# book: http://ogp.me/ns/book#">
 		<meta charset="utf-8">
-		
+
 		<!-- Search (https://www.google.com/webmasters/tools/googlebot-fetch) -->
 		<!--<meta name="robots" content="noindex">-->
-		
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		
+
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		
+
 		<!-- Chrome colors -->
 		<meta name="theme-color" content="#2c3f50">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		
+
 		<!-- iOS -->
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
-		
+
 		<!-- Title and description -->
 		<title>{{$object->web_pageTitle(true)}}</title>
 		<meta name="description" content="{{$object->web_description()}}" />
-		
+
 		<!-- Icons -->
 		<link rel="icon" sizes="192x192" href="{{URL::to('assets/icon192.png')}}">
 		<link rel="icon" sizes="144x144" href="{{URL::to('assets/icon144.png')}}">
@@ -38,22 +38,22 @@
 		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{URL::to('assets/icon76.png')}}">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{URL::to('assets/icon72.png')}}">
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{URL::to('assets/icon57.png')}}">
-				
+
 		<!-- Twitter (https://cards-dev.twitter.com/validator) -->
 		@if ($object->web_image() != "")
-		<meta name="twitter:card" content="summary_large_image" /> 
+		<meta name="twitter:card" content="summary_large_image" />
 		@else
-		<meta name="twitter:card" content="summary" /> 
+		<meta name="twitter:card" content="summary" />
 		@endif
 		<meta name="twitter:site" content="@LaikaReads" />
 		<meta name="twitter:title" content="{{$object->web_pageTitle(false)}}" /> <!-- Max 70 characters -->
 		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
-		 
+
 		 @if ($object->web_image() != "")
 		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" /> <!-- Max 5MB -->
 		<meta name="twitter:image:alt" content="{{$object->web_pageTitle(false)}}">
 		@endif
-		
+
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
 		<meta property="fb:app_id" content="229883360868841" />
 		<meta property="og:site_name" content="Laika Reads"/>
@@ -65,12 +65,12 @@
 		@if ($object->web_image() != "")
 		<meta property="og:image" content="{{URL::to($object->web_image())}}" />
 		@endif
-		
+
 		<!-- Styling -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
-        <link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
-        
+		<link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
+		
 		<!-- HTML5 shim -->
 		<!-- Respond.js -->
 		<!--[if lt IE 9]>
@@ -78,11 +78,11 @@
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 	</head>
-	
-	<body class="{{$bodyclass}}"> 
+
+	<body class="{{$bodyclass}}">
 	    @include("nav")
 	    @yield("content")
-		
+
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<!-- Bootstrap -->

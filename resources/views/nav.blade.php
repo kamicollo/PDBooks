@@ -3,24 +3,24 @@
 <nav class="navbar navbar-default navbar-fixed-top">
 	<div class="container-fluid">
 		<div class="navbar-header">
-			@if ($bodyclass == "chapter") 
+			@if ($bodyclass == "chapter")
 			<button type="button" class="navbar-toggle collapsed" data-target="#navigator" data-toggle="collapse" aria-expanded="false">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
 			@endif
-			
+
 			<a class="navbar-brand" href="{{URL::to('')}}">
 				<img alt="Books" src="{{URL::to('assets/small-logo-border.png')}}">
 			</a>
-			
+
 			@if ($bodyclass == "book")
 			<p class="navbar-text">
 				<a href="{{URL::to('')}}">Laika Reads</a>
 			</p>
 			@endif
-			
+
 			@if ($bodyclass == "chapter")
 			<p class="navbar-text hidden-xs">
 				<a class="navbar-link hidden-xs" href="{{route('book', $book->id)}}">
@@ -30,7 +30,13 @@
 			@endif
 		</div>
 
-		@if ($bodyclass == "chapter") 
+		<div class="sharing hidden-xs nav navbar-nav navbar-right">
+			<a href="https://twitter.com/LaikaReads" class="twiter twitter-follow-button" data-lang="en" data-show-count="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+			<div class="facebook fb-like" data-href="https://www.facebook.com/LaikaReads/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+		</div>
+
+		@if ($bodyclass == "chapter")
 		<div class="collapse navbar-collapse" id="navigator">
 			<ul class="nav navbar-nav navbar-right">
 				@if ($chapter->IsPrevious())
@@ -68,7 +74,7 @@
 				@endif
 			</ul>
 		</div>
-        @endif
+		@endif
 	</div>
 </nav>
 

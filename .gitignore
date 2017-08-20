@@ -2,24 +2,25 @@
 .DS_Store
 .Trashes
 Thumbs.db
-todo.md
 
 # Espresso
 *.espressostorage
 
-
 # Laravel
+/.idea
+/.vagrant
 /node_modules
 /public/hot
 /public/storage
 /storage/*.key
 /vendor
-/.idea
-/.vagrant
+.env
 Homestead.json
 Homestead.yaml
 npm-debug.log
-.env
 
 # Composer
 composer.phar
+
+# Other
+todo.md

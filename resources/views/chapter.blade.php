@@ -15,14 +15,24 @@
 		<span class="label label-default">2,136 words</span>
 		<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Easily understood by an average 7th or 8th-grade student (Dale–Chall readability formula).">Readability score 6.6</span>
 	</div>
-	
+
 	<?php echo $chapter->description; ?>
-	
-    <nav class="contents" aria-label="Chapters">
-    	<ul class="pagination">
-    		<li class="@if (!$chapter->isPrevious()) {{"disabled"}} @endif">
+
+	<div class="sharing">
+		<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_pageTitle(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>
+
+		<div class="facebook fb-like" data-href="{{$object->web_url()}}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+
+		<div class="facebook fb-share-button" data-href="{{$object->web_url()}}" data-layout="button_count" data-size="small" data-mobile-iframe="true">
+			<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.com%2F&amp;src=sdkpreparse"></a>
+		</div>
+	</div>
+
+	<nav class="contents" aria-label="Chapters">
+		<ul class="pagination">
+			<li class="@if (!$chapter->isPrevious()) {{"disabled"}} @endif">
 				@if ($chapter->isPrevious())
-				<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}" 
+				<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}"
 				   aria-label="Previous"
 				>@endif
 					<span aria-hidden="true">&laquo;</span>
@@ -31,25 +41,24 @@
 				@endif
 			</li>
 			@foreach ($book->allChapters() as $ch)
-    		<li class="@if ($ch == $chapter->order) {{"active"}} @endif">
+			<li class="@if ($ch == $chapter->order) {{"active"}} @endif">
 				<a href="{{route('chapter', ['id' => $book->id, 'order' => $ch])}}">
 					{{$ch}}
 				</a>
 			</li>
 			@endforeach
-    		
-    		<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
+
+			<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
 				@if ($chapter->isNext())
-    			<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}" 
-				   aria-label="Next"
-				> @endif
-    				<span aria-hidden="true">&raquo;</span>
-				@if ($chapter->isNext())
-    			</a>
+				<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}" aria-label="Next">
 				@endif
-    		</li>
-    	</ul>
-    </nav>
+				<span aria-hidden="true">&raquo;</span>
+				@if ($chapter->isNext())
+				</a>
+				@endif
+			</li>
+		</ul>
+	</nav>
 </div>
 
 @endsection

@@ -56,6 +56,20 @@ a:hover {
 	color: #2c3f50; /* dark blue */
 }
 
+.sharing {
+	height: 20px;
+}
+
+.sharing .facebook {
+	line-height: 10px;
+}
+
+.navbar .sharing {
+	margin-left: 5px;
+	margin-right: 30px;
+	margin-top: 15px;
+}
+
 
 /* NAVIGATION */
 /* Navigation bar */
@@ -171,7 +185,7 @@ a:hover {
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 100%;	
+	width: 100%;
 }
 
 .page-header .content-center img {
@@ -181,7 +195,7 @@ a:hover {
 }
 
 .page-header .content-center h1 {
-	
+
 }
 
 .page-header .content-center h3 {
@@ -259,14 +273,6 @@ p.goodreads {
 .rating {
 	margin-left: 4px;
 	margin-right: 8px;
-}
-
-.book .sharing {
-	height: 20px;
-}
-
-.book .sharing .facebook {
-	line-height: 10px;
 }
 
 
@@ -403,7 +409,7 @@ progress::-webkit-progress-value {
 /* Empty star */
 .gfc-star.gfc-p0 {
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAABWWlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyI+CiAgICAgICAgIDx0aWZmOk9yaWVudGF0aW9uPjE8L3RpZmY6T3JpZW50YXRpb24+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgpMwidZAAACaklEQVQoFYVSS09TURCeOec+2mIowkaKEQk+EkGBEBNZCmhiDO5oYuJC/4cLV/wRN+Y2bkiIO9m5MDHQKkR72+iCFjdAH/R97xlnrrRBY+JJ7p1zvvm+M48zAP9YHpEWOFc4fLTrlx/KnohQ7H8XE1WftOOXPsjXP7865+tjA7JEkO9doWCLM5cvrVqWteQ67lK2cLAs2Pr+vtXnyTlaAngeabF9TGzWL2365Sp9OzihnfzB1nnfec0fIiGxU2Xz5XVQ8AYR5Qxs+U9P56ZTnnDkLFYW7uRLD5i3wsSLSuE0GZgAhEmlVJzIGNHzHo0J2wj4nX1lMlRUqI4NBNuY/cr1Wbg1nkrFjo6OgcnQ7XSBBSweNJS01ui4LuMGxsZGoVwqtzmRx1EJueLP24bMZiKeuNpsnHY5R4uzGzQ4yhXAsO0lhobcZrPxQ6F+cmf60me1TWTJBiFYazRPi24s7nCBUuOgTrlAMDcWc5uNRgEhXBONaKMM9vbImZnB7pfi4d0gNO8t274QBD2JGGXB4tCxHd3rdetg1Or8zfGPfU1EaLU+RdECCKvcpEDpCA44bMB9DjhKwD1gF/QYrElGrVu/Mzyrc1Ew4BeYY+JIp9MJuZnOcDJpDSeHLd67rXYrRK1HbYWzwmVFFFSaBYuLZ7chTsYTCdDa0pXKSVirV1+T4UdGepZMjsiwQb1WuSKaTCYTXaAY5LlATlUyoCXbdqBWqbwlCpfnr028WLiRek5gVurVasZxHC5D3RNuOp0OWatk/hVfYHzfdxs49JKHJ7dw/XJGSH+vXf8wzaM5e2J3Nu5PTbU9z9O/AEHtPMLwJV5+AAAAAElFTkSuQmCC");
-	
+
 }
 
 /* Half star */
