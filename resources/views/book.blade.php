@@ -83,6 +83,8 @@
 			<p><?php echo $book->description; ?></p>
 
 			<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
+
+			<a class="btn pull-left" href="#chapters">See Chapters</a>
 		</div>
 	</div>
 
@@ -97,7 +99,7 @@
 		@endforeach
 	</div>
 
-	<h3>You Might Also Like</h3>
+	<h3>You Might Also Like...</h3>
 	<div class="row">
 		@foreach ($affiliates as $affiliate)
 		<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
@@ -106,6 +108,36 @@
 			</a>
 	    </div>
 		@endforeach
+	</div>
+
+	<h3 id="chapters">Chapters</h3>
+	<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+			<table class="metadata table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Title</th>
+					</tr>
+				<thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td><a href="">Down the Rabbit-Hole</a></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><a href="">The Pool of Tears</a></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><a href="">A Caucus-Race and a Long Tale</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="clearfix visible-xs"></div>
 	</div>
 </div>
 

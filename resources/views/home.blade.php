@@ -21,17 +21,17 @@
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 			<img src="{{URL::to('images/1.jpg')}}" class="img-rounded img-responsive" alt="">
 		</div>
-		
+
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 			<img src="{{URL::to('images/5.jpg')}}" class="img-rounded img-responsive" alt="">
 		</div>
-		
+
 		<div class="clearfix visible-xs"></div>
-		
+
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 			<img src="{{URL::to('images/2.jpg')}}" class="img-rounded img-responsive" alt="">
 		</div>
-		
+
 		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 			<img src="{{URL::to('images/4.jpg')}}" class="img-rounded img-responsive" alt="">
 		</div>
