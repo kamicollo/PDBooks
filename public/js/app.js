@@ -21,6 +21,13 @@ window.fbAsyncInit = function() {
 
 // UI ELEMENTS //
 (function ($) {
+	// Elipses
+	$(".home .featured .excerpt").dotdotdot({
+		fallbackToLetter: true,
+		watch: true,
+		wrap: "word"
+	});
+
 	// Tooltips and popovers
 	$("[data-toggle='popover']").popover();
 	$("[data-toggle='tooltip']").tooltip();

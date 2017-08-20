@@ -31,6 +31,16 @@
 		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/1.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures</span>
 		</div>
@@ -38,6 +48,16 @@
 		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/2.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures in Wonderland</span>
 		</div>
@@ -45,6 +65,16 @@
 		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/3.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures in Wonderland and Other Stories</span>
 		</div>
@@ -54,6 +84,16 @@
 		<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/4.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures in Wonderland</span>
 		</div>
@@ -61,6 +101,16 @@
 		<div class="col-lg-2 hidden-md hidden-sm col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/5.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures in Wonderland</span>
 		</div>
@@ -68,6 +118,16 @@
 		<div class="col-lg-2 hidden-md hidden-sm col-xs-4">
 			<a href="">
 				<img src="{{URL::to('images/6.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<div class="overlay hidden-xs">
+					<p class="goodreads">
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p10"></span>
+						<span class="gfc-star gfc-p6"></span>
+						<span class="gfc-star gfc-p0"></span>
+					</p>
+					<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+				</div>
 			</a>
 			<span class="metadata">Alice's Adventures in Wonderland</span>
 		</div>
