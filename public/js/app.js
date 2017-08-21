@@ -41,7 +41,7 @@ window.fbAsyncInit = function() {
 // FUNCTIONS //
 function displayInstagram() {
 	var page = $("body").attr("class");
-	if (page === "book" || page === "home") {
+	if (page === "home" || page === "book" || page === "unknown") {
 		$("a.instagram").removeClass("hidden");
 	}
 }
