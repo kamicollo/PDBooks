@@ -27,7 +27,7 @@
 	<div class="container featured">
 		<h3 id="explore">Start Reading Now</h3>
 		<div class="row">
-			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/1.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
@@ -44,7 +44,7 @@
 				<span class="metadata">Alice's Adventures</span>
 			</div>
 
-			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/2.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
@@ -61,7 +61,7 @@
 				<span class="metadata">Alice's Adventures in Wonderland</span>
 			</div>
 
-			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/3.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
@@ -78,9 +78,9 @@
 				<span class="metadata">Alice's Adventures in Wonderland and Other Stories</span>
 			</div>
 
-			<div class="clearfix visible-xs"></div>
+			<div class="clearfix visible-sm visible-xs"></div>
 
-			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/4.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
@@ -97,7 +97,7 @@
 				<span class="metadata">Alice's Adventures in Wonderland</span>
 			</div>
 
-			<div class="col-lg-2 hidden-md hidden-sm col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/5.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
@@ -114,7 +114,7 @@
 				<span class="metadata">Alice's Adventures in Wonderland</span>
 			</div>
 
-			<div class="col-lg-2 hidden-md hidden-sm col-xs-4">
+			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="">
 					<img src="{{URL::to('images/6.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
 					<div class="overlay hidden-xs">
