@@ -133,7 +133,7 @@ a:hover {
 	-o-background-size: cover;
 	background-position: top center;
 	background-size: cover;
-	color: #FFFFFF;
+	color: #dde5ec; /* grey blue */
 	height: 100vh;
 	margin: 0;
 	max-height: 1050px;
@@ -194,13 +194,16 @@ a:hover {
 	margin-right: 15px;
 }
 
-.page-header .content-center h1 {
-
-}
-
 .page-header .content-center h3 {
 	line-height: 36px;
 }
+
+.page-header a {
+	color: #dde5ec; /* grey blue */
+	font-weight: bold;
+	text-decoration: none;
+}
+
 
 /* Featured */
 .featured {

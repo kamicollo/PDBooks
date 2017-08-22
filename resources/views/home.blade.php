@@ -11,7 +11,7 @@
 					<h1 class="pull-left">Laika Reads</h1>
 				</div>
 
-				<h3>This or that about books or reading or maybe dogs. You know how it goes. This or that about books or reading or maybe dogs. You know how it goes.</h3>
+				<h3>Read free, beautifully formatted public domain books online. <a href="{{route('about')}}">Learn more</a> or <a href="#explore">start exploring now</a>.</h3>
 
 				<div class="sharing">
 					<a href="https://twitter.com/LaikaReads" class="twiter twitter-follow-button" data-lang="en" data-show-count="false" data-show-screen-name="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -25,7 +25,7 @@
 	</div>
 
 	<div class="container featured">
-		<h3>Start Reading Now</h3>
+		<h3 id="explore">Start Reading Now</h3>
 		<div class="row">
 			<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4">
 				<a href="">
