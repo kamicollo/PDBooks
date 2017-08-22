@@ -38,14 +38,24 @@ body {
 	margin-bottom: 20px;
 }
 
-h2, h3 {
+h1, h2, h3 {
+	color: #1e2b36;
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 30px;
+	text-align: center;
+}
+
+h2, h3 {
 	margin-bottom: 20px;
 	margin-top: 30px;
 }
 
-h2 {
-	text-align: center;
+h3 {
+	font-size: 24px;
 }
 
 a {
@@ -138,6 +148,17 @@ a:hover {
 	display: none;
 }
 
+.home h1 {
+	color: #dde5ec; /* grey blue */
+	font-size: 36px;
+}
+
+.home h2 {
+	color: #dde5ec; /* grey blue */
+	font-size: 24px;
+	line-height: 36px;
+}
+
 /* Page header */
 .page-header {
 	-moz-background-size: cover;
@@ -204,10 +225,6 @@ a:hover {
 	width: 40px;
 	margin-top: 22px;
 	margin-right: 15px;
-}
-
-.page-header .content-center h3 {
-	line-height: 36px;
 }
 
 .page-header a {
@@ -305,9 +322,7 @@ a:hover {
 
 .book .jumbotron h1 {
 	color: #eaeff3; /* white blue */
-	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 	font-size: 54px;
-	text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -365,6 +380,10 @@ p.goodreads {
 
 
 /* CHAPTER */
+.chapter h1 {
+	margin-bottom: 20px;
+}
+
 .chapter > .container p:first-of-type:first-letter {
 	color: #395267;
 	float: left;
