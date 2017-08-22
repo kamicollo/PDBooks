@@ -14,6 +14,11 @@ body {
 	max-width: 1000px;
 }
 
+.about .container,
+.chapter .container {
+	max-width: 700px;
+}
+
 .container p {
 	font-family: Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
 	font-size: 18px;
@@ -24,7 +29,7 @@ body {
 h2, h3 {
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 	margin-bottom: 20px;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 h2 {
@@ -130,7 +135,7 @@ a:hover {
 	background-size: cover;
 	color: #FFFFFF;
 	height: 100vh;
-	margin-top: 0;
+	margin: 0;
 	max-height: 1050px;
 	padding: 0;
 	position: relative;
@@ -198,6 +203,10 @@ a:hover {
 }
 
 /* Featured */
+.featured {
+	margin-bottom: -10px;
+}
+
 .featured > div > div {
 	margin: 10px 0;
 }
@@ -250,6 +259,16 @@ a:hover {
 	margin-top: 6px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+
+/* ABOUT */
+.about .wrapper {
+	padding-top: 30px;
+}
+
+.about .wrapper p:last-child {
+	margin-bottom: 0;
 }
 
 
@@ -331,10 +350,6 @@ p.goodreads {
 
 
 /* CHAPTER */
-.chapter .container {
-	max-width: 700px;
-}
-
 .chapter > .container p:first-of-type:first-letter {
 	color: #395267;
 	float: left;

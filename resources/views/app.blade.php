@@ -85,7 +85,7 @@
 
 		<footer class="footer">
 			<div class="container">
-				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernes7a</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="">Learn more</a>.</p>
+				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernes7a</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="{{route('about')}}">Learn more</a>.</p>
 			</div>
 		</footer>
 

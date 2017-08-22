@@ -15,7 +15,7 @@
 				<img src="{{URL::to('assets/small-logo-border.png')}}" alt="LaikaReads">
 			</a>
 
-			@if ($bodyclass == "book")
+			@if ($bodyclass == "about" || $bodyclass == "book")
 			<p class="navbar-text">
 				<a href="{{URL::to('')}}">Laika Reads</a>
 			</p>

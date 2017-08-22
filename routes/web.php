@@ -15,6 +15,10 @@ Route::get('/', function () {
 	return view('home', ['bodyclass' => 'home', 'object' => App\Page::create()]);
 })->name('home');
 
+Route::get('about', function () {
+	return view('about', ['bodyclass' => 'about', 'object' => App\Page::create()]);
+})->name('about');
+
 Route::get('book/{id?}', function($id = 1) {
 	$book = App\Book::find($id);
 	return view('book',

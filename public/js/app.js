@@ -21,29 +21,39 @@ window.fbAsyncInit = function() {
 
 // UI ELEMENTS //
 (function ($) {
-	// Elipses
+	var page = $("body").attr("class");
+
+	// Home
+	if (page === "home") {
+		ellipsize(page);
+	}
+
+	// Book
+	if (page === "book") {
+		$("[data-toggle='popover']").popover();
+	}
+
+	// Chapter
+	if (page === "chapter") {
+		$("[data-toggle='tooltip']").tooltip();
+		displayProgressBar();
+	}
+}(jQuery));
+
+
+// FUNCTIONS //
+function displayInstagram(page) {
+	if (page !== "chapter" && page !== "home") {
+		$("a.instagram").removeClass("hidden");
+	}
+}
+
+function ellipsize(page) {
 	$(".home .featured .excerpt").dotdotdot({
 		fallbackToLetter: true,
 		watch: true,
 		wrap: "word"
 	});
-
-	// Tooltips and popovers
-	$("[data-toggle='popover']").popover();
-	$("[data-toggle='tooltip']").tooltip();
-
-	// Progress bar
-	// TODO: only trigger this in the chapter page
-	displayProgressBar();
-}(jQuery));
-
-
-// FUNCTIONS //
-function displayInstagram() {
-	var page = $("body").attr("class");
-	if (page === "home" || page === "book" || page === "unknown") {
-		$("a.instagram").removeClass("hidden");
-	}
 }
 
 function displayProgressBar() {
