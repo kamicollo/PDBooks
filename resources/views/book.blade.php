@@ -101,13 +101,24 @@
 			@endforeach
 		</div>
 
-		<h3>You Might Also Like...</h3>
+		<h3>Listen with Audible</h3>
 		<div class="row">
+			<div class="col-lg-10 col-md-10 col-sm-9 col-xs-6">
+				<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250835785&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+				<span class="metadata">Download a free audiobook with your <a href="https://www.amazon.co.uk/Audible-Free-Trial-Digital-Membership/dp/B00OPA2XFG?tag=AssociateTrackingID" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
+			</div>
+		</div>
+
+		<h3>You Might Also Like...</h3>
+		<div class="row featured">
 			@foreach ($affiliates as $affiliate)
 			<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
 				<a href="#" target="_blank">
 					<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
 				</a>
+				<span class="metadata">Alice's Adventures in Wonderland and Stuff</span>
 		    </div>
 			@endforeach
 		</div>
