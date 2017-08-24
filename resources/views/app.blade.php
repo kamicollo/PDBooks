@@ -23,7 +23,7 @@
 		<meta name="format-detection" content="telephone=no">
 
 		<!-- Title and description -->
-		<title>{{$object->web_pageTitle(true)}}</title>
+		<title>{{$object->web_page_title(true)}}</title>
 		<meta name="description" content="{{$object->web_description()}}" />
 
 		<!-- Icons -->
@@ -46,12 +46,12 @@
 		<meta name="twitter:card" content="summary" />
 		@endif
 		<meta name="twitter:site" content="@LaikaReads" />
-		<meta name="twitter:title" content="{{$object->web_pageTitle(false)}}" /> <!-- Max 70 characters -->
+		<meta name="twitter:title" content="{{$object->web_page_title(false)}}" /> <!-- Max 70 characters -->
 		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
 
 		 @if ($object->web_image() != "")
 		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" /> <!-- Max 5MB -->
-		<meta name="twitter:image:alt" content="{{$object->web_pageTitle(false)}}">
+		<meta name="twitter:image:alt" content="{{$object->web_page_title(false)}}">
 		@endif
 
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
@@ -59,7 +59,7 @@
 		<meta property="og:site_name" content="Laika Reads"/>
 		<meta property="og:url" content="{{$object->web_url()}}" />
 		<meta property="og:type" content="book" /> <!-- https://developers.facebook.com/docs/reference/opengraph#object-type -->
-		<meta property="og:title" content="{{$object->web_pageTitle(false)}}" />
+		<meta property="og:title" content="{{$object->web_page_title(false)}}" />
 		<meta property="og:description" content="{{$object->web_description()}}" />
 
 		@if ($object->web_image() != "")
