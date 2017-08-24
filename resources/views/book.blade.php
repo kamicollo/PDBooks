@@ -128,18 +128,16 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<table class="metadata table table-hover">
 					<tbody>
+						@for ($i = 0; $i < ceil($book->chapters()->count() / 2); $i++)
 						<tr>
-							<td>1</td>
-							<td><a href="">Down the Rabbit-Hole</a></td>
+							<td>{{$book->chapters()->get()->all()[$i]->order}}</td>
+							<td>
+								<a href="{{route('chapter', [$book->getRoutekey(), $book->chapters()->get()->all()[$i]->order])}}">
+									{{$book->chapters()->get()->all()[$i]->title}}
+								</a>
+							</td>
 						</tr>
-						<tr>
-							<td>2</td>
-							<td><a href="">The Pool of Tears</a></td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td><a href="">A Caucus-Race and a Long Tale</a></td>
-						</tr>
+						@endfor						
 					</tbody>
 				</table>
 			</div>
@@ -147,18 +145,16 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<table class="metadata table table-hover">
 					<tbody>
+						@for ($i = ceil($book->chapters()->count() / 2); $i < $book->chapters()->count(); $i++)
 						<tr>
-							<td>4</td>
-							<td><a href="">The Rabbit Sends a Little Bill</a></td>
+							<td>{{$book->chapters()->get()->all()[$i]->order}}</td>
+							<td>
+								<a href="{{route('chapter', [$book->getRoutekey(), $book->chapters()->get()->all()[$i]->order])}}">
+									{{$book->chapters()->get()->all()[$i]->title}}
+								</a>
+							</td>
 						</tr>
-						<tr>
-							<td>5</td>
-							<td><a href="">Advice from a Caterpillar</a></td>
-						</tr>
-						<tr>
-							<td>6</td>
-							<td><a href="">Pig and Pepper</a></td>
-						</tr>
+						@endfor
 					</tbody>
 				</table>
 			</div>
