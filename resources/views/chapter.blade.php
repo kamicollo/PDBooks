@@ -20,7 +20,7 @@
 		<?php echo $chapter->content; ?>
 
 		<div class="sharing">
-			<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_pageTitle(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>
+			<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_page_title(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>
 
 			<div class="facebook fb-like" data-href="{{$object->web_url()}}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
 

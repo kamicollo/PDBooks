@@ -34,7 +34,7 @@ class Book extends Model
 	
 	use \web_helpers;
 	
-	public function web_pageTitle($site_name = FALSE) {
+	public function web_page_title($site_name = FALSE) {
 		return $this->page_title($site_name, [$this->title . ' by ' . $this->author]);
 	}
 	
