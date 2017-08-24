@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 
 		<!-- Search (https://www.google.com/webmasters/tools/googlebot-fetch) -->
-		<!--<meta name="robots" content="noindex">-->
+		<meta name="robots" content="noindex">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
