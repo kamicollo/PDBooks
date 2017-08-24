@@ -36,7 +36,7 @@ class Chapter extends Model
 	}
 	
 	public function getReadingTime() {
-		$text = strip_tags($this->description);
+		$text = strip_tags($this->content);
 		return str_word_count($text) / 250;
 	}
 	
@@ -53,7 +53,7 @@ class Chapter extends Model
 	}
 	
 	public function web_url() {
-		return route('chapter', ['id' => $this->book()->first()->id, 'order' => $this->order]);
+		return route('chapter', ['id' => $this->book()->first()->getRouteKey(), 'order' => $this->order]);
 	}
 	
 	public function web_image() {
@@ -61,7 +61,7 @@ class Chapter extends Model
 	}
 	
 	public function web_description() {
-		$descr = str_replace(["\n", "\t", "\r"], " ", trim(strip_tags($this->description)));
+		$descr = str_replace(["\n", "\t", "\r"], " ", trim(strip_tags($this->content)));
 		$descr = preg_replace('#\s+#', " ", $descr);
 		//Regex from: https://stackoverflow.com/questions/1231959/180-first-characters-of-a-string-ending-with-a-word
 		$m = preg_match("/^.{1,200}\b(?<!\s)/", $descr, $matches);

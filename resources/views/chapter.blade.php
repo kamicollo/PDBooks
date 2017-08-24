@@ -17,7 +17,7 @@
 			<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Easily understood by an average 7th or 8th-grade student (Dale–Chall readability formula).">Readability score 6.6</span>
 		</div>
 
-		<?php echo $chapter->description; ?>
+		<?php echo $chapter->content; ?>
 
 		<div class="sharing">
 			<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_pageTitle(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>
@@ -33,7 +33,7 @@
 			<ul class="pagination">
 				<li class="@if (!$chapter->isPrevious()) {{"disabled"}} @endif">
 					@if ($chapter->isPrevious())
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}"
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getPrevious()])}}"
 					   aria-label="Previous"
 					>@endif
 						<span aria-hidden="true">&laquo;</span>
@@ -43,7 +43,7 @@
 				</li>
 				@foreach ($book->allChapters() as $ch)
 				<li class="@if ($ch == $chapter->order) {{"active"}} @endif">
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $ch])}}">
+					<a href="{{route('chapter', [$book->getRouteKey(), $ch])}}">
 						{{$ch}}
 					</a>
 				</li>
@@ -51,7 +51,7 @@
 
 				<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
 					@if ($chapter->isNext())
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}" aria-label="Next">
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getNext()])}}" aria-label="Next">
 					@endif
 					<span aria-hidden="true">&raquo;</span>
 					@if ($chapter->isNext())
