@@ -11,22 +11,23 @@ class ManyChapterSeeder extends Seeder
      */
     public function run()
     {
-        $this->createChapter(2);
-		$this->createChapter(3);
-		$this->createChapter(4);
-		$this->createChapter(6);
-		$this->createChapter(7);
-		$this->createChapter(8);
-		$this->createChapter(9);
+        $this->createChapter(2, 'The Pool of Tears');
+		$this->createChapter(3, 'A Caucus-Race and a Long Tale');
+		$this->createChapter(4, 'The Rabbit Sends a Little Bill');
+		$this->createChapter(5, 'Advice from a Caterpillar');
+		$this->createChapter(6, 'Pig and Pepper');
+		$this->createChapter(8, 'Nobody knew');
+		$this->createChapter(9, 'Where did the seveth chapter go?');
+		$this->createChapter(10, 'It probably got lost!');
     }
 	
-	public function createChapter($order) {
+	public function createChapter($order, $title) {
 		DB::table('chapters')->insert([
-            'title' => "Down the Rabbit-Hole",
+            'title' => $title,
             'number' => 'One or not. Maybe ' . $order,
             'order' => $order,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'description' => "
+            'content' => "
 		    <p>
 		      Alice was beginning to get very tired of sitting by her sister on the
 		      bank, and of having nothing to do: once or twice she had peeped into the
@@ -40,6 +41,7 @@ class ManyChapterSeeder extends Seeder
 		      a daisy-chain would be worth the trouble of getting up and picking the
 		      daisies, when suddenly a White Rabbit with pink eyes ran close by her.
 		    </p>
+			<p>
 			<code>
 			 _________________________________
 				( So you're back... about time... )
@@ -51,6 +53,7 @@ class ManyChapterSeeder extends Seeder
 								||     ||
 
 			</code>
+			</p>
             ",
         ]);
 	}

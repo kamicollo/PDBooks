@@ -18,7 +18,7 @@ class ChapterSeeder extends Seeder
             'number' => 'One',
             'order' => 1,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'description' => "
+            'content' => "
 		    <p>
 		      Alice was beginning to get very tired of sitting by her sister on the
 		      bank, and of having nothing to do: once or twice she had peeped into the

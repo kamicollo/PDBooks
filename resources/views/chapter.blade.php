@@ -17,7 +17,7 @@
 			<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Easily understood by an average 7th or 8th-grade student (Dale–Chall readability formula).">Readability score 6.6</span>
 		</div>
 
-		<?php echo $chapter->description; ?>
+		<?php echo $chapter->content; ?>
 
 		<div class="sharing">
 			<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_pageTitle(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>

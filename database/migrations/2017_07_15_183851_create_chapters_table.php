@@ -20,7 +20,7 @@ class CreateChaptersTable extends Migration
             $table->integer('book_id')->unsigned();
             $table->string('title', 200);
             $table->string('number', 200);
-            $table->text('description');
+            $table->text('content');
             $table->foreign('book_id')->references('id')->on('books');
             $table->unique(['book_id', 'order']);
         });
