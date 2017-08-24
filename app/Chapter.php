@@ -53,7 +53,7 @@ class Chapter extends Model
 	}
 	
 	public function web_url() {
-		return route('chapter', ['id' => $this->book()->first()->id, 'order' => $this->order]);
+		return route('chapter', ['id' => $this->book()->first()->getRouteKey(), 'order' => $this->order]);
 	}
 	
 	public function web_image() {

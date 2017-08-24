@@ -84,7 +84,7 @@
 					<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
 				</p>
 
-				<a class="btn pull-left" href="{{route('chapter', ['id' => $book->id, 'order' => $book->firstChapter()])}}">Start Reading</a>
+				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 
 				<a class="btn pull-left" href="#chapters">See Chapters</a>
 			</div>

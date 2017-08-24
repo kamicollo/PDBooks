@@ -23,7 +23,7 @@
 
 			@if ($bodyclass == "chapter")
 			<p class="navbar-text hidden-xs">
-				<a class="navbar-link hidden-xs" href="{{route('book', $book->id)}}">
+				<a class="navbar-link hidden-xs" href="{{route('book', $book->getRouteKey())}}">
 					{{$book->title}} by <i>{{$book->author}}</i>
 				</a>
 			</p>
@@ -45,33 +45,33 @@
 			<ul class="nav navbar-nav navbar-right">
 				@if ($chapter->IsPrevious())
 				<li class="hidden-xs">
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}">
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getPrevious()])}}">
 						<span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
 					</a>
 				</li>
 				@endif
 				@if ($chapter->IsNext())
 				<li class="hidden-xs">
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}">
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getNext()])}}">
 						<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
 					</a>
 				</li>
 				@endif
 				<li class="visible-xs-inline">
-					<a href="{{route('book', $book->id)}}">
+					<a href="{{route('book', $book->getRouteKey())}}">
 						Title Page
 					</a>
 				</li>
 				@if ($chapter->IsPrevious())
 				<li class="visible-xs-inline">
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getPrevious()])}}">
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getPrevious()])}}">
 						Previous Chapter
 					</a>
 				</li>
 				@endif
 				@if ($chapter->IsNext())
 				<li class="visible-xs-inline">
-					<a href="{{route('chapter', ['id' => $book->id, 'order' => $chapter->getNext()])}}">
+					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getNext()])}}">
 						Next Chapter
 					</a>
 				</li>

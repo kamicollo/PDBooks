@@ -6,7 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    public function chapters()
+    public function getRouteKeyName() {
+		return 'url_slug';
+	}
+	
+	public function chapters()
     {
         return $this->hasMany('App\Chapter');
     }
@@ -35,7 +39,7 @@ class Book extends Model
 	}
 	
 	public function web_url() {
-		return route('book', ['id' => $this->id]);
+		return route('book', [$this->getRouteKey()]);
 	}
 	
 	public function web_image() {
