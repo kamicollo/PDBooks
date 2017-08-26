@@ -13,7 +13,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\CalculateReadability::class
+        Commands\CalculateReadability::class,
+		Commands\UpdateGoodreads::class
     ];
 
     /**

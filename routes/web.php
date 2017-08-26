@@ -42,31 +42,3 @@ Route::get('books/{book}/{order}', function(\App\Book $book, $order) {
 			]);
 	}
 })->name('chapter')->where(['book' => '[-a-z0-9]+', 'order' => '[0-9]+']);
-		
-Route::get('book/{id}/goodreads', function($id) {
-    $book = App\Book::find($id);
-    try {
-        $client = new GuzzleHttp\Client(['base_uri' => 'https://www.goodreads.com/book/isbn/']);
-        $response = $client->request('GET', $book->isbn, 
-            ['query' => 
-                [
-                    'key'    => env('GOODREADS_KEY'),
-                    'format' => 'xml'
-                ]
-            ]
-        );
-        
-        $xml = \simplexml_load_string($response->getBody(), null, LIBXML_NOCDATA);
-        $number_of_ratings = (int) $xml->xpath("book/work/ratings_count/text()")[0];
-        $sum_of_ratings = (int) $xml->xpath("book/work/ratings_sum/text()")[0];
-        $url = $xml->xpath("book/url")[0];
-        $average_rating = $sum_of_ratings / $number_of_ratings;
-        $book->goodreads_avg_rating = $average_rating;
-        $book->goodread__countof_ratings = $number_of_ratings;
-        $book->link_to_goodreads = $url;
-        $book->save();
-    } catch (\ErrorException $error) {
-        //Pokemons!
-    }
-    return $book;
-});
