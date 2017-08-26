@@ -13,7 +13,7 @@
 		<h1>{{$chapter->title}}</h1>
 		<div class="readability">
 			<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Based on an average reading speed of 250 words per minute.">{{ceil($chapter->getReadingTime())}} min read</span>
-			<span class="label label-default">2,136 words</span>
+			<span class="label label-default">{{number_format($chapter->getWordCount())}} words</span>
 			<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="{{$chapter->web_readability_score()}} (Dale–Chall readability formula).">Readability score {{$chapter->readability_score}}</span>
 		</div>
 
