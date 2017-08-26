@@ -2,15 +2,13 @@
 
 use Illuminate\Database\Seeder;
 
-class AffiliateSeeder extends Seeder
-{
+class AffiliateSeeder extends Seeder {
     /**
      * Run the database seeds.
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
         DB::table('affiliates')->insert([
             'title' => "Mekeke",
             'order' => 1,
