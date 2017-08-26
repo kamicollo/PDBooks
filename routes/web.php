@@ -12,30 +12,37 @@
 */
 
 Route::get('/', function () {
-    return view('home', ['bodyclass' => 'home']);
-});
+	return view('home', ['bodyclass' => 'home', 'object' => App\Page::create()]);
+})->name('home');
 
-Route::get('book/{id?}', function($id = 1) {
-	$book = App\Book::find($id);
-    return view('book', 
-			[	'bodyclass' => 'book', 
+Route::get('about', function () {
+	return view('about', ['bodyclass' => 'about', 'object' => App\Page::create()]);
+})->name('about');
+
+Route::get('books/{book}', function(App\Book $book) {	
+	return view('book',
+			[	'bodyclass' => 'book',
 				'book' => $book,
 				'object' => $book,
-				'affiliates' => App\Book::find($id)->affiliates()->orderBy('order', 'asc')->get()
+				'affiliates' => $book->affiliates()->orderBy('order', 'asc')->get()
 			]);
-})->name('book');
+})->name('book')->where(['book' => '[-a-z0-9]+']);
 
 
-Route::get('book/{id}/chapter/{order}', function($id, $order) {
-	$chapter = App\Book::find($id)->chapters()->where('order', '=', $order)->first();
-    return view('chapter', 
+Route::get('books/{book}/{order}', function(\App\Book $book, $order) {
+	$chapter = $book->chapters()->where('order', '=', $order)->first();
+	if ($chapter === null) {
+		return view('errors.404');
+	} else {
+		return view('chapter',
 			[	'bodyclass' => 'chapter',
-				'book' => App\Book::find($id),
+				'book' => $book,
 				'chapter' => $chapter,
 				'object' => $chapter
 			]);
-})->name('chapter');
-
+	}
+})->name('chapter')->where(['book' => '[-a-z0-9]+', 'order' => '[0-9]+']);
+		
 Route::get('book/{id}/goodreads', function($id) {
     $book = App\Book::find($id);
     try {
@@ -62,6 +69,4 @@ Route::get('book/{id}/goodreads', function($id) {
         //Pokemons!
     }
     return $book;
-    
-
 });
