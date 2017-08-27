@@ -28,6 +28,7 @@ Route::get('books/{book}', function(App\Book $book) {
 			]);
 })->name('book')->where(['book' => '[-a-z0-9]+']);
 
+
 Route::get('books/{book}/{order}', function(\App\Book $book, $order) {
 	$chapter = $book->chapters()->where('order', '=', $order)->first();
 	if ($chapter === null) {
