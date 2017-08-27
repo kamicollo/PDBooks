@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+	ServerName laikareads.com
+	DocumentRoot /var/www/laikareads.com/public
+
+	<directory /var/www/laikareads.com>
+		DirectoryIndex index.php
+		AllowOverride ALL
+	</directory>
+
+	LogLevel warn
+	ErrorLog ${APACHE_LOG_DIR}/laikareads.error.log
+	CustomLog ${APACHE_LOG_DIR}/laikareads.access.log combined
+</VirtualHost>
+
+<VirtualHost *:80>
+	ServerName www.laikareads.com
+	Redirect permanent / http://laikareads.com/
+</VirtualHost>
