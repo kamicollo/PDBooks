@@ -31,12 +31,8 @@
 		</div>
 
 		@if ($bodyclass != "chapter")
-		<div class="sharing hidden-xs nav navbar-nav navbar-right">
-			<a href="https://twitter.com/LaikaReads" class="twiter twitter-follow-button" data-lang="en" data-show-count="false" data-show-screen-name="false"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-			<div class="facebook fb-like" data-href="https://www.facebook.com/LaikaReads/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-
-			<a href="https://www.instagram.com/LaikaReads/" target="_blank" class="instagram hidden"><img src="{{URL::to('assets/instagram.png')}}" alt="LaikaReads on Instagram">Follow</a>
+		<div class="share hidden-xs nav navbar-nav navbar-right">
+			@include("follow")
 		</div>
 		@endif
 

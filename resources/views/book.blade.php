@@ -14,6 +14,9 @@
 	<div class="container center-block">
 		<div class="row">
 			<div class="hidden-xs col-sm-3">
+				<div class="static-book">
+					<img src="{{URL::to($book->cover_image)}}" class="img-thumbnail img-responsive" alt="Book cover" width="100%" height="100%">
+				</div>
 				<figure class="flippy-book">
 					<!-- Front -->
 					<ul class="flippy-front">
@@ -69,15 +72,7 @@
 					@if ($book->translator != "") <li><b>Translator:</b> {{$book->translator}}</li> @endif
 				</ul>
 
-				<div class="sharing">
-					<a href="https://twitter.com/share" class="twitter twitter-share-button" data-text="{{$object->web_page_title(false)}}" data-url="{{$object->web_url()}}" data-via="LaikaReads" data-related="ernes7a" data-dnt="true" data-show-count="false"></a>
-
-					<div class="facebook fb-like" data-href="{{$object->web_url()}}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-
-					<div class="facebook fb-share-button" data-href="{{$object->web_url()}}" data-layout="button_count" data-size="small" data-mobile-iframe="true">
-						<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fgoogle.com%2F&amp;src=sdkpreparse"></a>
-					</div>
-				</div>
+				@include("share")
 
 				<p>
 					<blockquote><?php echo $book->descr_quote; ?></blockquote>
@@ -86,7 +81,7 @@
 
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 
-				<a class="btn pull-left" href="#chapters">See Chapters</a>
+				<a class="btn pull-left" href="#chapters">See Table of Contents</a>
 			</div>
 		</div>
 

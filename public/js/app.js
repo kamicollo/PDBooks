@@ -1,4 +1,13 @@
+// BROWSERS
+// Safari
+if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+	$(".flippy-book").hide();
+	$(".static-book").show();
+}
+
+
 // SHARING //
+// Facebook
 window.fbAsyncInit = function() {
 	FB.init({
 		appId: "229883360868841",
@@ -14,6 +23,7 @@ window.fbAsyncInit = function() {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
 	js = d.createElement(s); js.id = id;
+	js.async = true;
 	js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=229883360868841";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
@@ -49,7 +59,7 @@ function displayInstagram(page) {
 	}
 }
 
-function ellipsize(page) {
+function ellipsize() {
 	$(".featured .excerpt").dotdotdot({
 		fallbackToLetter: true,
 		watch: true,

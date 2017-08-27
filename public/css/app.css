@@ -289,7 +289,7 @@ table {
 	text-align: center;
 }
 
-.book .overlay {
+.book .jumbotron .overlay {
 	background-color: rgba(103, 130, 72, 0.80);
 	height: 100%;
 	overflow: hidden;
@@ -335,6 +335,10 @@ p.goodreads {
 	margin-bottom: 0;
 }
 
+.book table tr td:first-child {
+	width: 45px;
+}
+
 #chapters {
 	border-bottom: none;
 	margin-bottom: 6px;
@@ -362,27 +366,6 @@ p.goodreads {
 	text-transform: uppercase;
 }
 
-/*.order:before, .order:after {
-	content: "§";
-	-moz-transform: rotate(90deg);
-	-ms-transform: rotate(90deg);
-	-o-transform: rotate(90deg);
-	-webkit-transform: rotate(90deg);
-	display: inline-block;
-	font-size: 10px;
-	line-height: 14px;
-	opacity: 0.6;
-	transform: rotate(90deg);
-}
-
-.order:before {
-	margin: 0 5px;
-}
-
-.order:after {
-	margin: 0 7px;
-}*/
-
 .readability {
 	margin-bottom: 30px;
 	text-align: center;
@@ -407,11 +390,11 @@ progress::-webkit-progress-bar {
 	background-color: transparent;
 }
 
-progress::-moz-progress-bar {
-	background-color: transparent;
+progress::-webkit-progress-value {
+	background-color: #ffe14e;
 }
 
-progress::-webkit-progress-value {
+progress::-moz-progress-bar {
 	background-color: #ffe14e;
 }
 
@@ -486,7 +469,7 @@ progress::-webkit-progress-value {
 footer {
 	background-color: #dde5ec; /* grey blue */
 	color: #2c3f50; /* dark blue */
-	height: 40px;
+	min-height: 40px;
 	margin-top: -40px;
 	width: 100%;
 }
@@ -505,20 +488,26 @@ footer .container p {
 }
 
 
-/* SHARING */
-.sharing {
+/* SHARE */
+ul.share {
 	height: 20px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
-.navbar .sharing {
-	margin: 15px 0 0 5px;
+ul.share li {
+	display: inline;
+	float: left;
+	margin-right: 5px;
 }
 
-.sharing .facebook {
-	line-height: 10px;
+div.share {
+	margin: 15px -5px 0 5px;
 }
 
-.sharing .instagram {
+/* Instagram */
+.share .instagram {
 	background-color: #d93175;
 	border-radius: 3px;
 	color: #ffffff;
@@ -528,16 +517,15 @@ footer .container p {
 	height: 20px;
 	line-height: 11px;
 	padding: 2px 8px 0 3px;
-	margin: -12px 0 0 1px;
 	text-decoration: none;
 	vertical-align: middle;
 }
 
-.sharing .instagram:hover {
+.share .instagram:hover {
 	background-color: #bf2363;
 }
 
-.sharing .instagram img {
+.share .instagram img {
 	margin: 1px 4px 3px 0;
 }
 
@@ -630,6 +618,10 @@ footer .container p {
 
 /* FLIPPY BOOK */
 /* 1: Container */
+.static-book {
+	display: none;
+}
+
 .flippy-book {
 	position: relative;
 	-webkit-perspective: 1000px;
@@ -675,14 +667,13 @@ footer .container p {
 	width: 140px;
 }
 
-
 /* 2: Background and color */
 /* Front */
 .flippy-front li:first-child {
-	background-color: #eee;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
+	background-color: #eee;
 }
 
 .flippy-front li:last-child {
@@ -778,6 +769,7 @@ footer .container p {
 	-moz-transform: rotateY(-36deg);
 	transform: rotateY(-36deg);
 }
+
 
 /* 4: Positions, transforms and transitions */
 .flippy-front,
