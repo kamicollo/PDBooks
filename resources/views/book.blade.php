@@ -28,8 +28,8 @@
 						<li></li>
 						<li>
 							<div>
-								<img class="img-thumbnail" src="{{URL::to('images/portrait.jpg')}}" alt="Author portrait" width="100%" height="100%">
-								<img src="{{URL::to('images/signature.svg')}}" alt="Author signature" width="100%" height="100%">
+								<img class="img-thumbnail" src="{{URL::to('images/alice-in-wonderland/portrait.jpg')}}" alt="Author's portrait" width="100%" height="100%">
+								<img src="{{URL::to('images/alice-in-wonderland/signature.svg')}}" alt="Author's signature" width="100%" height="100%">
 							</div>
 						</li>
 						<li></li>
@@ -90,13 +90,19 @@
 			</div>
 		</div>
 
-		<h3>Top Editions</h3>
-		<div class="row">
+		<h3>Wonderful Editions</h3>
+		<div class="row featured">
 			@foreach ($affiliates as $affiliate)
 			<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
-				<a href="#" target="_blank">
+				<a href="{{URL::to($affiliate->amazon_link)}}" target="_blank">
 					<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+					<div class="overlay hidden-xs">
+						<p class="excerpt">{{$affiliate->title}}</p>
+					</div>
 				</a>
+				@if ($affiliate->bd_link)
+				<span class="metadata">Or <a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Book Depository</a></span>
+				@endif
 		    </div>
 			@endforeach
 		</div>
@@ -107,23 +113,28 @@
 				<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250835785&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-				<span class="metadata">Download a free audiobook with your <a href="https://www.amazon.co.uk/Audible-Free-Trial-Digital-Membership/dp/B00OPA2XFG?tag=AssociateTrackingID" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
+				<span class="metadata">Download a free audiobook with your <a href="https://www.amazon.co.uk/Audible-Free-Trial-Digital-Membership/dp/B00OPA2XFG" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
 			</div>
 		</div>
 
-		<h3>You Might Also Like...</h3>
+		<!-- <h3>You Might Also Like...</h3>
 		<div class="row featured">
 			@foreach ($affiliates as $affiliate)
 			<div class="@if ($loop->iteration > 3) {{'hidden-xs'}} @endif @if ($loop->iteration > 4) {{'hidden-sm'}} @endif col-xs-4 col-sm-3 col-md-2">
-				<a href="#" target="_blank">
+				<a href="{{URL::to($affiliate->amazon_link)}}" target="_blank">
 					<img src="{{URL::to($affiliate->cover_image)}}" alt="{{$affiliate->title}}" class="img-thumbnail img-responsive">
+					<div class="overlay hidden-xs">
+						<p class="excerpt">{{$affiliate->title}}</p>
+					</div>
 				</a>
-				<span class="metadata">Alice's Adventures in Wonderland and Stuff</span>
+				@if ($affiliate->bd_link)
+				<span class="metadata">Or <a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Book Depository</a></span>
+				@endif
 		    </div>
 			@endforeach
-		</div>
+		</div> -->
 
-		<h3 id="chapters">Chapters</h3>
+		<h3 id="chapters">Table of Contents</h3>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<table class="metadata table table-hover">
@@ -137,7 +148,7 @@
 								</a>
 							</td>
 						</tr>
-						@endfor						
+						@endfor
 					</tbody>
 				</table>
 			</div>

@@ -4,15 +4,13 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddBookIsbn extends Migration
-{
+class AddBookIsbn extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::table('books', function (Blueprint $table) {
             $table->string('isbn', 20);
         });
@@ -23,8 +21,7 @@ class AddBookIsbn extends Migration
      *
      * @return void
      */
-    public function down()
-    {
+    public function down() {
         Schema::table('books', function (Blueprint $table) {
             $table->dropColumn('isbn');
         });

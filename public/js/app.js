@@ -25,12 +25,13 @@ window.fbAsyncInit = function() {
 
 	// Home
 	if (page === "home") {
-		ellipsize(page);
+		ellipsize();
 	}
 
 	// Book
 	if (page === "book") {
 		$("[data-toggle='popover']").popover();
+		ellipsize();
 	}
 
 	// Chapter
@@ -49,7 +50,7 @@ function displayInstagram(page) {
 }
 
 function ellipsize(page) {
-	$(".home .featured .excerpt").dotdotdot({
+	$(".featured .excerpt").dotdotdot({
 		fallbackToLetter: true,
 		watch: true,
 		wrap: "word"

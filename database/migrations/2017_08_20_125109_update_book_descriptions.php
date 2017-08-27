@@ -4,19 +4,17 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UpdateBookDescriptions extends Migration
-{
+class UpdateBookDescriptions extends Migration {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
-    {
+    public function up() {
         Schema::table('books', function (Blueprint $table) {
-			$table->text('descr_quote')->nullable();
-			$table->string('descr_source', 200)->nullable();
-		});		
+            $table->text('descr_quote')->nullable();
+            $table->string('descr_source', 200)->nullable();
+        });
     }
 
     /**
@@ -24,13 +22,12 @@ class UpdateBookDescriptions extends Migration
      *
      * @return void
      */
-    public function down()
-    {	
+    public function down() {
         Schema::table('books', function (Blueprint $table) {
-			$table->dropColumn('descr_quote');
-		});
-		Schema::table('books', function (Blueprint $table) {
-			$table->dropColumn('descr_source');
-		});
+            $table->dropColumn('descr_quote');
+        });
+        Schema::table('books', function (Blueprint $table) {
+            $table->dropColumn('descr_source');
+        });
     }
 }

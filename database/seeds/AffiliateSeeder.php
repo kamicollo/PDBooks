@@ -10,46 +10,52 @@ class AffiliateSeeder extends Seeder {
      */
     public function run() {
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice's Adventures in Wonderland and Through the Looking Glass (Clothbound Classics)",
             'order' => 1,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/1.jpg'
+            'amazon_link' => "https://www.amazon.com/Adventures-Wonderland-Clothbound-Classics-Hardcover/dp/B00NPMPSCK",
+            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll-Sir-John-Tenniel/9780141192468",
+            'cover_image' => 'images/alice-in-wonderland/1.jpg'
         ]);
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice's Adventures in Wonderland (Illustrated by Yayoi Kusama)",
             'order' => 2,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/2.jpg'
+            'amazon_link' => "https://www.amazon.com/Lewis-Carrolls-Alices-Adventures-Wonderland/dp/0141197307",
+            'bd_link' => "https://www.bookdepository.com/Lewis-Carrolls-Alices-Adventures-in-Wonderland-Lewis-Carroll-Yayoi-Kusam/9780141197302",
+            'cover_image' => 'images/alice-in-wonderland/2.jpg'
         ]);
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice's Adventures in Wonderland (Narrated by Scarlett Johansson)",
             'order' => 3,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/3.jpg'
+            'amazon_link' => "https://www.amazon.com/Alices-Adventures-in-Wonderland/dp/B015D84R02",
+            'bd_link' => "",
+            'cover_image' => 'images/alice-in-wonderland/3.jpg'
         ]);
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice's Adventures in Wonderland (Illustrated by Andrea D'Aquino)",
             'order' => 4,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/4.jpg'
+            'amazon_link' => "https://www.amazon.com/Classics-Reimagined-Alices-Adventures-Wonderland/dp/1631590758",
+            'bd_link' => "https://www.bookdepository.com/Classics-Reimagined-Alices-Adventures-in-Wonderland-Lewis-Carroll-Andre-Daquino/9781631590757",
+            'cover_image' => 'images/alice-in-wonderland/4.jpg'
         ]);
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice's Adventures in Wonderland (Illustrated by Anna Bond)",
             'order' => 5,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/5.jpg'
+            'amazon_link' => "https://www.amazon.com/Alices-Adventures-Wonderland-Lewis-Carroll/dp/0147515874",
+            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll/9780147515872",
+            'cover_image' => 'images/alice-in-wonderland/5.jpg'
         ]);
         DB::table('affiliates')->insert([
-            'title' => "Mekeke",
+            'title' => "Alice’s Adventures in Wonderland (Illustrated by Salvador Dali)",
             'order' => 6,
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
-            'link' => "",
-            'cover_image' => 'images/6.jpg'
+            'amazon_link' => "https://www.amazon.com/Alices-Adventures-Wonderland-Lewis-Carroll/dp/0691170029",
+            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll-Mark-Burstein-Salvador-Dali/9780691170022",
+            'cover_image' => 'images/alice-in-wonderland/6.jpg'
         ]);
     }
 }
