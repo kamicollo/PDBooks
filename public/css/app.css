@@ -64,12 +64,15 @@ h3 {
 	padding-bottom: 6px;
 }
 
-a {
-	color: #395267;
+a,
+a:hover {
+	color: #5e6f7c; /* link grey */
 }
 
-a:hover {
-	color: #395267;
+.highlight a,
+.highlight a:hover {
+	color: #ff146c; /* vivid pink */
+	text-decoration: none;
 }
 
 ::selection {
@@ -297,33 +300,35 @@ table {
 }
 
 blockquote {
-	border-left-color: #395267;
+	border-left-color: #395267; /* metadata grey */
 	font-style: italic;
+	margin-top: 20px;
+}
+
+.book .metadata {
+	margin-bottom: 20px;
 }
 
 .metadata {
-	color: #395267;
+	color: #395267; /* metadata grey */
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	list-style-type: none;
 	padding: 0;
 }
 
-.audible a {
-	color: #ff4300;
-	font-weight: bold;
-	text-decoration: none;
-}
-
 .metadata.table-hover > tbody > tr:hover {
 	background-color: #eaeff3;
 }
 
-p.goodreads {
-	color: #395267;
+p.goodreads,
+p.goodreads a,
+p.goodreads a:hover {
+	color: #395267; /* metadata grey */
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 15px;
+	text-decoration: none;
 }
 
 .rating {
@@ -331,8 +336,20 @@ p.goodreads {
 	margin-right: 8px;
 }
 
+.audible a {
+	color: #ff4300;
+	font-weight: bold;
+}
+
 .book table {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 15px;
 	margin-bottom: 0;
+}
+
+.book table a,
+.book table a:hover {
+	color: #395267; /* metadata grey */
 }
 
 .book table tr td:first-child {
@@ -350,8 +367,8 @@ p.goodreads {
 	margin-bottom: 20px;
 }
 
-.chapter > .container p:first-of-type:first-letter {
-	color: #395267;
+.chapter .wrapper .container p:first-of-type:first-letter {
+	color: #395267; /* metadata grey */
 	float: left;
 	font-size: 64px;
 	line-height: 54px;
@@ -468,18 +485,18 @@ progress::-moz-progress-bar {
 /* FOOTER */
 footer {
 	background-color: #dde5ec; /* grey blue */
-	color: #2c3f50; /* dark blue */
-	min-height: 40px;
-	margin-top: -40px;
+	color: #395267; /* metadata grey */
+	padding: 10px 0;
+	min-height: 51px;
+	margin-top: -51px;
 	width: 100%;
 }
 
 footer .container p {
 	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
-	line-height: 40px;
-	margin: 0;
-	text-align: center;
+	margin: 4px 0;
+	text-align: left;
 }
 .wrapper {
 	min-height: 100%;

@@ -86,6 +86,10 @@
 		<footer class="footer">
 			<div class="container">
 				<p>Made with <span class="glyphicon glyphicon-heart"></span> by <a href="https://twitter.com/ernes7a" target="_blank">@ernes7a</a> and <a href="https://twitter.com/aurimas" target="_blank">@aurimas</a>. <a href="{{route('about')}}">Learn more</a>.</p>
+
+				@if ($bodyclass == "book")
+				<p>We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites. In human terms, whenever you buy a book on <a href="https://www.amazon.com?tag=laikareads-20" target="_blank">Amazon</a> by following a link on LaikaReads, we get a small percentage of its price to help support our work.</p>
+				@endif
 			</div>
 		</footer>
 
@@ -102,6 +106,8 @@
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<!-- Facebook -->
 		<div id="fb-root"></div>
+		<!-- Amazon -->
+		<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=d1fd94e6-d008-4d9c-9170-1f8cbad00503"></script>
 		<!-- Google Analytics -->
 		<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

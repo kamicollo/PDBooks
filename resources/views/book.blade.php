@@ -74,10 +74,8 @@
 
 				@include("share")
 
-				<p>
-					<blockquote><?php echo $book->descr_quote; ?></blockquote>
-					<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
-				</p>
+				<blockquote><?php echo $book->descr_quote; ?></blockquote>
+				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
 
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 
@@ -132,7 +130,7 @@
 		<h3 id="chapters">Table of Contents</h3>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<table class="metadata table table-hover">
+				<table class="table table-hover">
 					<tbody>
 						@for ($i = 0; $i < ceil($book->chapters()->count() / 2); $i++)
 						<tr>
@@ -149,7 +147,7 @@
 			</div>
 
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-				<table class="metadata table table-hover">
+				<table class="table table-hover">
 					<tbody>
 						@for ($i = ceil($book->chapters()->count() / 2); $i < $book->chapters()->count(); $i++)
 						<tr>
