@@ -45,7 +45,7 @@
 		<meta name="twitter:card" content="summary" />
 		@endif
 		<meta name="twitter:site" content="@LaikaReads" />
-		<meta name="twitter:title" content="{{$object->web_page_title(false)}}" /> <!-- Max 70 characters -->
+		<meta name="twitter:title" content="{{$object->web_page_title(true)}}" /> <!-- Max 70 characters -->
 		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
 
 		@if ($object->web_image() != "")
@@ -62,7 +62,7 @@
 		@if ($bodyclass == "about")
 		<meta property="og:type" content="article" />
 		@endif
-		<meta property="og:title" content="{{$object->web_page_title(false)}}" />
+		<meta property="og:title" content="{{$object->web_page_title(true)}}" />
 		<meta property="og:description" content="{{$object->web_description()}}" />
 		@if ($object->web_image() != "")
 		<meta property="og:image" content="{{URL::to($object->web_image())}}" />
