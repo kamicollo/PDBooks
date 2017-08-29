@@ -94,7 +94,7 @@
 					</div>
 				</a>
 				@if ($affiliate->bd_link)
-				<span class="metadata">Or <a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Book Depository</a></span>
+				<span class="subtitle">Or <a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Book Depository</a></span>
 				@endif
 		    </div>
 			@endforeach

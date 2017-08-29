@@ -65,12 +65,14 @@ h3 {
 }
 
 a,
-a:hover {
+a:hover,
+a:focus {
 	color: #5e6f7c; /* link grey */
 }
 
 .highlight a,
-.highlight a:hover {
+.highlight a:hover,
+.highlight a:focus {
 	color: #ff146c; /* vivid pink */
 	text-decoration: none;
 }
@@ -305,15 +307,12 @@ blockquote {
 	margin-top: 20px;
 }
 
-.book .metadata {
-	margin-bottom: 20px;
-}
-
 .metadata {
 	color: #395267; /* metadata grey */
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	list-style-type: none;
+	margin-bottom: 20px;
 	padding: 0;
 }
 
@@ -328,7 +327,6 @@ p.goodreads a:hover {
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	line-height: 15px;
-	text-decoration: none;
 }
 
 .rating {
@@ -593,10 +591,13 @@ div.share {
 	text-align: left;
 }
 
-.featured .metadata {
+.featured .subtitle {
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
+	color: #395267; /* metadata grey */
 	display: -webkit-box;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 15px;
 	margin-top: 6px;
 	overflow: hidden;
 	text-overflow: ellipsis;
