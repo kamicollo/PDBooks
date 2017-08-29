@@ -94,7 +94,7 @@
 					</div>
 				</a>
 				@if ($affiliate->bd_link)
-				<span class="subtitle">Or <a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Book Depository</a></span>
+				<span class="subtitle"><a style="word-wrap: break-word;" href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/bd.png')}}" class="bd">Book Depository</a></span>
 				@endif
 		    </div>
 			@endforeach
@@ -106,7 +106,7 @@
 				<iframe width="100%" height="120" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250835785&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-				<span class="metadata">Download a free audiobook with your <a href="https://www.amazon.co.uk/Audible-Free-Trial-Digital-Membership/dp/B00OPA2XFG" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
+				<span class="metadata">Download two audiobooks for free with your <a href="https://www.amazon.com/dp/B00NB86OYE/?tag=laikareads-20" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
 			</div>
 		</div>
 

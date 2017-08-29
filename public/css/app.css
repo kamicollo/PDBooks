@@ -27,7 +27,8 @@ body {
 }
 
 .about .container,
-.chapter .container {
+.chapter .container,
+.unknown .container {
 	max-width: 700px;
 }
 
@@ -334,6 +335,23 @@ p.goodreads a:hover {
 	margin-right: 8px;
 }
 
+.book .featured .subtitle {
+	font-size: 13px;
+}
+
+.book .featured .subtitle a,
+.book .featured .subtitle a:hover,
+.book .featured .subtitle a:focus {
+	text-decoration: none;
+}
+
+.bd {
+	height: 14px;
+	line-height: 18px;
+	margin-right: 2px;
+	vertical-align: text-bottom;
+}
+
 .audible a {
 	color: #ff4300;
 	font-weight: bold;
@@ -439,10 +457,7 @@ progress::-moz-progress-bar {
 .unknown .wrapper .container {
 	text-align: center;
 	vertical-align: middle;
-	/*display: inline-block;*/
-	/*display: inline;*/
-	/*height: auto;*/
-	padding-top: 10%;
+	padding-top: 8%;
 }
 
 
@@ -484,6 +499,7 @@ progress::-moz-progress-bar {
 footer {
 	background-color: #dde5ec; /* grey blue */
 	color: #395267; /* metadata grey */
+	color: #5e6f7c; /* link grey */
 	padding: 10px 0;
 	min-height: 51px;
 	margin-top: -51px;
