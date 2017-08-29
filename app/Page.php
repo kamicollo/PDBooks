@@ -23,10 +23,10 @@ class Page {
 	}
 
 	public function web_image() {
-		return '';
+		return url('assets/featured-logo.png');
 	}
 
 	public function web_description() {
-		return '';
+		return 'Read free, beautifully formatted public domain books online.';
 	}
 }

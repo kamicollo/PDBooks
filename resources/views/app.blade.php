@@ -12,7 +12,6 @@
 
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 		<!-- Chrome colors -->
 		<meta name="theme-color" content="#2c3f50">
@@ -49,19 +48,22 @@
 		<meta name="twitter:title" content="{{$object->web_page_title(false)}}" /> <!-- Max 70 characters -->
 		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
 
-		 @if ($object->web_image() != "")
+		@if ($object->web_image() != "")
 		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" /> <!-- Max 5MB -->
-		<meta name="twitter:image:alt" content="{{$object->web_page_title(false)}}">
 		@endif
 
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
 		<meta property="fb:app_id" content="229883360868841" />
 		<meta property="og:site_name" content="Laika Reads"/>
 		<meta property="og:url" content="{{$object->web_url()}}" />
-		<meta property="og:type" content="book" /> <!-- https://developers.facebook.com/docs/reference/opengraph#object-type -->
+		@if ($bodyclass == "book" || $bodyclass == "chapter")
+		<meta property="og:type" content="book" />
+		@endif
+		@if ($bodyclass == "about")
+		<meta property="og:type" content="article" />
+		@endif
 		<meta property="og:title" content="{{$object->web_page_title(false)}}" />
 		<meta property="og:description" content="{{$object->web_description()}}" />
-
 		@if ($object->web_image() != "")
 		<meta property="og:image" content="{{URL::to($object->web_image())}}" />
 		@endif
