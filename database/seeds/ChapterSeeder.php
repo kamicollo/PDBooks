@@ -60,7 +60,7 @@ class ChapterSeeder extends Seeder {
 		      sides of the well, and noticed that they were filled with cupboards and
 		      book-shelves; here and there she saw maps and pictures hung upon pegs. She
 		      took down a jar from one of the shelves as she passed; it was labelled
-		      ‘ORANGE MARMALADE’, but to her great disappointment it was empty: she did
+		      <span class='aiw-marmelade'>ORANGE MARMALADE</span>, but to her great disappointment it was empty: she did
 		      not like to drop the jar for fear of killing somebody, so managed to put
 		      it into one of the cupboards as she fell past it.
 		    </p>
@@ -154,7 +154,7 @@ class ChapterSeeder extends Seeder {
 		      a book of rules for shutting people up like telescopes: this time she
 		      found a little bottle on it, (‘which certainly was not here before,’ said
 		      Alice,) and round the neck of the bottle was a paper label, with the words
-		      ‘DRINK ME’ beautifully printed on it in large letters.
+		      <span class='aiw-drink'>DRINK ME</span> beautifully printed on it in large letters.
 		    </p>
 		    <p>
 		      It was all very well to say ‘Drink me,’ but the wise little Alice was not
@@ -174,13 +174,7 @@ class ChapterSeeder extends Seeder {
 		      cherry-tart, custard, pine-apple, roast turkey, toffee, and hot buttered
 		      toast,) she very soon finished it off.
 		    </p>
-		    <p>
-		  *    *    *    *    *    *    *
-
-		    *    *    *    *    *    *
-
-		  *    *    *    *    *    *    *
-			</p>
+		    <p class='aiw-separator'>*****</p>
 		    <p>
 		      ‘What a curious feeling!’ said Alice; ‘I must be shutting up like a
 		      telescope.’
@@ -219,8 +213,8 @@ class ChapterSeeder extends Seeder {
 		    </p>
 		    <p>
 		      Soon her eye fell on a little glass box that was lying under the table:
-		      she opened it, and found in it a very small cake, on which the words ‘EAT
-		      ME’ were beautifully marked in currants. ‘Well, I’ll eat it,’ said Alice,
+		      she opened it, and found in it a very small cake, on which the words <span class='aiw-eat'>EAT
+		      ME</span> were beautifully marked in currants. ‘Well, I’ll eat it,’ said Alice,
 		      ‘and if it makes me grow larger, I can reach the key; and if it makes me
 		      grow smaller, I can creep under the door; so either way I’ll get into the
 		      garden, and I don’t care which happens!’
@@ -263,10 +257,15 @@ class ChapterSeeder extends Seeder {
 			  by the carrier,&rsquo; she thought; &lsquo;and how funny it&rsquo;ll seem, sending presents
 			  to one&rsquo;s own feet! And how odd the directions will look!
 			</p>
+			<p class='aiw-foot' class='stanza'>
 			 Alice&rsquo;s Right Foot, Esq.
+			<br>
 			   Hearthrug,
+			<br>
 				 near The Fender,
+			<br>
 				   (with Alice&rsquo;s love).
+			</p>
 			<p>
 			  Oh dear, what nonsense I&rsquo;m talking!&rsquo;
 			</p>
@@ -326,15 +325,25 @@ class ChapterSeeder extends Seeder {
 			  sounded hoarse and strange, and the words did not come the same as they
 			  used to do:&mdash;
 			</p>
+			<p class='aiw-crocodile stanza'>
 			 &lsquo;How doth the little crocodile
+			<br>
 			  Improve his shining tail,
+			<br>
 			 And pour the waters of the Nile
+			<br>
 			  On every golden scale!
-
+			<br>
+			</p>
+			<p class='aiw-crocodile stanza'>
 			 &lsquo;How cheerfully he seems to grin,
+			<br>
 			  How neatly spread his claws,
+			<br>
 			 And welcome little fishes in
+			<br>
 			  With gently smiling jaws!&rsquo;
+			</p>
 			<p>
 			  &lsquo;I&rsquo;m sure those are not the right words,&rsquo; said poor Alice, and her eyes
 			  filled with tears again as she went on, &lsquo;I must be Mabel after all, and I
@@ -640,6 +649,7 @@ class ChapterSeeder extends Seeder {
 		      about it while the Mouse was speaking, so that her idea of the tale was
 		      something like this:&mdash;
 		    </p>
+			<p class='aiw-prosecute stanza'>
 		         &lsquo;Fury said to a
 		         mouse, That he
 		        met in the
@@ -684,6 +694,7 @@ class ChapterSeeder extends Seeder {
 		           you
 		          to
 		           death.&rdquo;&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;You are not attending!&rsquo; said the Mouse to Alice severely. &lsquo;What are you
 		      thinking of?&rsquo;
@@ -807,7 +818,7 @@ class ChapterSeeder extends Seeder {
 		      tiny white kid gloves: she took up the fan and a pair of the gloves, and
 		      was just going to leave the room, when her eye fell upon a little bottle
 		      that stood near the looking-glass. There was no label this time with the
-		      words &lsquo;DRINK ME,&rsquo; but nevertheless she uncorked it and put it to her lips.
+		      words <span class='aiw-drink'>DRINK ME</span> but nevertheless she uncorked it and put it to her lips.
 		      &lsquo;I know <i>something</i> interesting is sure to happen,&rsquo; she said to herself,
 		      &lsquo;whenever I eat or drink anything; so I&rsquo;ll just see what this bottle does.
 		      I do hope it&rsquo;ll make me grow large again, for really I&rsquo;m quite tired of
@@ -1172,45 +1183,78 @@ class ChapterSeeder extends Seeder {
 		    <p>
 		      Alice folded her hands, and began:&mdash;
 		    </p>
+			<p class='aiw-william stanza'>
 		   &lsquo;You are old, Father William,&rsquo; the young man said,
+		    <br>
 		    &lsquo;And your hair has become very white;
+		    <br>
 		   And yet you incessantly stand on your head&mdash;
+		    <br>
 		    Do you think, at your age, it is right?&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;In my youth,&rsquo; Father William replied to his son,
+		    <br>
 		    &lsquo;I feared it might injure the brain;
+		    <br>
 		   But, now that I&rsquo;m perfectly sure I have none,
+		    <br>
 		    Why, I do it again and again.&rsquo;
-
+		    </p>
+		   <p class='aiw-william stanza'>
 		   &lsquo;You are old,&rsquo; said the youth, &lsquo;as I mentioned before,
+		    <br>
 		    And have grown most uncommonly fat;
+		    <br>
 		   Yet you turned a back-somersault in at the door&mdash;
+		    <br>
 		    Pray, what is the reason of that?&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;In my youth,&rsquo; said the sage, as he shook his grey locks,
+		    <br>
 		    &lsquo;I kept all my limbs very supple
+		    <br>
 		   By the use of this ointment&mdash;one shilling the box&mdash;
+		    <br>
 		    Allow me to sell you a couple?&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;You are old,&rsquo; said the youth, &lsquo;and your jaws are too weak
+		    <br>
 		    For anything tougher than suet;
+		    <br>
 		   Yet you finished the goose, with the bones and the beak&mdash;
+		    <br>
 		    Pray how did you manage to do it?&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;In my youth,&rsquo; said his father, &lsquo;I took to the law,
+		    <br>
 		    And argued each case with my wife;
+		    <br>
 		   And the muscular strength, which it gave to my jaw,
+		    <br>
 		    Has lasted the rest of my life.&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;You are old,&rsquo; said the youth, &lsquo;one would hardly suppose
+		    <br>
 		    That your eye was as steady as ever;
+		    <br>
 		   Yet you balanced an eel on the end of your nose&mdash;
+		    <br>
 		    What made you so awfully clever?&rsquo;
-
+		    </p>
+		    <p class='aiw-william stanza'>
 		   &lsquo;I have answered three questions, and that is enough,&rsquo;
+		    <br>
 		    Said his father; &lsquo;don&rsquo;t give yourself airs!
+		    <br>
 		   Do you think I can listen all day to such stuff?
+		    <br>
 		    Be off, or I&rsquo;ll kick you down stairs!&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;That is not said right,&rsquo; said the Caterpillar.
 		    </p>
@@ -1291,13 +1335,7 @@ class ChapterSeeder extends Seeder {
 		      closely against her foot, that there was hardly room to open her mouth;
 		      but she did it at last, and managed to swallow a morsel of the lefthand
 		      bit.
-		    </p>
-		  *    *    *    *    *    *    *
-
-		    *    *    *    *    *    *
-
-		  *    *    *    *    *    *    *
-		    <p>
+			<p class='aiw-separator'>*****</p>
 		      &lsquo;Come, my head&rsquo;s free at last!&rsquo; said Alice in a tone of delight, which
 		      changed into alarm in another moment, when she found that her shoulders
 		      were nowhere to be found: all she could see, when she looked down, was an
@@ -1603,29 +1641,44 @@ class ChapterSeeder extends Seeder {
 		      to it as she did so, and giving it a violent shake at the end of every
 		      line:
 		    </p>
+		    <p class='aiw-rough stanza'>
 		   &lsquo;Speak roughly to your little boy,
+		    <br>
 		    And beat him when he sneezes:
+		    <br>
 		   He only does it to annoy,
+		    <br>
 		    Because he knows it teases.&rsquo;
-
+		    </p>
+		    <p class='aiw-chorus'>
 		         CHORUS.
-
+		    </p>
+		    <p class='aiw-annotate'>
 		 (In which the cook and the baby joined):&mdash;
-
+		    </p>
+		    <p class='aiw-wow'>
 		       &lsquo;Wow! wow! wow!&rsquo;
+		    </p>
 		    <p>
 		      While the Duchess sang the second verse of the song, she kept tossing the
 		      baby violently up and down, and the poor little thing howled so, that
 		      Alice could hardly hear the words:&mdash;
 		    </p>
+		    <p class='aiw-severe stanza'>
 		   &lsquo;I speak severely to my boy,
+		    <br>
 		    I beat him when he sneezes;
+		    <br>
 		   For he can thoroughly enjoy
+		    <br>
 		    The pepper when he pleases!&rsquo;
-
+		    </p>
+		    <p class='aiw-chorus'>
 		         CHORUS.
-
+		    </p>
+		    <p class='aiw-wow'>
 		       &lsquo;Wow! wow! wow!&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;Here! you may nurse it a bit, if you like!&rsquo; the Duchess said to Alice,
 		      flinging the baby at her as she spoke. &lsquo;I must go and get ready to play
@@ -2016,8 +2069,11 @@ class ChapterSeeder extends Seeder {
 		      his tea spoon at the March Hare,) &lsquo;&mdash;it was at the great concert
 		      given by the Queen of Hearts, and I had to sing
 		    </p>
+		    <p class='aiw-twinkle stanza'>
 		     &ldquo;Twinkle, twinkle, little bat!
+		    <br>
 		     How I wonder what you&rsquo;re at!&rdquo;
+		    </p>
 		    <p>
 		      You know the song, perhaps?&rsquo;
 		    </p>
@@ -2027,9 +2083,12 @@ class ChapterSeeder extends Seeder {
 		    <p>
 		      &lsquo;It goes on, you know,&rsquo; the Hatter continued, &lsquo;in this way:&mdash;
 		    </p>
+		    <p class='aiw-world stanza'>
 		     &ldquo;Up above the world you fly,
+		    <br>
 		     Like a tea-tray in the sky.
 		         Twinkle, twinkle&mdash;&ldquo;&rsquo;
+		    </p>
 		    <p>
 		      Here the Dormouse shook itself, and began singing in its sleep &lsquo;<i>Twinkle,
 		      twinkle, twinkle, twinkle</i>&mdash;&rsquo; and went on so long that they had to
@@ -2317,8 +2376,8 @@ class ChapterSeeder extends Seeder {
 		      Alice recognised the White Rabbit: it was talking in a hurried nervous
 		      manner, smiling at everything that was said, and went by without noticing
 		      her. Then followed the Knave of Hearts, carrying the King&rsquo;s crown on a
-		      crimson velvet cushion; and, last of all this grand procession, came THE
-		      KING AND QUEEN OF HEARTS.
+		      crimson velvet cushion; and, last of all this grand procession, came <span class='aiw-hearts'>THE
+		      KING AND QUEEN OF HEARTS</span>.
 		    </p>
 		    <p>
 		      Alice was rather doubtful whether she ought not to lie down on her face
@@ -3126,30 +3185,49 @@ class ChapterSeeder extends Seeder {
 		      treading on her toes when they passed too close, and waving their forepaws
 		      to mark the time, while the Mock Turtle sang this, very slowly and sadly:&mdash;
 		    </p>
+		    <p class='aiw-snail stanza'>
 		 &lsquo;&ldquo;Will you walk a little faster?&rdquo; said a whiting to a snail.
+		    <br>
 		 &ldquo;There&rsquo;s a porpoise close behind us, and he&rsquo;s treading on my tail.
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 See how eagerly the lobsters and the turtles all advance!
+		    <br>
 		 They are waiting on the shingle&mdash;will you come and join the dance?
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 Will you, won&rsquo;t you, will you, won&rsquo;t you, will you join the dance?
+		    <br>
 		 Will you, won&rsquo;t you, will you, won&rsquo;t you, won&rsquo;t you join the dance?
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 &ldquo;You can really have no notion how delightful it will be
+		    <br>
 		 When they take us up and throw us, with the lobsters, out to sea!&rdquo;
+		    <br>
 		  But the snail replied &ldquo;Too far, too far!&rdquo; and gave a look askance&mdash;
+		    <br>
 		 Said he thanked the whiting kindly, but he would not join the dance.
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 Would not, could not, would not, could not, would not join the dance.
+		    <br>
 		 Would not, could not, would not, could not, could not join the dance.
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 &lsquo;&ldquo;What matters it how far we go?&rdquo; his scaly friend replied.
+		    <br>
 		 &ldquo;There is another shore, you know, upon the other side.
+		    <br>
 		 The further off from England the nearer is to France&mdash;
+		    <br>
 		 Then turn not pale, beloved snail, but come and join the dance.
-
+		    </p>
+		    <p class='aiw-snail stanza'>
 		 Will you, won&rsquo;t you, will you, won&rsquo;t you, will you join the dance?
+		    <br>
 		 Will you, won&rsquo;t you, will you, won&rsquo;t you, won&rsquo;t you join the dance?&rdquo;&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;Thank you, it&rsquo;s a very interesting dance to watch,&rsquo; said Alice, feeling
 		      very glad that it was over at last: &lsquo;and I do so like that curious song
@@ -3284,16 +3362,26 @@ class ChapterSeeder extends Seeder {
 		      that she hardly knew what she was saying, and the words came very queer
 		      indeed:&mdash;
 		    </p>
+		    <p class='aiw-lobster stanza'>
 		  &lsquo;&rsquo;Tis the voice of the Lobster; I heard him declare,
+		    <br>
 		  &ldquo;You have baked me too brown, I must sugar my hair.&rdquo;
+		    <br>
 		   As a duck with its eyelids, so he with his nose
+		    <br>
 		  Trims his belt and his buttons, and turns out his toes.&rsquo;
-
+		    </p>
+		    <p class='aiw-lobster stanza'>
 		       [later editions continued as follows
+		    <br>
 		  When the sands are all dry, he is gay as a lark,
+		    <br>
 		  And will talk in contemptuous tones of the Shark,
+		    <br>
 		  But, when the tide rises and sharks are around,
+		    <br>
 		  His voice has a timid and tremulous sound.]
+		    </p>
 		    <p>
 		      &lsquo;That&rsquo;s different from what <i>I</i> used to say when I was a child,&rsquo; said the
 		      Gryphon.
@@ -3329,16 +3417,26 @@ class ChapterSeeder extends Seeder {
 		      Alice did not dare to disobey, though she felt sure it would all come
 		      wrong, and she went on in a trembling voice:&mdash;
 		    </p>
+		    <p class='aiw-panther stanza'>
 		  &lsquo;I passed by his garden, and marked, with one eye,
+		    <br>
 		  How the Owl and the Panther were sharing a pie&mdash;&rsquo;
-
+		    </p>
+		    <p class='aiw-panther stanza'>
 		    [later editions continued as follows
+		    <br>
 		  The Panther took pie-crust, and gravy, and meat,
+		    <br>
 		  While the Owl had the dish as its share of the treat.
+		    <br>
 		  When the pie was all finished, the Owl, as a boon,
+		    <br>
 		  Was kindly permitted to pocket the spoon:
+		    <br>
 		  While the Panther received knife and fork with a growl,
+		    <br>
 		  And concluded the banquet&mdash;]
+		    </p>
 		    <p>
 		      &lsquo;What <i>is</i> the use of repeating all that stuff,&rsquo; the Mock Turtle
 		      interrupted, &lsquo;if you don&rsquo;t explain it as you go on? It&rsquo;s by far the most
@@ -3361,25 +3459,44 @@ class ChapterSeeder extends Seeder {
 		      The Mock Turtle sighed deeply, and began, in a voice sometimes choked with
 		      sobs, to sing this:&mdash;
 		    </p>
+		    <p class='aiw-soup stanza'>
 		   &lsquo;Beautiful Soup, so rich and green,
+		    <br>
 		   Waiting in a hot tureen!
+		    <br>
 		   Who for such dainties would not stoop?
+		    <br>
 		   Soup of the evening, beautiful Soup!
+		    <br>
 		   Soup of the evening, beautiful Soup!
+		    <br>
 		     Beau&mdash;ootiful Soo&mdash;oop!
+		    <br>
 		     Beau&mdash;ootiful Soo&mdash;oop!
+		    <br>
 		   Soo&mdash;oop of the e&mdash;e&mdash;evening,
+		    <br>
 		     Beautiful, beautiful Soup!
-
+		    </p>
+		    <p class='aiw-soup stanza'>
 		   &lsquo;Beautiful Soup! Who cares for fish,
+		    <br>
 		   Game, or any other dish?
+		    <br>
 		   Who would not give all else for two
+		    <br>
 		   Pennyworth only of beautiful Soup?
+		    <br>
 		   Pennyworth only of beautiful Soup?
+		    <br>
 		     Beau&mdash;ootiful Soo&mdash;oop!
+		    <br>
 		     Beau&mdash;ootiful Soo&mdash;oop!
+		    <br>
 		   Soo&mdash;oop of the e&mdash;e&mdash;evening,
+		    <br>
 		     Beautiful, beauti&mdash;FUL SOUP!&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;Chorus again!&rsquo; cried the Gryphon, and the Mock Turtle had just begun to
 		      repeat it, when a cry of &lsquo;The trial&rsquo;s beginning!&rsquo; was heard in the
@@ -3474,10 +3591,15 @@ class ChapterSeeder extends Seeder {
 		      On this the White Rabbit blew three blasts on the trumpet, and then
 		      unrolled the parchment scroll, and read as follows:&mdash;
 		    </p>
+		    <p class='aiw-tarts stanza'>
 		   &lsquo;The Queen of Hearts, she made some tarts,
+		    <br>
 		      All on a summer day:
+		    <br>
 		    The Knave of Hearts, he stole those tarts,
+		    <br>
 		      And took them quite away!&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;Consider your verdict,&rsquo; the King said to the jury.
 		    </p>
@@ -3899,35 +4021,60 @@ class ChapterSeeder extends Seeder {
 		    <p>
 		      These were the verses the White Rabbit read:&mdash;
 		    </p>
+		    <p class='aiw-swim stanza'>
 		   &lsquo;They told me you had been to her,
+		    <br>
 		    And mentioned me to him:
+		    <br>
 		   She gave me a good character,
+		    <br>
 		    But said I could not swim.
-
+		    </p>
+		    <p class='aiw-swim stanza'>
 		   He sent them word I had not gone
+		    <br>
 		    (We know it to be true):
+		    <br>
 		   If she should push the matter on,
+		    <br>
 		    What would become of you?
-
+		    </p>
+		    <p class='aiw-swim stanza'>
 		   I gave her one, they gave him two,
+		    <br>
 		    You gave us three or more;
+		    <br>
 		   They all returned from him to you,
+		    <br>
 		    Though they were mine before.
-
+		    </p>
+		    <p class='aiw-swim stanza'>
 		   If I or she should chance to be
+		    <br>
 		    Involved in this affair,
+		    <br>
 		   He trusts to you to set them free,
+		    <br>
 		    Exactly as we were.
-
+		    </p>
+		    <p class='aiw-swim stanza'>
 		   My notion was that you had been
+		    <br>
 		    (Before she had this fit)
+		    <br>
 		   An obstacle that came between
+		    <br>
 		    Him, and ourselves, and it.
-
+		    </p>
+		    <p class='aiw-swim stanza'>
 		   Don&rsquo;t let him know she liked them best,
+		    <br>
 		    For this must ever be
+		    <br>
 		   A secret, kept from all the rest,
+		    <br>
 		    Between yourself and me.&rsquo;
+		    </p>
 		    <p>
 		      &lsquo;That&rsquo;s the most important piece of evidence we&rsquo;ve heard yet,&rsquo; said the
 		      King, rubbing his hands; &lsquo;so now let the jury&mdash;&rsquo;
@@ -4074,8 +4221,9 @@ class ChapterSeeder extends Seeder {
 		      simple sorrows, and find a pleasure in all their simple joys, remembering
 		      her own child-life, and the happy summer days.
 		    </p>
+		    <p class='aiw-end'>
 		              THE END
-		    <p>
+		    </p>
 			"
 		]);
 	}

@@ -448,6 +448,56 @@ progress::-moz-progress-bar {
 	width: 50%;
 }
 
+/* Alice in Wonderland */
+.stanza {}
+
+.aiw-marmelade,
+.aiw-drink,
+.aiw-eat {
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.aiw-marmelade {
+	color: #fe5a13;
+}
+
+.aiw-drink {
+	color: #1d9101;
+}
+
+.aiw-eat {
+	color: #910165;
+}
+
+.aiw-separator {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+
+.aiw-foot {}
+.aiw-crocodile {}
+.aiw-prosecute {}
+.aiw-william{}
+.aiw-rough {}
+.aiw-severe {}
+.aiw-chorus {}
+.aiw-annotate {}
+.aiw-wow {}
+.aiw-twinkle {}
+.aiw-world {}
+.aiw-hearts{}
+.aiw-snail {}
+.aiw-lobster {}
+.aiw-panther {}
+.aiw-soup {}
+.aiw-tarts {}
+.aiw-swim {}
+.aiw-end {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
 
 /* 404 */
 .unknown {
