@@ -7,6 +7,7 @@
 
 		<!-- Search (https://www.google.com/webmasters/tools/googlebot-fetch) -->
 		<meta name="robots" content="noindex">
+		<link rel="canonical" href="{{$object->web_url()}}">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -45,11 +46,10 @@
 		<meta name="twitter:card" content="summary" />
 		@endif
 		<meta name="twitter:site" content="@LaikaReads" />
-		<meta name="twitter:title" content="{{$object->web_page_title(true)}}" /> <!-- Max 70 characters -->
-		<meta name="twitter:description" content="{{$object->web_description()}}" /> <!-- Max 200 characters -->
-
+		<meta name="twitter:title" content="{{$object->web_page_title(true)}}" />
+		<meta name="twitter:description" content="{{$object->web_description()}}" />
 		@if ($object->web_image() != "")
-		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" /> <!-- Max 5MB -->
+		<meta name="twitter:image" content="{{URL::to($object->web_image())}}" />
 		@endif
 
 		<!-- Open Graph (https://developers.facebook.com/tools/debug/) -->
