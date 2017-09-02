@@ -74,6 +74,15 @@
 		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700" rel="stylesheet">
 		<link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
 
+		<!-- AdSense -->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<script>
+		  (adsbygoogle = window.adsbygoogle || []).push({
+		    google_ad_client: "ca-pub-1082181286220484",
+		    enable_page_level_ads: true
+		  });
+		</script>
+
 		<!-- HTML5 shim -->
 		<!-- Respond.js -->
 		<!--[if lt IE 9]>
