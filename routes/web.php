@@ -16,7 +16,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('about', function () {
-	return view('about', ['bodyclass' => 'about', 'object' => App\Page::create()]);
+	return view('about', ['bodyclass' => 'about', 'object' => App\About::create()]);
 })->name('about');
 
 Route::get('books/{book}', function(App\Book $book) {	
