@@ -20,9 +20,18 @@ class Book extends Model {
 	public function firstChapter() {
 		return $this->chapters()->orderBy('order', 'asc')->first()->order;
 	}
-
+	
 	public function allChapters() {
 		return $this->chapters()->orderby('order', 'asc')->pluck('order');
+	}
+	
+	public function firstParagraph() {
+		$content = $this->chapters()->orderBy('order', 'asc')->first()->content;
+		$dom = new \DOMDocument();
+		$dom->loadHTML('<?xml encoding="utf-8" ?>' . $content);
+		$xp = new \DOMXPath($dom);
+		$res = $xp->query('//p');
+		return $res[0]->nodeValue;
 	}
 
 	public function getGoodreadsAvgRating($value) {

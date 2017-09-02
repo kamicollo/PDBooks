@@ -21,42 +21,44 @@
 
 	<div class="container featured">
 		<h3 id="explore">Start Reading Now</h3>
+		<?php 
+			$books = App\Book::orderBy('title', 'asc')->get(); 
+			/* this is for testing purposes only - duplicating books */
+			$b = $books->first();
+			for ($i=1; $i < 10; $i++) {
+				$c = clone $b;
+				$c->title = $i . ' ' . $c->title;
+				$books->push($c);
+			}						
+			/* end testing code */
+		?>
+		@for ($i=0; $i < $books->count(); $i++)
+			@if ($i == 0) 
 		<div class="row">
+			@elseif ($i % 6 == 0) 
+		</div><div class="row">
+			@elseif ($i % 3 == 0) 
+			<div class="clearfix visible-sm visible-xs"></div>
+			@endif
 			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-				<a href="{{URL::to('/books/alice-in-wonderland')}}">
-					<img src="{{URL::to('images/alice-in-wonderland/cover.jpg')}}" class="img-thumbnail img-responsive" alt="Alice's Adventures in Wonderland">
+				<a href="{{route('book', $books->get($i)->getRouteKey())}}">
+					<img src="{{URL::to($books->get($i)->cover_image)}}" 
+						 class="img-thumbnail img-responsive" 
+						 alt="{{$books->get($i)->title}}"
+					>
 					<div class="overlay hidden-xs">
 						<p class="goodreads">
-							<span class="gfc-star gfc-p10"></span>
-							<span class="gfc-star gfc-p10"></span>
-							<span class="gfc-star gfc-p10"></span>
-							<span class="gfc-star gfc-p10"></span>
-							<span class="gfc-star gfc-p0"></span>
+						@foreach ($books->get($i)->web_star_rating() as $star)
+							<span class="gfc-star {{$star}}"></span>
+						@endforeach							
 						</p>
-						<p class="excerpt">Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, ‘and what is the use of a book,’ thought Alice ‘without pictures or conversations?'</p>
+						<p class="excerpt">{{$books->get($i)->firstParagraph()}}</p>
 					</div>
 				</a>
-				<span class="subtitle">Alice's Adventures in Wonderland</span>
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-			</div>
-
-			<div class="clearfix visible-sm visible-xs">
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-			</div>
-
-			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-			</div>
-		</div>
+				<span class="subtitle">{{$books->get($i)->title}}</span>			
+			</div>			
+		@endfor	
+		</div>		
 	</div>
 </div>
 
