@@ -31,8 +31,8 @@
 						<li></li>
 						<li>
 							<div>
-								<img class="img-thumbnail" src="{{URL::to('images/alice-in-wonderland/portrait.jpg')}}" alt="Author's portrait" width="100%" height="100%">
-								<img src="{{URL::to('images/alice-in-wonderland/signature.svg')}}" alt="Author's signature" width="100%" height="100%">
+								<img class="img-thumbnail" src="{{URL::to('images/the-adventures-of-sherlock-holmes/portrait.jpg')}}" alt="Author's portrait" width="100%" height="100%">
+								<img src="{{URL::to('images/the-adventures-of-sherlock-holmes/signature.png')}}" alt="Author's signature" width="100%" height="100%">
 							</div>
 						</li>
 						<li></li>

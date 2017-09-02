@@ -110,7 +110,7 @@ class BookSeeder extends Seeder {
             'goodreads_avg_rating' => 3.8,
             'goodread__countof_ratings' => 1004110,
             'link_to_goodreads' => "https://www.goodreads.com/book/show/2956.The_Adventures_of_Huckleberry_Finn",
-            'background_image' => "images/the-adventures-of-huckleberry-finn/background.png",
+            'background_image' => "images/the-adventures-of-huckleberry-finn/background.jpg",
             'cover_image' => "images/the-adventures-of-huckleberry-finn/cover.jpg",
             'description' => "The Adventures of Huckleberry Finn is a novel by Mark Twain, first published in the United Kingdom in December 1884 and in the United States in February 1885. Commonly named among the Great American Novels, the work is among the first in major American literature to be written throughout in vernacular English, characterized by local color regionalism. It is told in the first person by Huckleberry \"Huck\" Finn, a friend of Tom Sawyer the narrator of two other Twain novels (Tom Sawyer Abroad and Tom Sawyer, Detective). It is a direct sequel to The Adventures of Tom Sawyer.",
             'descr_quote' => '<p>“Right is right, and wrong is wrong, and a body ain’t got no business doing wrong when he ain’t ignorant and knows better.”</p>',

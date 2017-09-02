@@ -4226,5 +4226,131 @@ class ChapterSeeder extends Seeder {
 		    </p>
 			"
 		]);
+
+		DB::table('chapters')->insert([
+			'title' => "Looking-Glass House",
+			'number' => "One",
+			'order' => 1,
+			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
+			'content' => "
+			<p>
+		      One thing was certain, that the <i>white</i> kitten had had nothing to do with
+		      it:&mdash;it was the black kitten&rsquo;s fault entirely. For the white kitten
+		      had been having its face washed by the old cat for the last quarter of an
+		      hour (and bearing it pretty well, considering); so you see that it
+		      <i>couldn&rsquo;t</i> have had any hand in the mischief.
+		    </p>
+			"
+		]);
+
+		DB::table('chapters')->insert([
+			'title' => "A Scandal in Bohemia",
+			'number' => "One: I",
+			'order' => 1,
+			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+			'content' => "
+			<p>To Sherlock Holmes she is always <i>the</i> woman. I have seldom heard
+			him mention her under any other name. In his eyes she eclipses
+			and predominates the whole of her sex. It was not that he felt
+			any emotion akin to love for Irene Adler. All emotions, and that
+			one particularly, were abhorrent to his cold, precise but
+			admirably balanced mind. He was, I take it, the most perfect
+			reasoning and observing machine that the world has seen, but as a
+			lover he would have placed himself in a false position. He never
+			spoke of the softer passions, save with a gibe and a sneer. They
+			were admirable things for the observer&#8212;excellent for drawing the
+			veil from men&#8217;s motives and actions. But for the trained reasoner
+			to admit such intrusions into his own delicate and finely
+			adjusted temperament was to introduce a distracting factor which
+			might throw a doubt upon all his mental results. Grit in a
+			sensitive instrument, or a crack in one of his own high-power
+			lenses, would not be more disturbing than a strong emotion in a
+			nature such as his. And yet there was but one woman to him, and
+			that woman was the late Irene Adler, of dubious and questionable
+			memory.
+			<p>
+			"
+		]);
+
+		DB::table('chapters')->insert([
+			'title' => "Mr. Sherlock Holmes",
+			'number' => "One",
+			'order' => 1,
+			'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+			'content' => "
+			<p>
+		      Mr. Sherlock Holmes, who was usually very late in the mornings, save upon
+		      those not infrequent occasions when he was up all night, was seated at the
+		      breakfast table. I stood upon the hearth-rug and picked up the stick which
+		      our visitor had left behind him the night before. It was a fine, thick
+		      piece of wood, bulbous-headed, of the sort which is known as a &ldquo;Penang
+		      lawyer.&rdquo; Just under the head was a broad silver band nearly an inch
+		      across. &ldquo;To James Mortimer, M.R.C.S., from his friends of the C.C.H.,&rdquo; was
+		      engraved upon it, with the date &ldquo;1884.&rdquo; It was just such a stick as the
+		      old-fashioned family practitioner used to carry&mdash;dignified, solid,
+		      and reassuring.
+		    </p>
+			"
+		]);
+
+		DB::table('chapters')->insert([
+			'title' => "Preface",
+			'number' => "",
+			'order' => 1,
+			'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+			'content' => "
+			<p>
+		      Most of the adventures recorded in this book really occurred; one or two
+		      were experiences of my own, the rest those of boys who were schoolmates of
+		      mine. Huck Finn is drawn from life; Tom Sawyer also, but not from an
+		      individual&mdash;he is a combination of the characteristics of three boys
+		      whom I knew, and therefore belongs to the composite order of architecture.
+		    </p>
+		    <p>
+		      The odd superstitions touched upon were all prevalent among children and
+		      slaves in the West at the period of this story&mdash;that is to say,
+		      thirty or forty years ago.
+		    </p>
+		    <p>
+		      Although my book is intended mainly for the entertainment of boys and
+		      girls, I hope it will not be shunned by men and women on that account, for
+		      part of my plan has been to try to pleasantly remind adults of what they
+		      once were themselves, and of how they felt and thought and talked, and
+		      what queer enterprises they sometimes engaged in.
+		    </p>
+		    <p>
+		      THE AUTHOR.
+		    </p>
+		    <p>
+		      HARTFORD, 1876.
+		    </p>
+			"
+		]);
+
+		DB::table('chapters')->insert([
+			'title' => "Explanatory",
+			'number' => "",
+			'order' => 1,
+			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+			'content' => "
+			<p>
+		      In this book a number of dialects are used, to wit: &nbsp;the Missouri
+		      negro dialect; the extremest form of the backwoods Southwestern dialect;
+		      the ordinary &ldquo;Pike County&rdquo; dialect; and four modified
+		      varieties of this last. The shadings have not been done in a haphazard
+		      fashion, or by guesswork; but painstakingly, and with the trustworthy
+		      guidance and support of personal familiarity with these several forms of
+		      speech.
+		    </p>
+		    <p>
+		      I make this explanation for the reason that without it many readers would
+		      suppose that all these characters were trying to talk alike and not
+		      succeeding.
+		    </p>
+		    <p>
+		      THE AUTHOR.
+		    </p>
+			"
+		]);
 	}
 }
