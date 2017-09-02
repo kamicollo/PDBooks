@@ -1,3 +1,4 @@
+<?php $object = App\Error::create(); ?>
 <?php $bodyclass = 'error'; ?>
 @extends("app")
 @section("content")
