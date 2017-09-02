@@ -28,7 +28,7 @@ body {
 
 .about .container,
 .chapter .container,
-.unknown .container {
+.error .container {
 	max-width: 700px;
 }
 
@@ -500,11 +500,11 @@ progress::-moz-progress-bar {
 }
 
 /* 404 */
-.unknown {
+.error {
 	background-color: #dde5ec; /* grey blue */
 }
 
-.unknown .wrapper .container {
+.error .wrapper .container {
 	text-align: center;
 	vertical-align: middle;
 	padding-top: 8%;
