@@ -26,12 +26,16 @@ class Book extends Model {
 	}
 	
 	public function firstParagraph() {
-		$content = $this->chapters()->orderBy('order', 'asc')->first()->content;
-		$dom = new \DOMDocument();
-		$dom->loadHTML('<?xml encoding="utf-8" ?>' . $content);
-		$xp = new \DOMXPath($dom);
-		$res = $xp->query('//p');
-		return $res[0]->nodeValue;
+		try {
+			$content = $this->chapters()->orderBy('order', 'asc')->first()->content;
+			$dom = new \DOMDocument();
+			$dom->loadHTML('<?xml encoding="utf-8" ?>' . $content);
+			$xp = new \DOMXPath($dom);
+			$res = $xp->query('//p');
+			return $res[0]->nodeValue; 
+		} catch (\ErrorException $e) {
+			return '';
+		}
 	}
 
 	public function getGoodreadsAvgRating($value) {
