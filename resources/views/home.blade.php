@@ -21,44 +21,44 @@
 
 	<div class="container featured">
 		<h3 id="explore">Start Reading Now</h3>
-		<?php 
-			$books = App\Book::orderBy('title', 'asc')->get(); 
+		<?php
+			$books = App\Book::orderBy('title', 'asc')->get();
 			/* this is for testing purposes only - duplicating books */
 			$b = $books->first();
 			for ($i=1; $i < 10; $i++) {
 				$c = clone $b;
 				$c->title = $i . ' ' . $c->title;
 				$books->push($c);
-			}						
+			}
 			/* end testing code */
 		?>
 		@for ($i=0; $i < $books->count(); $i++)
-			@if ($i == 0) 
+			@if ($i == 0)
 		<div class="row">
-			@elseif ($i % 6 == 0) 
+			@elseif ($i % 6 == 0)
 		</div><div class="row">
-			@elseif ($i % 3 == 0) 
+			@elseif ($i % 3 == 0)
 			<div class="clearfix visible-sm visible-xs"></div>
 			@endif
 			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="{{route('book', $books->get($i)->getRouteKey())}}">
-					<img src="{{URL::to($books->get($i)->cover_image)}}" 
-						 class="img-thumbnail img-responsive" 
+					<img src="{{URL::to($books->get($i)->cover_image)}}"
+						 class="img-thumbnail img-responsive"
 						 alt="{{$books->get($i)->title}}"
 					>
 					<div class="overlay hidden-xs">
 						<p class="goodreads">
 						@foreach ($books->get($i)->web_star_rating() as $star)
 							<span class="gfc-star {{$star}}"></span>
-						@endforeach							
+						@endforeach
 						</p>
 						<p class="excerpt">{{$books->get($i)->firstParagraph()}}</p>
 					</div>
 				</a>
-				<span class="subtitle">{{$books->get($i)->title}}</span>			
-			</div>			
-		@endfor	
-		</div>		
+				<span class="subtitle">{{$books->get($i)->title}}</span>
+			</div>
+		@endfor
+		</div>
 	</div>
 </div>
 
