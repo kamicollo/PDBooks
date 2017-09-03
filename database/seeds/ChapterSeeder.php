@@ -13,7 +13,7 @@ class ChapterSeeder extends Seeder {
 	public function run() {
 		DB::table('chapters')->insert([
 			'title' => "Down the Rabbit-Hole",
-			'number' => "One",
+			'number' => "Chapter One",
 			'order' => 1,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -236,7 +236,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Pool of Tears",
-			'number' => "Two",
+			'number' => "Chapter Two",
 			'order' => 2,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -476,7 +476,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "A Caucus-Race and a Long Tale",
-			'number' => "Three",
+			'number' => "Chapter Three",
 			'order' => 3,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -769,7 +769,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Rabbit Sends a Little Bill",
-			'number' => "Four",
+			'number' => "Chapter Four",
 			'order' => 4,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -1076,7 +1076,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Advice from a Caterpillar",
-			'number' => "Five",
+			'number' => "Chapter Five",
 			'order' => 5,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -1462,7 +1462,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Pig and Pepper",
-			'number' => "Six",
+			'number' => "Chapter Six",
 			'order' => 6,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -1868,7 +1868,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "A Mad Tea-Party",
-			'number' => "Seven",
+			'number' => "Chapter Seven",
 			'order' => 7,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -2312,7 +2312,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Queen’s Croquet-Ground",
-			'number' => "Eight",
+			'number' => "Chapter Eight",
 			'order' => 8,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -2685,7 +2685,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Mock Turtle’s Story",
-			'number' => "Nine",
+			'number' => "Chapter Nine",
 			'order' => 9,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -3095,7 +3095,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Lobster Quadrille",
-			'number' => "Ten",
+			'number' => "Chapter Ten",
 			'order' => 10,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -3516,7 +3516,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Who Stole the Tarts?",
-			'number' => "Eleven",
+			'number' => "Chapter Eleven",
 			'order' => 11,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -3852,7 +3852,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Alice’s Evidence",
-			'number' => "Twelve",
+			'number' => "Chapter Twelve",
 			'order' => 12,
 			'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
 			'content' => "
@@ -4229,7 +4229,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Looking-Glass House",
-			'number' => "One",
+			'number' => "Chapter One",
 			'order' => 1,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -4642,7 +4642,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Garden of Live Flowers",
-			'number' => "Two",
+			'number' => "Chapter Two",
 			'order' => 2,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -5074,7 +5074,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Looking-Glass Insects",
-			'number' => "Three",
+			'number' => "Chapter Three",
 			'order' => 3,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -5504,7 +5504,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Tweedledum And Tweedledee",
-			'number' => "Four",
+			'number' => "Chapter Four",
 			'order' => 4,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -6160,7 +6160,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Wool and Water",
-			'number' => "Five",
+			'number' => "Chapter Five",
 			'order' => 5,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -6659,7 +6659,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Humpty Dumpty",
-			'number' => "Six",
+			'number' => "Chapter Six",
 			'order' => 6,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -7287,7 +7287,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "The Lion and the Unicorn",
-			'number' => "Seven",
+			'number' => "Chapter Seven",
 			'order' => 7,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -7735,7 +7735,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "‘It’s my own Invention’",
-			'number' => "Eight",
+			'number' => "Chapter Eight",
 			'order' => 8,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -8431,7 +8431,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Queen Alice",
-			'number' => "Nine",
+			'number' => "Chapter Nine",
 			'order' => 9,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -9135,7 +9135,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Shaking",
-			'number' => "Ten",
+			'number' => "Chapter Ten",
 			'order' => 10,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -9154,7 +9154,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Waking",
-			'number' => "Eleven",
+			'number' => "Chapter Eleven",
 			'order' => 11,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
@@ -9166,7 +9166,7 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Which Dreamed It?",
-			'number' => "Twelve",
+			'number' => "Chapter Twelve",
 			'order' => 12,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
