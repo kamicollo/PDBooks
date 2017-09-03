@@ -33,7 +33,7 @@
 			@endif
 			<div class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 				<a href="{{route('book', $books->get($i)->getRouteKey())}}">
-					<img src="{{URL::to($books->get($i)->cover_image)}}"
+					<img src="{{URL::to($books->get($i)->web_cover_image())}}"
 						 class="img-thumbnail img-responsive"
 						 alt="{{$books->get($i)->title}}">
 					<div class="overlay hidden-xs">

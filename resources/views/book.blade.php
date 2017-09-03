@@ -2,11 +2,11 @@
 @section("content")
 
 <div class="wrapper">
-	<div class="jumbotron" style="background-image:url({{URL::to($book->background_image)}})">
+	<div class="jumbotron" style="background-image:url({{URL::to($book->web_background_image())}})">
 		<div class="overlay">
 			<div class="container">
 				<h1>{{$book->title}}</h1>
-				<div class="author">by {{$book->author}}</div>
+				<div class="author">by {{$book->author}}</div>				
 			</div>
 		</div>
 	</div>
@@ -15,13 +15,13 @@
 		<div class="row">
 			<div class="hidden-xs col-sm-3">
 				<div class="static-book">
-					<img src="{{URL::to($book->cover_image)}}" class="img-thumbnail img-responsive" alt="Book cover" width="100%" height="100%">
+					<img src="{{URL::to($book->web_cover_image())}}" class="img-thumbnail img-responsive" alt="Book cover" width="100%" height="100%">
 				</div>
 				<figure class="flippy-book">
 					<!-- Front -->
 					<ul class="flippy-front">
 						<li>
-							<img src="{{URL::to($book->cover_image)}}" alt="Book cover" width="100%" height="100%">
+							<img src="{{URL::to($book->web_cover_image())}}" alt="Book cover" width="100%" height="100%">
 						</li>
 						<li></li>
 					</ul>
@@ -31,8 +31,8 @@
 						<li></li>
 						<li>
 							<div>
-								<img class="img-thumbnail" src="{{URL::to('images/the-adventures-of-sherlock-holmes/portrait.jpg')}}" alt="Author's portrait" width="100%" height="100%">
-								<img src="{{URL::to('images/the-adventures-of-sherlock-holmes/signature.png')}}" alt="Author's signature" width="100%" height="100%">
+								<img class="img-thumbnail" src="{{URL::to($book->web_portrait_image())}}" alt="Author's portrait" width="100%" height="100%">
+								<img src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" width="100%" height="100%">
 							</div>
 						</li>
 						<li></li>
@@ -61,12 +61,12 @@
 					@endforeach
 					<span class="rating">{{number_format($book->goodreads_avg_rating, 2)}}</span>
 					<span>
-						<a target="_blank" href="{{$book->link_to_goodreads}}">{{number_format($book->goodread__countof_ratings)}} Goodreads ratings</a>
+						<a target="_blank" href="{{$book->goodreads_link}}">{{number_format($book->goodreads_count_ratings)}} Goodreads ratings</a>
 					</span>
 				</p>
 
 				<ul class="metadata">
-					<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "F d, Y")}} <span id="copyright" class="glyphicon glyphicon-question-sign" data-toggle="popover" data-trigger="hover" data-placement="top" title="A Note on Book Copyright" data-content="This book may be freely used in the US. If you live elsewhere, you must check the copyright laws of your country before reading the book." aria-hidden="true"></span></li>
+					<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "Y")}} <span id="copyright" class="glyphicon glyphicon-question-sign" data-toggle="popover" data-trigger="hover" data-placement="top" title="A Note on Book Copyright" data-content="This book may be freely used in the US. If you live elsewhere, you must check the copyright laws of your country before reading the book." aria-hidden="true"></span></li>
 					<li><b>Genre:</b> {{$book->genre}}</li>
 					@if ($book->illustrator != "") <li><b>Illustrator:</b> {{$book->illustrator}}</li> @endif
 					@if ($book->translator != "") <li><b>Translator:</b> {{$book->translator}}</li> @endif
@@ -74,8 +74,8 @@
 
 				@include("share")
 
-				<blockquote><?php echo $book->descr_quote; ?></blockquote>
-				<p><?php echo $book->description; ?> <?php echo $book->descr_source; ?></p>
+				<blockquote><?php echo $book->description_quote; ?></blockquote>
+				<p><?php echo $book->description; ?> <?php echo $book->description_source; ?></p>
 
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 

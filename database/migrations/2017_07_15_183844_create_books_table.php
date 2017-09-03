@@ -20,11 +20,9 @@ class CreateBooksTable extends Migration {
             $table->string('genre', 200);
             $table->string('illustrator', 200);
             $table->float('goodreads_avg_rating', 3, 2);
-            $table->integer('goodread__countof_ratings');
-            $table->string('link_to_goodreads', 200);
+            $table->integer('goodreads_count_ratings');
+            $table->string('goodreads_link', 200);
             $table->text('description');
-            $table->string('background_image', 200);
-            $table->string('cover_image', 200);
             $table->timestamps();
         });
     }

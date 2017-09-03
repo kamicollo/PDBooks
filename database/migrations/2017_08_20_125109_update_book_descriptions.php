@@ -12,8 +12,8 @@ class UpdateBookDescriptions extends Migration {
      */
     public function up() {
         Schema::table('books', function (Blueprint $table) {
-            $table->text('descr_quote')->nullable();
-            $table->string('descr_source', 200)->nullable();
+            $table->text('description_quote')->nullable();
+            $table->string('description_source', 200)->nullable();
         });
     }
 
@@ -24,10 +24,10 @@ class UpdateBookDescriptions extends Migration {
      */
     public function down() {
         Schema::table('books', function (Blueprint $table) {
-            $table->dropColumn('descr_quote');
+            $table->dropColumn('description_quote');
         });
         Schema::table('books', function (Blueprint $table) {
-            $table->dropColumn('descr_source');
+            $table->dropColumn('description_source');
         });
     }
 }
