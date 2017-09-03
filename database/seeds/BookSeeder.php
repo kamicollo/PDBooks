@@ -43,6 +43,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“Why, sometimes I\'ve believed as many as six impossible things before breakfast.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Through_the_Looking-Glass">Wikipedia</a>',
             'url_slug' => "through-the-looking-glass",
+            'soundcloud_id' => '194010055',
             'country' => 'United Kingdom'
         ]);
 
@@ -115,7 +116,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“Right is right, and wrong is wrong, and a body ain’t got no business doing wrong when he ain’t ignorant and knows better.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn">Wikipedia</a>',
             'url_slug' => "the-adventures-of-huckleberry-finn",
-            'country' => 'United States'
+            'country' => 'United Kingdom'
         ]);
 
         // DB::table('books')->insert([

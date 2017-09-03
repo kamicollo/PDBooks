@@ -85,10 +85,10 @@ class AffiliateSeeder extends Seeder {
         ]);
 
         DB::table('affiliates')->insert([
-            'title' => "Alice's Adventures in Wonderland and Through the Looking Glass (Narrated by Christopher Plummer)",
+            'title' => "Alice's Adventures in Wonderland and Through the Looking Glass (Narrated by Sheridan Smith)",
             'order' => 3,
             'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
-            'amazon_link' => "https://www.amazon.com/Alices-Adventures-Wonderland-Through-Looking/dp/B0036UZCLI/?tag=laikareads-20",
+            'amazon_link' => "https://www.amazon.com/Alices-Adventures-in-Wonderland/dp/B00TGBWVO2/?tag=laikareads-20",
             'bd_link' => "",
             'type' => "audible",
             'cover_image' => 'images/through-the-looking-glass/3.jpg'

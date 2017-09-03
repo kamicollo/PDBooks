@@ -6669,7 +6669,7 @@ class ChapterSeeder extends Seeder {
 		      However, the egg only got larger and larger, and more and more human: when
 		      she had come within a few yards of it, she saw that it had eyes and a nose
 		      and mouth; and when she had come close to it, she saw clearly that it was
-		      HUMPTY DUMPTY himself. &lsquo;It can&rsquo;t be anybody else!&rsquo; she said to herself.
+		      <span class='tlg-humpty'>HUMPTY DUMPTY</span> himself. &lsquo;It can&rsquo;t be anybody else!&rsquo; she said to herself.
 		      &lsquo;I&rsquo;m as certain of it, as if his name were written all over his face.&rsquo;
 		    </p>
 		    <p>
@@ -6703,7 +6703,7 @@ class ChapterSeeder extends Seeder {
 		      was evidently addressed to a tree&mdash;so she stood and softly repeated
 		      to herself:&mdash;
 		    </p>
-		    <p class='tlg-humpty stanza'>
+		    <p class='tlg-fall stanza'>
 		     &lsquo;Humpty Dumpty sat on a wall:
 		    <br>
 		     Humpty Dumpty had a great fall.
@@ -8806,8 +8806,8 @@ class ChapterSeeder extends Seeder {
 		      them.
 		    </p>
 		    <p>
-		      She was standing before an arched doorway over which were the words QUEEN
-		      ALICE in large letters, and on each side of the arch there was a
+		      She was standing before an arched doorway over which were the words <span class='tlg-alice'>QUEEN
+		      ALICE</span> in large letters, and on each side of the arch there was a
 		      bell-handle; one was marked &lsquo;Visitors&rsquo; Bell,&rsquo; and the other &lsquo;Servants&rsquo;
 		      Bell.&rsquo;
 		    </p>
@@ -9161,7 +9161,7 @@ class ChapterSeeder extends Seeder {
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
 			<p>
-		      &mdash;and it really <i>was</i> a kitten, after all.
+		      And it really <i>was</i> a kitten, after all.
 		    </p>
 			"
 		]);

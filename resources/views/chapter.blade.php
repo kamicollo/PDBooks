@@ -9,8 +9,8 @@
 	</progress>
 
 	<div class="container center-block">
-		@if ($chapter->number <> '') <div class="order">{{$chapter->number}}</div> @endif
-		@if ($chapter->title <> '') <h1>{{$chapter->title}}</h1> @endif
+		@if ($chapter->number != '') <div class="order">{{$chapter->number}}</div> @endif
+		@if ($chapter->title != '') <h1>{{$chapter->title}}</h1> @endif
 		<div class="readability">
 			<span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Based on an average reading speed of 250 words per minute.">{{ceil($chapter->getReadingTime())}} min read</span>
 			<span class="label label-default">{{number_format($chapter->getWordCount())}} words</span>
