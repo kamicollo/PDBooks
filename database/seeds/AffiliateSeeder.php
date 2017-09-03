@@ -31,6 +31,7 @@ class AffiliateSeeder extends Seeder {
             'book_id' => DB::table('books')->where('title', "Alice's Adventures in Wonderland")->value('id'),
             'amazon_link' => "https://www.amazon.com/Alices-Adventures-in-Wonderland/dp/B015D84R02/?tag=laikareads-20",
             'bd_link' => "",
+			'type' => 'audible',
             'cover_image' => 'images/alice-in-wonderland/3.jpg'
         ]);
         DB::table('affiliates')->insert([
