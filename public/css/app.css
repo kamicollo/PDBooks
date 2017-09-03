@@ -499,6 +499,32 @@ progress::-moz-progress-bar {
 	text-align: center;
 }
 
+.tlg-ykcwrebbaj {}
+.tlg-jabberwocky {}
+.tlg-separator {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+.tlg-sign {
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+.tlg-tweedle {}
+.tlg-humpty {}
+.tlg-wabe {}
+.tlg-seasons {}
+.tlg-unicorn {}
+.tlg-man {}
+.tlg-hush {}
+.tlg-dine {}
+.tlg-dreams {}
+.tlg-end {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+
 /* 404 */
 .error {
 	background-color: #dde5ec; /* grey blue */
