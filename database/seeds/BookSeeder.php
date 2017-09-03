@@ -23,7 +23,8 @@ class BookSeeder extends Seeder {
             'description' => "Alice's Adventures in Wonderland is an 1865 fantasy novel written by English mathematician Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells of a girl named Alice falling through a rabbit hole into a fantasy world populated by peculiar, anthropomorphic creatures. The tale plays with logic, giving the story lasting popularity with adults as well as with children.",
             'description_quote' => '<p>“No wise fish would go anywhere without a porpoise.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland">Wikipedia</a>',
-            'url_slug' => "alice-in-wonderland"
+            'url_slug' => "alice-in-wonderland",
+			'soundcloud_id' => '250835785'
         ]);
         DB::table('books')->insert([
             'title' => "Through the Looking-Glass, and What Alice Found There",
@@ -119,7 +120,8 @@ class BookSeeder extends Seeder {
         //     'description' => "",
         //     'description_quote' => '<p>“”</p>',
         //     'description_source' => '<a target="_blank" href=""></a>',
-        //     'url_slug' => ""
+        //     'url_slug' => "",
+		//     'soundclound_id' => ""
         // ]);
     }
 }
