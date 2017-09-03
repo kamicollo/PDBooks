@@ -9166,8 +9166,8 @@ class ChapterSeeder extends Seeder {
 
 		DB::table('chapters')->insert([
 			'title' => "Which Dreamed It?",
-			'number' => "One",
-			'order' => 1,
+			'number' => "Twelve",
+			'order' => 12,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
 			'content' => "
 			<p>
