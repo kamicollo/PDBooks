@@ -76,13 +76,14 @@
 
 				<blockquote><?php echo $book->description_quote; ?></blockquote>
 				<p><?php echo $book->description; ?> <?php echo $book->description_source; ?></p>
-
+				@if ($book->chapters->count() > 0) 
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
-
 				<a class="btn pull-left" href="#chapters">See Table of Contents</a>
+				@endif
 			</div>
 		</div>
 
+		@if ($affiliates->count() > 0)
 		<h3>Wonderful Editions</h3>
 		<div class="row featured">
 			@foreach ($affiliates as $affiliate)
@@ -99,6 +100,8 @@
 		    </div>
 			@endforeach
 		</div>
+		@endif
+		
 		@if ($book->soundcloud_id <> '')
 		<h3>Listen with Audible</h3>
 		<div class="row audible">
@@ -134,7 +137,7 @@
 		    </div>
 			@endforeach
 		</div> -->
-
+		@if ($book->chapters->count() > 0) 
 		<h3 id="chapters">Table of Contents</h3>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -171,6 +174,7 @@
 				</table>
 			</div>
 		</div>
+		@endif
 	</div>
 </div>
 
