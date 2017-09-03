@@ -10,7 +10,7 @@
 	</li>
 
 	<li>
-		<a href="https://www.instagram.com/LaikaReads/" target="_blank" class="instagram hidden"><img src="{{URL::to('assets/instagram.png')}}" alt="LaikaReads on Instagram">Follow</a>
+		<a href="https://www.instagram.com/LaikaReads/" target="_blank" class="instagram hidden"><span>Follow</span></a>
 	</li>
 </ul>
 
