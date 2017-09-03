@@ -499,6 +499,7 @@ progress::-moz-progress-bar {
 	text-align: center;
 }
 
+/* Through the Looking-Glass */
 .tlg-ykcwrebbaj {}
 .tlg-jabberwocky {}
 .tlg-separator {
@@ -693,6 +694,7 @@ div.share {
 	margin-top: 6px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	word-wrap: break-word;
 }
 
 

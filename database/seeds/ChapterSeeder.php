@@ -11,6 +11,7 @@ class ChapterSeeder extends Seeder {
 	 * @return void
 	 */
 	public function run() {
+		// Alice in Wonderland
 		DB::table('chapters')->insert([
 			'title' => "Down the Rabbit-Hole",
 			'number' => "Chapter One",
@@ -4227,6 +4228,7 @@ class ChapterSeeder extends Seeder {
 			"
 		]);
 
+		// Through the Looking-Glass
 		DB::table('chapters')->insert([
 			'title' => "Looking-Glass House",
 			'number' => "Chapter One",
@@ -5503,7 +5505,7 @@ class ChapterSeeder extends Seeder {
 		]);
 
 		DB::table('chapters')->insert([
-			'title' => "Tweedledum And Tweedledee",
+			'title' => "Tweedledum and Tweedledee",
 			'number' => "Chapter Four",
 			'order' => 4,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
@@ -7734,7 +7736,7 @@ class ChapterSeeder extends Seeder {
 		]);
 
 		DB::table('chapters')->insert([
-			'title' => "‘It’s my own Invention’",
+			'title' => "‘It’s My Own Invention’",
 			'number' => "Chapter Eight",
 			'order' => 8,
 			'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
@@ -9296,6 +9298,7 @@ class ChapterSeeder extends Seeder {
 			"
 		]);
 
+		// The Adventures of Sherlock Holmes
 		DB::table('chapters')->insert([
 			'title' => "A Scandal in Bohemia",
 			'number' => "One: I",
@@ -9325,6 +9328,7 @@ class ChapterSeeder extends Seeder {
 			"
 		]);
 
+		// The Hound of the Baskervilles
 		DB::table('chapters')->insert([
 			'title' => "Mr. Sherlock Holmes",
 			'number' => "One",
@@ -9346,6 +9350,7 @@ class ChapterSeeder extends Seeder {
 			"
 		]);
 
+		// The Adventures of Tom Sawyer
 		DB::table('chapters')->insert([
 			'title' => "Preface",
 			'number' => "",
@@ -9380,6 +9385,7 @@ class ChapterSeeder extends Seeder {
 			"
 		]);
 
+		// The Adventures of Huckleberry Finn
 		DB::table('chapters')->insert([
 			'title' => "Explanatory",
 			'number' => "",

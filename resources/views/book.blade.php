@@ -6,7 +6,7 @@
 		<div class="overlay">
 			<div class="container">
 				<h1>{{$book->title}}</h1>
-				<div class="author">by {{$book->author}}</div>				
+				<div class="author">by {{$book->author}}</div>
 			</div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 
 				<blockquote><?php echo $book->description_quote; ?></blockquote>
 				<p><?php echo $book->description; ?> <?php echo $book->description_source; ?></p>
-				@if ($book->chapters->count() > 0) 
+				@if ($book->chapters->count() > 0)
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 				<a class="btn pull-left" href="#chapters">See Table of Contents</a>
 				@endif
@@ -97,24 +97,26 @@
 					</div>
 				</a>
 				@if ($affiliate->bd_link)
-				<span class="subtitle"><a style="word-wrap: break-word;" href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/bd.png')}}" class="bd">Book Depository</a></span>
+				<span class="subtitle"><a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/bd.png')}}" class="bd">Book Depository</a></span>
+				@endif
+				@if ($affiliate->type == "audible")
+				<span class="subtitle"><a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/audible.png')}}" class="bd">Audible trial</a></span>
 				@endif
 		    </div>
 			@endforeach
 		</div>
 		@endif
-		
-		@if ($book->soundcloud_id <> '')
+
+		@if ($book->soundcloud_id != '')
 		<h3>Listen with Audible</h3>
 		<div class="row audible">
 			<div class="col-lg-10 col-md-10 col-sm-9 col-xs-6">
-				<iframe 
+				<iframe
 					width="100%"
 					height="120"
 					scrolling="no"
 					frameborder="no"
-					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{$book->soundcloud_id}}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
-				>						
+					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{$book->soundcloud_id}}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
 				</iframe>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
@@ -139,7 +141,7 @@
 		    </div>
 			@endforeach
 		</div> -->
-		@if ($book->chapters->count() > 0) 
+		@if ($book->chapters->count() > 0)
 		<h3 id="chapters">Table of Contents</h3>
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
