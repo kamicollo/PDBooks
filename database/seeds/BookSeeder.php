@@ -24,7 +24,8 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“No wise fish would go anywhere without a porpoise.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland">Wikipedia</a>',
             'url_slug' => "alice-in-wonderland",
-			'soundcloud_id' => '250835785'
+			'soundcloud_id' => '250835785',
+			'country' => 'United Kingdom of Wales & Ireland'
         ]);
         DB::table('books')->insert([
             'title' => "Through the Looking-Glass, and What Alice Found There",
@@ -121,7 +122,8 @@ class BookSeeder extends Seeder {
         //     'description_quote' => '<p>“”</p>',
         //     'description_source' => '<a target="_blank" href=""></a>',
         //     'url_slug' => "",
-		//     'soundclound_id' => ""
+		//     'soundclound_id' => "",
+		//     'country' => "",
         // ]);
     }
 }
