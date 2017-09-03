@@ -53,7 +53,7 @@ class Book extends Model {
 	}
 
 	public function web_image() {
-		return $this->background_image;
+		return $this->web_background_image();
 	}
 
 	public function web_description() {
@@ -74,5 +74,29 @@ class Book extends Model {
 		$empty_stars = array_fill(0, 4 - floor($this->goodreads_avg_rating), 'gfc-p0');
 
 		return array_merge($full_stars, $half_stars, $empty_stars);
+	}
+	
+	public function web_cover_image() {
+		return 'images/' . $this->url_slug . '/cover.jpg';
+	}
+	
+	public function web_background_image() {
+		$jpg_path = 'images/' . $this->url_slug . '/background.jpg';
+		$png_path = 'images/' . $this->url_slug . '/background.png';
+		if (file_exists(public_path($jpg_path))) {
+			return $jpg_path;
+		} elseif (file_exists(public_path($png_path))) {
+			return $png_path;
+		} else {
+			throw new \ErrorException('Background image not found for book ' . $this->url_slug);
+		}
+	}
+	
+	public function web_portrait_image() {
+		return 'images/' . $this->url_slug . '/portrait.jpg';
+	}
+	
+	public function web_signature_image() {
+		return 'images/' . $this->url_slug . '/signature.png';
 	}
 }

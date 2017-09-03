@@ -92,15 +92,15 @@ class UpdateGoodreads extends Command
 			$url = $xml->xpath("book/url")[0];
 			$average_rating = $sum_of_ratings / $number_of_ratings;
 			$book->goodreads_avg_rating = $average_rating;
-			$book->goodread__countof_ratings = $number_of_ratings;
-			$book->link_to_goodreads = $url;
+			$book->goodreads_count_ratings = $number_of_ratings;
+			$book->goodreads_link = $url;
 			$book->save();
 			$this->info(
 				sprintf(
 					'Book "%s" updated. Avg rating: %f, total ratings: %d',
 					$book->title,
 					$book->goodreads_avg_rating,
-					$book->goodread__countof_ratings
+					$book->goodreads_count_ratings
 				)
 			);
 		} catch (\ErrorException $e) {

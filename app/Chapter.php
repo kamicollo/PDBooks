@@ -75,7 +75,7 @@ class Chapter extends Model {
 	}
 
 	public function web_image() {
-		return $this->book()->first()->background_image;
+		return $this->book()->first()->web_background_image();
 	}
 
 	public function web_description() {
