@@ -10,7 +10,14 @@ class DatabaseSeeder extends Seeder {
      */
     public function run() {
         $this->call(BookSeeder::class);
-        $this->call(ChapterSeeder::class);
         $this->call(AffiliateSeeder::class);
+
+        // Chapters
+        $this->call(AliceInWonderlandSeeder::class);
+        $this->call(ThroughTheLookingGlassSeeder::class);
+        $this->call(TheAdventuresOfTomSawyerSeeder::class);
+        $this->call(TheAdventuresOfHuckleberryFinnSeeder::class);
+        $this->call(TheHoundOfTheBaskervillesSeeder::class);
+        $this->call(TheAdventuresOfSherlockHolmesSeeder::class);
     }
 }
