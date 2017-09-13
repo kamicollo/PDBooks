@@ -12,316 +12,316 @@ class TheAdventuresOfHuckleberryFinnSeeder extends Seeder {
 	 */
 	public function run() {
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Notice",
+			'title' => "Notice",
+			'number' => "",
 			'order' => 1,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/1.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Explanatory",
+			'title' => "Explanatory",
+			'number' => "",
 			'order' => 2,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/2.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter One",
+			'title' => "Chapter One",
+			'number' => "",
 			'order' => 3,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/3.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Two",
+			'title' => "Chapter Two",
+			'number' => "",
 			'order' => 4,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/4.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Three",
+			'title' => "Chapter Three",
+			'number' => "",
 			'order' => 5,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/5.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Four",
+			'title' => "Chapter Four",
+			'number' => "",
 			'order' => 6,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/6.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Five",
+			'title' => "Chapter Five",
+			'number' => "",
 			'order' => 7,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/7.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Six",
+			'title' => "Chapter Six",
+			'number' => "",
 			'order' => 8,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/8.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Seven",
+			'title' => "Chapter Seven",
+			'number' => "",
 			'order' => 9,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/9.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Eight",
+			'title' => "Chapter Eight",
+			'number' => "",
 			'order' => 10,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/10.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Nine",
+			'title' => "Chapter Nine",
+			'number' => "",
 			'order' => 11,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/11.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Ten",
+			'title' => "Chapter Ten",
+			'number' => "",
 			'order' => 12,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/12.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Eleven",
+			'title' => "Chapter Eleven",
+			'number' => "",
 			'order' => 13,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/13.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twelve",
+			'title' => "Chapter Twelve",
+			'number' => "",
 			'order' => 14,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/14.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirteen",
+			'title' => "Chapter Thirteen",
+			'number' => "",
 			'order' => 15,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/15.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Fourteen",
+			'title' => "Chapter Fourteen",
+			'number' => "",
 			'order' => 16,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/16.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Fifteen",
+			'title' => "Chapter Fifteen",
+			'number' => "",
 			'order' => 17,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/17.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Sixteen",
+			'title' => "Chapter Sixteen",
+			'number' => "",
 			'order' => 18,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/18.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Seventeen",
+			'title' => "Chapter Seventeen",
+			'number' => "",
 			'order' => 19,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/19.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Eighteen",
+			'title' => "Chapter Eighteen",
+			'number' => "",
 			'order' => 20,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/20.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Nineteen",
+			'title' => "Chapter Nineteen",
+			'number' => "",
 			'order' => 21,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/21.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty",
+			'title' => "Chapter Twenty",
+			'number' => "",
 			'order' => 22,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/22.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-One",
+			'title' => "Chapter Twenty-One",
+			'number' => "",
 			'order' => 23,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/23.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Two",
+			'title' => "Chapter Twenty-Two",
+			'number' => "",
 			'order' => 24,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/24.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Three",
+			'title' => "Chapter Twenty-Three",
+			'number' => "",
 			'order' => 25,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/25.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Four",
+			'title' => "Chapter Twenty-Four",
+			'number' => "",
 			'order' => 26,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/26.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Five",
+			'title' => "Chapter Twenty-Five",
+			'number' => "",
 			'order' => 27,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/27.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Six",
+			'title' => "Chapter Twenty-Six",
+			'number' => "",
 			'order' => 28,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/28.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Seven",
+			'title' => "Chapter Twenty-Seven",
+			'number' => "",
 			'order' => 29,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/29.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Eight",
+			'title' => "Chapter Twenty-Eight",
+			'number' => "",
 			'order' => 30,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/30.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Twenty-Nine",
+			'title' => "Chapter Twenty-Nine",
+			'number' => "",
 			'order' => 31,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/31.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty",
+			'title' => "Chapter Thirty",
+			'number' => "",
 			'order' => 32,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/32.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-One",
+			'title' => "Chapter Thirty-One",
+			'number' => "",
 			'order' => 33,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/33.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Two",
+			'title' => "Chapter Thirty-Two",
+			'number' => "",
 			'order' => 34,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/34.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Three",
+			'title' => "Chapter Thirty-Three",
+			'number' => "",
 			'order' => 35,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/35.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Four",
+			'title' => "Chapter Thirty-Four",
+			'number' => "",
 			'order' => 36,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/36.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Five",
+			'title' => "Chapter Thirty-Five",
+			'number' => "",
 			'order' => 37,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/37.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Six",
+			'title' => "Chapter Thirty-Six",
+			'number' => "",
 			'order' => 38,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/38.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Seven",
+			'title' => "Chapter Thirty-Seven",
+			'number' => "",
 			'order' => 39,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/39.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Eight",
+			'title' => "Chapter Thirty-Eight",
+			'number' => "",
 			'order' => 40,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/40.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Thirty-Nine",
+			'title' => "Chapter Thirty-Nine",
+			'number' => "",
 			'order' => 41,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/41.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Fourty",
+			'title' => "Chapter Fourty",
+			'number' => "",
 			'order' => 42,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/42.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Fourty-One",
+			'title' => "Chapter Fourty-One",
+			'number' => "",
 			'order' => 43,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/43.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter Fourty-Two",
+			'title' => "Chapter Fourty-Two",
+			'number' => "",
 			'order' => 44,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/44.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
-			'number' => "Chapter The Last",
+			'title' => "Chapter The Last",
+			'number' => "",
 			'order' => 45,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-huckleberry-finn/45.html"))
