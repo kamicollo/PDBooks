@@ -155,7 +155,7 @@ table {
 }
 
 
-/*** HOMEPAGE ***/
+/*** HOME ***/
 .home {
 	padding-top: 0;
 }
@@ -220,6 +220,7 @@ table {
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-attachment: fixed;
+	background-color: #04060B;
 	background-image: url("../assets/background.jpg");
 	background-position: top center;
 	background-size: cover;
@@ -725,7 +726,7 @@ div.share {
 }
 
 .featured .subtitle {
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 	color: #395267; /* metadata grey */
 	display: -webkit-box;
@@ -735,6 +736,12 @@ div.share {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+	.featured .subtitle {
+		font-size: 13px;
+	}
 }
 
 
