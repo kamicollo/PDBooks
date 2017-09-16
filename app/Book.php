@@ -67,7 +67,7 @@ class Book extends Model {
 	}
 
 	public function web_image() {
-		return $this->web_background_image();
+		return $this->web_cover_image();
 	}
 
 	public function web_description() {
@@ -95,14 +95,18 @@ class Book extends Model {
 	}
 
 	public function web_background_image() {
-		$jpg_path = 'images/' . $this->url_slug . '/background.jpg';
+		$svg_path = 'images/' . $this->url_slug . '/background.svg';
 		$png_path = 'images/' . $this->url_slug . '/background.png';
-		if (file_exists(public_path($jpg_path))) {
-			return $jpg_path;
+		$jpg_path = 'images/' . $this->url_slug . '/background.jpg';
+
+		if (file_exists(public_path($svg_path))) {
+			return $svg_path;
 		} elseif (file_exists(public_path($png_path))) {
 			return $png_path;
+		} elseif (file_exists(public_path($jpg_path))) {
+			return $jpg_path;
 		} else {
-			throw new \ErrorException('Background image not found for book ' . $this->url_slug);
+			throw new \ErrorException('Background image not found for ' . $this->title);
 		}
 	}
 

@@ -11,7 +11,7 @@
 					<h1 class="pull-left">Laika Reads</h1>
 				</div>
 
-				<h2>Read free, beautifully formatted public domain books online. <a href="{{route('about')}}">Learn more</a> or <a href="#explore">start exploring now</a>.</h2>
+				<h2>Read free, beautifully formatted public domain books online. <a href="{{route('about')}}">Learn more</a> or <a href="#explore">start reading now</a>.</h2>
 
 				@include("follow")
 

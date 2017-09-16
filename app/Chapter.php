@@ -52,7 +52,7 @@ class Chapter extends Model {
 			]
 		);
 	}
-	
+
 	public function web_readability_score() {
 		switch (true) {
 			case ($this->readability_score < 4.9):
@@ -66,16 +66,16 @@ class Chapter extends Model {
 			case ($this->readability_score < 8.9):
 				return 'Easily understood by an average 11th or 12th-grade student';
 			default:
-				return 'Easily understood by an average 13th to 15th-grade (college) student';			
+				return 'Easily understood by an average 13th to 15th-grade (college) student';
 		}
 	}
-	
+
 	public function web_url() {
 		return route('chapter', ['id' => $this->book()->first()->getRouteKey(), 'order' => $this->order]);
 	}
 
 	public function web_image() {
-		return $this->book()->first()->web_background_image();
+		return $this->book()->first()->web_cover_image();
 	}
 
 	public function web_description() {

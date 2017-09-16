@@ -1,7 +1,7 @@
 @extends("app")
 @section("content")
 
-<div class="wrapper">
+<div class="wrapper {{$book->url_slug}}">
 	<div class="jumbotron" style="background-image:url({{URL::to($book->web_background_image())}})">
 		<div class="overlay">
 			<div class="container">
