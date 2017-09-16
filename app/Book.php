@@ -13,18 +13,14 @@ class Book extends Model {
 		return $this->hasMany('App\Chapter');
 	}
 
-	public function affiliates() {
-		return $this->hasMany('App\Affiliate');
-	}
-
 	public function firstChapter() {
 		return $this->chapters()->orderBy('order', 'asc')->first()->order;
 	}
-	
+
 	public function allChapters() {
 		return $this->chapters()->orderby('order', 'asc')->pluck('order');
 	}
-	
+
 	public function firstParagraph() {
 		try {
 			$content = $this->chapters()->orderBy('order', 'asc')->first()->content;
@@ -32,9 +28,27 @@ class Book extends Model {
 			$dom->loadHTML('<?xml encoding="utf-8" ?>' . $content);
 			$xp = new \DOMXPath($dom);
 			$res = $xp->query('//p');
-			return $res[0]->nodeValue; 
+			return $res[0]->nodeValue;
 		} catch (\ErrorException $e) {
 			return '';
+		}
+	}
+
+	public function affiliates() {
+		return $this->hasMany('App\Affiliate');
+	}
+
+	public function countryCode() {
+		switch($this->country) {
+			case "United Kingdom":
+				return "gb";
+				break;
+			case "United States":
+				return "us";
+				break;
+			default:
+				return "";
+				break;
 		}
 	}
 
@@ -75,11 +89,11 @@ class Book extends Model {
 
 		return array_merge($full_stars, $half_stars, $empty_stars);
 	}
-	
+
 	public function web_cover_image() {
 		return 'images/' . $this->url_slug . '/cover.jpg';
 	}
-	
+
 	public function web_background_image() {
 		$jpg_path = 'images/' . $this->url_slug . '/background.jpg';
 		$png_path = 'images/' . $this->url_slug . '/background.png';
@@ -91,11 +105,11 @@ class Book extends Model {
 			throw new \ErrorException('Background image not found for book ' . $this->url_slug);
 		}
 	}
-	
+
 	public function web_portrait_image() {
 		return 'images/' . $this->url_slug . '/portrait.jpg';
 	}
-	
+
 	public function web_signature_image() {
 		return 'images/' . $this->url_slug . '/signature.png';
 	}

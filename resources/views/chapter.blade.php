@@ -1,7 +1,7 @@
 @extends("app")
 @section("content")
 
-<div class="wrapper">
+<div class="wrapper {{$chapter->book->url_slug}}">
 	<progress value="0">
 		<div class="progress-container">
 			<span class="progress-bar"></span>

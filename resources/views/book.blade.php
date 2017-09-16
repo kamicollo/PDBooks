@@ -66,7 +66,9 @@
 				</p>
 
 				<ul class="metadata">
-					<li><b>First published:</b> {{date_format(date_create($book->first_publication_date), "Y")}}@if ($book->country !== null), {{$book->country}} @endif
+					<li>
+						<b>First published:</b> {{date_format(date_create($book->first_publication_date), "Y")}}@if ($book->country !== null),
+						<img src="{{URL::to('assets/blank.gif')}}" class="flag flag-{{$book->countryCode()}}" alt="{{$book->country}}" /> {{$book->country}} @endif
 						<span id="copyright" class="glyphicon glyphicon-question-sign" data-toggle="popover" data-trigger="hover" data-placement="top" title="A Note on Book Copyright" data-content="This book may be freely used in the US. If you live elsewhere, you must check the copyright laws of your country before reading the book." aria-hidden="true"></span>
 					</li>
 					<li><b>Genre:</b> {{$book->genre}}</li>
