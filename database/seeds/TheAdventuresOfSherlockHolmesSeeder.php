@@ -61,49 +61,49 @@ class TheAdventuresOfSherlockHolmesSeeder extends Seeder {
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/7.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Man with the Twisted Lip",
 			'number' => "Adventure Six",
 			'order' => 8,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/8.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Blue Carbuncle",
 			'number' => "Adventure Seven",
 			'order' => 9,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/9.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Speckled Band",
 			'number' => "Adventure Eight",
 			'order' => 10,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/10.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Engineer’s Thumb",
 			'number' => "Adventure Nine",
 			'order' => 11,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/11.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Noble Bachelor",
 			'number' => "Adventure Ten",
 			'order' => 12,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/12.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Beryl Coronet",
 			'number' => "Adventure Eleven",
 			'order' => 13,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
 			'content' => File::get(storage_path("books/the-adventures-of-sherlock-holmes/13.html"))
 		]);
 		DB::table('chapters')->insert([
-			'title' => "",
+			'title' => "The Adventure of the Copper Beeches",
 			'number' => "Adventure Twelve",
 			'order' => 14,
 			'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),

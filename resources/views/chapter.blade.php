@@ -18,7 +18,7 @@
 		</div>
 
 		<?php echo $chapter->content; ?>
-		<!-- <?php echo File::get(storage_path("books/the-hound-of-the-baskervilles/15.html")); ?> -->
+		<!-- <?php echo File::get(storage_path("books/the-adventures-of-sherlock-holmes/14.html")); ?> -->
 
 		@include("share")
 

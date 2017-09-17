@@ -635,6 +635,11 @@ p.end {
 }
 
 /* The Adventures of Sherlock Holmes */
+.the-adventures-of-sherlock-holmes .sign {
+	color: #4b372e;
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
 /* The Hound of the Baskervilles */
 .the-hound-of-the-baskervilles .engraving {
 	color: #979b9e;
