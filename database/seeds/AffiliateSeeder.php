@@ -120,5 +120,117 @@ class AffiliateSeeder extends Seeder {
             'bd_link' => "https://www.bookdepository.com/Alice-in-Wonderland-150-Year-Anniversary-Edition-Illustrated-1000-Copy-Limited-Edition-Lewis-Carroll-Sir-John-Tenniel/9781772261714/?a_aid=ffed6a58",
             'cover_image' => 'images/through-the-looking-glass/6.jpg'
         ]);
+
+		// The Adventures of Sherlock Holmes
+        DB::table('affiliates')->insert([
+            'title' => "The Complete Sherlock Holmes (Knickerbocker Classics)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Complete-Sherlock-Holmes-Knickerbocker-Classics/dp/1937994309/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Sherlock-Holmes-Sir-Arthur-Conan-Doyle/9781937994303/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/1.png'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Original Illustrated Sherlock Holmes",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Original-Illustrated-Sherlock-Holmes/dp/0890090572/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Original-Illustrated-Sherlock-Holmes-Sir-Arthur-Conan-Doyle-S-Paget/9780890090572/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sherlock Holmes (Narrated by Stephen Fry)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sherlock-Holmes/dp/B06VWQTBZ9/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Complete Sherlock Holmes",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Complete-Sherlock-Holmes-Volumes/dp/0553328255/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Sherlock-Holmes-Sir-Arthur-Conan-Doyle/9780553328257/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures and Memoirs of Sherlock Holmes (Penguin Classics)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Memoirs-Sherlock-Penguin-Classics/dp/0140437711/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Adventures-of-Sherlock-Holmes-and-the-Memoirs-of-Sherlock-Holmes-Sir-Arthur-Conan-Doyle-Iain-Pears-Ed-Glinert/9780140437713/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Great Adventures of Sherlock Holmes (Puffin Classics)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Sherlock Holmes")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Sherlock-Holmes-Puffin-Classics/dp/0141332492/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Great-Adventures-of-Sherlock-Holmes-Conan-Doyle-Matt-Jones/9780141332499/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-sherlock-holmes/6.jpg'
+        ]);
+
+		// The Hound of the Baskervilles
+        DB::table('affiliates')->insert([
+            'title' => "Sherlock Holmes: The Novels (Penguin Classics Deluxe Edition)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sherlock-Holmes-Novels-Penguin-Classics/dp/0143107135/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Sherlock-Holmes-The-Novels-Sir-Arthur-Conan-Doyle/9780143107132/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Hound of the Baskervilles, A Study in Scarlet, The Sign of Four (Everyman's Library)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Hound-Baskervilles-Scarlet-Everymans-Library/dp/0375712674/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Hound-of-the-Baskervilles-Study-in-Scarlet-The-Sign-of-Four-Sir-Arthur-Conan-Doyle/9781841593630/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sherlock Holmes: The Hound of the Baskervilles (Narrated by Derek Jacobi)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sherlock-Holmes-Hound-Baskervilles/dp/B00906V6PI/?tag=laikareads-20",
+			'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Hound of the Baskervilles (Puffin Classics)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Hound-Baskervilles-Puffin-Classics/dp/0141329394/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Hound-of-the-Baskervilles-Sir-Arthur-Conan-Doyle-Matt-Jones/9780141329390/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Complete Sherlock Holmes, Volume I (Barnes & Noble Classics Series)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/dp/1593080344/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Sherlock-Holmes-Volume-I-Barnes--Noble-Classics-Series-Sir-Arthur-Conan-Doyle/9781593080341/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Complete Sherlock Holmes, Volume II (Barnes & Noble Classics Series)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Hound of the Baskervilles")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Complete-Sherlock-Holmes-Barnes-Classics/dp/1593080409/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Sherlock-Holmes-Volume-II-Barnes--Noble-Classics-Series-Sir-Arthur-Conan-Doyle/9781593080402/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-hound-of-the-baskervilles/6.jpg'
+        ]);
     }
 }

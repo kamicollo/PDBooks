@@ -62,6 +62,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“Never trust to general impressions, my boy, but concentrate yourself upon details.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Adventures_of_Sherlock_Holmes">Wikipedia</a>',
             'url_slug' => "the-adventures-of-sherlock-holmes",
+			'soundcloud_id' => "307524908",
             'country' => "United Kingdom"
         ]);
 
@@ -80,6 +81,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“There is nothing more stimulating than a case where everything goes against you.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Hound_of_the_Baskervilles">Wikipedia</a>',
             'url_slug' => "the-hound-of-the-baskervilles",
+			'soundcloud_id' => "307524908",
             'country' => "United Kingdom"
         ]);
 
