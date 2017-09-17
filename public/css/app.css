@@ -400,12 +400,12 @@ p.goodreads a:hover {
 
 /*** CHAPTER ***/
 .chapter h1 {
-	/*margin-bottom: 20px;*/
 	margin-top: 30px;
 }
 
 .chapter .wrapper .container p:first-of-type {
 	min-height: 60px;
+	text-indent: 0;
 }
 
 .chapter .wrapper .container p:first-of-type:first-letter {
@@ -475,56 +475,136 @@ progress::-moz-progress-bar {
 	width: 50%;
 }
 
-.stanza {}
-.note {}
+/* Text */
+p.address {
+	color: #395267;
+	margin-left: 40px;
+}
+
+p.stanza {
+	font-style: italic;
+	margin-left: 40px;
+}
+
+p.note {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+p.annotation,
+p.annotation-title {
+	margin-bottom: 0;
+	margin-left: 40px;
+}
+
+p.annotation-title {
+	font-size: 15px;
+}
+
+p.end {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+
+.indent-b {
+	margin-left: 20px;
+}
+
+.indent-d {
+	margin-left: 40px;
+}
+
+.indent-f {
+	margin-left: 60px;
+}
+
+.indent-h {
+	margin-left: 80px;
+}
+
+.indent-j {
+	margin-left: 100px;
+}
+
+.indent-l {
+	margin-left: 120px;
+}
+
+.indent-n {
+	margin-left: 140px;
+}
+
+.indent-p {
+	margin-left: 160px;
+}
+
+.indent-r {
+	margin-left: 180px;
+}
+
+.indent-t {
+	margin-left: 200px;
+}
+
+.reduce-b {
+	font-size: 16px;
+}
+
+.reduce-d {
+	font-size: 14px;
+}
+
+.reduce-f {
+	font-size: 12px;
+}
+
+.reduce-h {
+	font-size: 10px;
+}
+
+.reduce-j {
+	font-size: 9px;
+}
 
 /* Alice in Wonderland */
-.aiw-marmelade,
-.aiw-drink,
-.aiw-eat {
+.alice-in-wonderland .address {
+	font-family: "Zeyada", cursive;
+	font-size: 22px;
+}
+
+.alice-in-wonderland .separator {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+
+.alice-in-wonderland .marmelade,
+.alice-in-wonderland .drink,
+.alice-in-wonderland .eat,
+.alice-in-wonderland .sign {
 	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
-.aiw-marmelade {
+.alice-in-wonderland .marmelade {
 	color: #fe5a13;
 }
 
-.aiw-drink {
+.alice-in-wonderland .drink {
 	color: #1d9101;
 }
 
-.aiw-eat {
+.alice-in-wonderland .eat {
 	color: #910165;
 }
 
-.aiw-separator {
-	color: #5e6f7c; /* link grey */
-	letter-spacing: 6px;
-	text-align: center;
+.alice-in-wonderland .sign {
+	color: #b5a642;
 }
 
-.aiw-foot {}
-.aiw-crocodile {}
-.aiw-prosecute {}
-.aiw-william{}
-.aiw-rough {}
-.aiw-severe {}
-.aiw-chorus {}
-.aiw-annotate {}
-.aiw-wow {}
-.aiw-twinkle {}
-.aiw-world {}
-.aiw-hearts{}
-.aiw-snail {}
-.aiw-lobster {}
-.aiw-panther {}
-.aiw-soup {}
-.aiw-tarts {}
-.aiw-swim {}
-.aiw-end {
-	color: #5e6f7c; /* link grey */
-	letter-spacing: 6px;
-	text-align: center;
+.alice-in-wonderland .fury {
+	font-style: normal;
+	line-height: 1.3;
 }
 
 /* Through the Looking-Glass */
