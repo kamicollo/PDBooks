@@ -47,6 +47,7 @@ window.fbAsyncInit = function() {
 	// Chapter
 	if (page === "chapter") {
 		$("[data-toggle='tooltip']").tooltip();
+		$("[data-toggle='popover']").popover();
 		displayProgressBar();
 	}
 }(jQuery));

@@ -500,6 +500,18 @@ p.note {
 	margin-left: 40px;
 }
 
+p.footnote {
+	border-top: solid 1px #5e6f7c;
+	color: #5e6f7c; /* link grey */
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding-top: 10px;
+}
+
+.innote {
+	border-bottom: dotted 1px;
+}
+
 p.annotation,
 p.annotation-title {
 	margin-bottom: 0;
@@ -671,6 +683,11 @@ p.end {
 }
 
 /* The Adventures of Tom Sawyer */
+.the-adventures-of-tom-sawyer .sand {
+	font-family: "Zeyada", cursive;
+	font-size: 22px;
+}
+
 /* The Adventures of Huckleberry Finn */
 .the-adventures-of-huckleberry-finn .ordnance {
 	font-variant: small-caps;
