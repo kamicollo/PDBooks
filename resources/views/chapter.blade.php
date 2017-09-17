@@ -34,14 +34,28 @@
 					</a>
 					@endif
 				</li>
-				@foreach ($book->allChapters() as $ch)
-				<li class="@if ($ch == $chapter->order) {{"active"}} @endif">
-					<a href="{{route('chapter', [$book->getRouteKey(), $ch])}}">
-						{{$ch}}
-					</a>
-				</li>
-				@endforeach
-
+				
+				<?php 
+					$chapters = $book->allChapters()->toArray();
+					$active_chapter = $chapter->order;
+					$callback = function($index, $item, $active_index) use ($book) {
+						
+						if ($index === null) {
+							return '<li><a>'. $item . '</a></li>'; // separator case
+						} elseif ($index == $active_index) {
+							return '<li class="active">'
+							. '<a href="' . route('chapter', [$book->getRouteKey(), $item])
+							. '">'. $item . '</a></li>'; // active chapter
+						} else {
+							return '<li>'
+							. '<a href="' . route('chapter', [$book->getRouteKey(), $item])
+							. '">'. $item . '</a></li>'; // other chapter
+						}
+					};
+					$pagination = generate_pagination($chapters, $active_chapter, 2, 1, $callback, '…');
+				?>				
+				{!!implode('', $pagination)!!}
+				
 				<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
 					@if ($chapter->isNext())
 					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getNext()])}}" aria-label="Next">
