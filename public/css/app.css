@@ -488,7 +488,8 @@ p.stanza {
 
 p.note {
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 16px;
+	margin-left: 40px;
 }
 
 p.annotation,
@@ -635,7 +636,26 @@ p.end {
 
 /* The Adventures of Sherlock Holmes */
 /* The Hound of the Baskervilles */
+.the-hound-of-the-baskervilles .engraving {
+	color: #979b9e;
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
 
+.the-hound-of-the-baskervilles .manuscript {
+	font-family: "Jim Nightshade", cursive;
+	font-size: 22px;
+}
+
+.the-hound-of-the-baskervilles .cutout {
+	color: #5e6f7c; /* link grey */
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 18px;
+}
+
+.the-hound-of-the-baskervilles .writing {
+	font-family: "Caveat", cursive;
+	font-size: 22px;
+}
 
 /* The Adventures of Tom Sawyer */
 /* The Adventures of Huckleberry Finn */

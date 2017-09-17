@@ -71,9 +71,21 @@
 		<!-- Fonts -->
 		<!-- Alls books -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
-		<!-- Alice in Wonderland -->
+
 		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700" rel="stylesheet">
+		<!-- Alice in Wonderland -->
+		<!-- Through the Looking-Glass -->
+		<!-- The Hound of the Baskervilles -->
+
 		<link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
+		<!-- Alice in Wonderland -->
+		<!-- Through the Looking-Glass -->
+
+		<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+		<!-- The Hound of the Baskervilles -->
+
+		<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+		<!-- The Hound of the Baskervilles -->
 
 		<!-- Styling -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
