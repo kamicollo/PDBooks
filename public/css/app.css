@@ -476,6 +476,14 @@ progress::-moz-progress-bar {
 }
 
 /* Text */
+.all-caps {
+	text-transform: uppercase;
+}
+
+.small-caps {
+	font-variant: small-caps;
+}
+
 p.address {
 	color: #395267;
 	margin-left: 40px;
@@ -664,6 +672,30 @@ p.end {
 
 /* The Adventures of Tom Sawyer */
 /* The Adventures of Huckleberry Finn */
+.the-adventures-of-huckleberry-finn .ordnance {
+	font-variant: small-caps;
+}
+
+.the-adventures-of-huckleberry-finn .testament {
+	font-family: "Zeyada", cursive;
+	font-size: 22px;
+}
+
+.the-adventures-of-huckleberry-finn .poster {
+	background-color: grey;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 40px;
+	background-color: #dde5ec; /* grey blue */
+}
+
+.the-adventures-of-huckleberry-finn .fake {
+	text-align: center;
+}
+
+.the-adventures-of-huckleberry-finn .fin {
+	text-align: center;
+}
 
 /* 404 */
 .error {
