@@ -501,6 +501,12 @@ p.annotation-title {
 	font-size: 15px;
 }
 
+p.separator {
+	color: #5e6f7c; /* link grey */
+	letter-spacing: 6px;
+	text-align: center;
+}
+
 p.end {
 	color: #5e6f7c; /* link grey */
 	letter-spacing: 6px;
@@ -573,12 +579,6 @@ p.end {
 	font-size: 22px;
 }
 
-.alice-in-wonderland .separator {
-	color: #5e6f7c; /* link grey */
-	letter-spacing: 6px;
-	text-align: center;
-}
-
 .alice-in-wonderland .marmelade,
 .alice-in-wonderland .drink,
 .alice-in-wonderland .eat,
@@ -608,33 +608,29 @@ p.end {
 }
 
 /* Through the Looking-Glass */
-.tlg-ykcwrebbaj {}
-.tlg-jabberwocky {}
 .tlg-separator {
 	color: #5e6f7c; /* link grey */
 	letter-spacing: 6px;
 	text-align: center;
 }
-.tlg-sign,
-.tlg-collar {
+.through-the-looking-glass .sign,
+.through-the-looking-glass .collar,
+.through-the-looking-glass .alice {
 	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
-.tlg-tweedle {}
-.tlg-humpty {}
-.tlg-fall {}
-.tlg-wabe {}
-.tlg-seasons {}
-.tlg-unicorn {}
-.tlg-man {}
-.tlg-hush {}
-.tlg-alice {}
-.tlg-dine {}
-.tlg-dreams {}
-.tlg-end {
-	color: #5e6f7c; /* link grey */
-	letter-spacing: 6px;
-	text-align: center;
+.through-the-looking-glass .sign {
+	color: #4b372e;
+}
+
+.through-the-looking-glass .alice {
+	color: #727b84;
+}
+
+.through-the-looking-glass .sum {
+	font-family: "Zeyada", cursive;
+	font-size: 22px;
+	margin-left: 40px;
 }
 
 /* The Adventures of Sherlock Holmes */
