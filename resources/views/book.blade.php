@@ -99,7 +99,7 @@
 					</div>
 				</a>
 				@if ($affiliate->bd_link)
-				<span class="subtitle"><a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/bd.png')}}" class="bd">Book Depository</a></span>
+				<!-- <span class="subtitle"><a href="{{URL::to($affiliate->bd_link)}}" target="_blank">Or <img src="{{URL::to('assets/bd.png')}}" class="bd">Book Depository</a></span> -->
 				@endif
 				@if ($affiliate->type == "audible")
 				<span class="subtitle"><a href="https://www.amazon.com/dp/B00NB86OYE/?tag=laikareads-20" target="_blank">Or <img src="{{URL::to('assets/audible.png')}}" class="bd">Audible trial</a></span>
