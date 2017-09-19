@@ -100,6 +100,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“He was not the Model Boy of the village. He knew the model boy very well though—and loathed him.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Adventures_of_Tom_Sawyer">Wikipedia</a>',
             'url_slug' => "the-adventures-of-tom-sawyer",
+			'soundcloud_id' => "283654932",
             'country' => "United States"
         ]);
 
@@ -118,6 +119,7 @@ class BookSeeder extends Seeder {
             'description_quote' => '<p>“Right is right, and wrong is wrong, and a body ain’t got no business doing wrong when he ain’t ignorant and knows better.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Adventures_of_Huckleberry_Finn">Wikipedia</a>',
             'url_slug' => "the-adventures-of-huckleberry-finn",
+			'soundcloud_id' => "86291985",
             'country' => "United Kingdom"
         ]);
 

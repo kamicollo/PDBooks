@@ -232,5 +232,117 @@ class AffiliateSeeder extends Seeder {
             'bd_link' => "https://www.bookdepository.com/The-Complete-Sherlock-Holmes-Volume-II-Barnes--Noble-Classics-Series-Sir-Arthur-Conan-Doyle/9781593080402/?a_aid=ffed6a58",
             'cover_image' => 'images/the-hound-of-the-baskervilles/6.jpg'
         ]);
+
+		// The Adventures of Tom Sawyer
+		DB::table('affiliates')->insert([
+            'title' => "The Complete Tom Sawyer",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Complete-Tom-Sawyer-Mark-Twain/dp/1627300503/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Tom-Sawyer-Mark-Twain/9781627300506/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-tom-sawyer/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Tom Sawyer (Penguin Classics)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Tom-Sawyer-Penguin-Classics/dp/014310733X/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Adventures-of-Tom-Sawyer-Mark-Twain/9780143107330/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-tom-sawyer/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Tom Sawyer (Narrated by Nick Offerman)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+            'amazon_link' => "https://www.amazon.com/The-Adventures-of-Tom-Sawyer/dp/B01HQMJ9NS/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-adventures-of-tom-sawyer/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Tom Sawyer (Sterling Illustrated Classics)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Sawyer-Sterling-Illustrated-Classics/dp/1402767625/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Adventures-Tom-Sawyer/9781402767623/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-tom-sawyer/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Tom Sawyer (The Original Text Edition)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Mark-Twains-Adventures-Tom-Sawyer/dp/1603062394/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Mark-Twains-Adventures-of-Tom-Sawyer-Mark-Twain/9781603062398/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-tom-sawyer/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+			'title' => "The Adventures of Tom Sawyer (Barnes & Noble Classics Series)",
+			'order' => 6,
+			'book_id' => DB::table('books')->where('title', "The Adventures of Tom Sawyer")->value('id'),
+			'amazon_link' => "https://www.amazon.com/Adventures-Sawyer-Barnes-Noble-Classics/dp/1593081391/?tag=laikareads-20",
+			'bd_link' => "https://www.bookdepository.com/The-Adventures-of-Tom-Sawyer-Barnes--Noble-Classics-Series-Mark-Twain-H-Daniel-Peck/9781593081393/?a_aid=ffed6a58",
+			'cover_image' => 'images/the-adventures-of-tom-sawyer/6.jpg'
+		]);
+
+		// The Adventures of Huckleberry Finn
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (Macmillan Collector's Library)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Macmillan-Collectors-Library/dp/1509827994/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Adventures-of-Huckleberry-Finn-Mark-Twain/9781509827992/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (Barnes & Noble Flexibound Classics)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Flexibound-Classics-Editions/dp/1435159640/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Barnes--Noble-Flexibound-Classics-Mark-Twain/9781435159648/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (Narrated by Elijah Wood)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Finn-Signature-Performance/dp/B004BDL7N6/?tag=laikareads-20",
+			'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (The Original Text Edition)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Mark-Twains-Adventures-Huckleberry-Finn/dp/1603062416/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Mark-Twains-Adventures-of-Huckleberry-Finn-Mark-Twain/9781603062411/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (The Ignatius Critical Editions)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Ignatius-Critical-Editions/dp/1586172964/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Mark-Twain/9781586172961/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Adventures of Huckleberry Finn (Dover Thrift Editions)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Finn-Mark-Twain/dp/0486280616/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Mark-Twain/9780486280615/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-adventures-of-huckleberry-finn/6.jpg'
+        ]);
     }
 }
