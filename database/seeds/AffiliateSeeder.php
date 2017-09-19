@@ -76,11 +76,11 @@ class AffiliateSeeder extends Seeder {
         ]);
 
         DB::table('affiliates')->insert([
-            'title' => "Alice's Adventures in Wonderland and Through the Looking Glass (Barnes & Noble Leatherbound Children's Classics)",
+            'title' => "Alice's Adventures in Wonderland & Through the Looking-Glass (Modern Library Classics)",
             'order' => 2,
             'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
-            'amazon_link' => "https://www.amazon.com/gp/product/1435160738/?tag=laikareads-20",
-            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-and-Through-the-Looking-Glass-Barnes--Noble-Childrens-Leatherbound-Classics-Lewis-Carroll-Sir-John-Tenniel/9781435160736/?a_aid=ffed6a58",
+            'amazon_link' => "https://www.amazon.com/dp/0375761381/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-AND-Alice-Through-the-Looking-Glass-Lewis-Carroll/9780375761386/?a_aid=ffed6a58",
             'cover_image' => 'images/through-the-looking-glass/2.jpg'
         ]);
 
@@ -104,11 +104,11 @@ class AffiliateSeeder extends Seeder {
         ]);
 
         DB::table('affiliates')->insert([
-            'title' => "Alice's Adventures in Wonderland and Through the Looking Glass (Clothbound Classics)",
+            'title' => "Alice's Adventures in Wonderland & Through the Looking-Glass (Macmillan Collector's Library)",
             'order' => 5,
             'book_id' => DB::table('books')->where('title', "Through the Looking-Glass, and What Alice Found There")->value('id'),
-            'amazon_link' => "https://www.amazon.com/Adventures-Wonderland-Clothbound-Classics-Hardcover/dp/B00NPMPSCK/?tag=laikareads-20",
-            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland-Lewis-Carroll-Sir-John-Tenniel/9780141192468/?a_aid=ffed6a58",
+            'amazon_link' => "https://www.amazon.com/Adventures-Wonderland-Looking-Glass-Macmillan-Collectors/dp/1909621579/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Alices-Adventures-in-Wonderland--Through-the-Looking-Glass-Lewis-Carroll/9781909621572/9780141192468/?a_aid=ffed6a58",
             'cover_image' => 'images/through-the-looking-glass/5.jpg'
         ]);
 
@@ -337,11 +337,11 @@ class AffiliateSeeder extends Seeder {
         ]);
 
 		DB::table('affiliates')->insert([
-            'title' => "The Adventures of Huckleberry Finn (Dover Thrift Editions)",
+            'title' => "The Adventures of Huckleberry Finn (Bantam Classic)",
             'order' => 6,
             'book_id' => DB::table('books')->where('title', "The Adventures of Huckleberry Finn")->value('id'),
-            'amazon_link' => "https://www.amazon.com/Adventures-Huckleberry-Finn-Mark-Twain/dp/0486280616/?tag=laikareads-20",
-            'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Mark-Twain/9780486280615/?a_aid=ffed6a58",
+            'amazon_link' => "https://www.amazon.com/dp/0553210793/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Mark-Twain/9780553210798/?a_aid=ffed6a58",
             'cover_image' => 'images/the-adventures-of-huckleberry-finn/6.jpg'
         ]);
     }
