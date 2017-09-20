@@ -19,6 +19,8 @@ window.fbAsyncInit = function() {
 	FB.Event.subscribe("xfbml.render", displayInstagram);
 };
 
+
+// EVERYTHING ELSE
 (function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
 	if (d.getElementById(id)) return;
@@ -54,6 +56,12 @@ window.fbAsyncInit = function() {
 
 
 // FUNCTIONS //
+// ANIMATIONS
+function scrollTo(element) {
+	var top = $("#" + element).offset().top;
+    $("html, body").animate({ scrollTop: top }, 750);
+}
+
 function displayInstagram(page) {
 	if (page !== "chapter" && page !== "home") {
 		$("a.instagram").removeClass("hidden");

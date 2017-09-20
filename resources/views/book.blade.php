@@ -82,7 +82,7 @@
 				<p><?php echo $book->description; ?> <?php echo $book->description_source; ?></p>
 				@if ($book->chapters->count() > 0)
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
-				<a class="btn pull-left" href="#chapters">See Table of Contents</a>
+				<a class="btn pull-left" onclick="return false;" onmousedown="scrollTo('chapters');" href="#chapters">See Table of Contents</a>
 				@endif
 			</div>
 		</div>
