@@ -58,7 +58,7 @@ window.fbAsyncInit = function() {
 // FUNCTIONS //
 // ANIMATIONS
 function scrollTo(element) {
-	var top = $("#" + element).offset().top;
+	var top = $("#" + element).offset().top - 60;
     $("html, body").animate({ scrollTop: top }, 750);
 }
 

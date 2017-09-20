@@ -355,6 +355,13 @@ p.goodreads a:hover {
 	margin-right: 8px;
 }
 
+.laika {
+	background-image: url("../assets/laikareads.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
 .book .featured .subtitle {
 	font-size: 13px;
 }
