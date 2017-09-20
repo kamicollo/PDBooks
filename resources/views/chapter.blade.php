@@ -34,28 +34,29 @@
 					</a>
 					@endif
 				</li>
-				
-				<?php 
+
+				<?php
 					$chapters = $book->allChapters()->toArray();
 					$active_chapter = $chapter->order;
+
 					$callback = function($index, $item, $active_index) use ($book) {
-						
 						if ($index === null) {
-							return '<li><a>'. $item . '</a></li>'; // separator case
+							return "<li class='disabled'><span>" . $item . "</span></li>"; // separator case
 						} elseif ($index == $active_index) {
-							return '<li class="active">'
-							. '<a href="' . route('chapter', [$book->getRouteKey(), $item])
-							. '">'. $item . '</a></li>'; // active chapter
+							return "<li class='active'>"
+							. "<a href='" . route("chapter", [$book->getRouteKey(), $item])
+							. "'>" . $item . "</a></li>"; // active chapter
 						} else {
-							return '<li>'
-							. '<a href="' . route('chapter', [$book->getRouteKey(), $item])
-							. '">'. $item . '</a></li>'; // other chapter
+							return "<li>"
+							. "<a href='" . route("chapter", [$book->getRouteKey(), $item])
+							. "'>" . $item . "</a></li>"; // other chapter
 						}
 					};
-					$pagination = generate_pagination($chapters, $active_chapter, 2, 1, $callback, '…');
-				?>				
+
+					$pagination = generate_pagination($chapters, $active_chapter, 2, 1, $callback, "…");
+				?>
 				{!!implode('', $pagination)!!}
-				
+
 				<li class="@if (!$chapter->isNext()) {{"disabled"}} @endif">
 					@if ($chapter->isNext())
 					<a href="{{route('chapter', [$book->getRouteKey(), $chapter->getNext()])}}" aria-label="Next">
