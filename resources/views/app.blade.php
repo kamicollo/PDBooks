@@ -149,5 +149,20 @@
 		ga('create', 'UA-19315846-20', 'auto');
 		ga('send', 'pageview');
 		</script>
+
+		<!-- Doorbel.io -->
+		@if ($bodyclass != "chapter")
+		<script type="text/javascript">
+    		window.doorbellOptions = {
+        		appKey: 'MqQwYKhajdXcyTSZ5vp0p3ZMdA5JfMQwtAqnWyGe1UQnFG2tBCCrywGn6cD2Rh7D'
+    		};
+    		(function(w, d, t) {
+        	var hasLoaded = false;
+        	function l() { if (hasLoaded) { return; } hasLoaded = true; window.doorbellOptions.windowLoaded = true; var g = d.createElement(t);g.id = 'doorbellScript';g.type = 'text/javascript';g.async = true;g.src = 'https://embed.doorbell.io/button/7051?t='+(new Date().getTime());(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(g); }
+        	if (w.attachEvent) { w.attachEvent('onload', l); } else if (w.addEventListener) { w.addEventListener('load', l, false); } else { l(); }
+        	if (d.readyState == 'complete') { l(); }
+    		}(window, document, 'script'));
+		</script>
+		@endif
 	</body>
 </html>
