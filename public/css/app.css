@@ -1970,6 +1970,7 @@ div.share {
 }
 
 .flippy-book {
+	display: none;
 	position: relative;
 	-webkit-perspective: 1000px;
 	-moz-perspective: 1000px;
