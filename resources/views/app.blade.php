@@ -31,13 +31,13 @@
 		<link rel="icon" sizes="144x144" href="{{URL::to('assets/icon144.png')}}">
 		<link rel="icon" sizes="96x96" href="{{URL::to('assets/icon96.png')}}">
 		<link rel="icon" sizes="48x48" href="{{URL::to('assets/icon48.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{URL::to('assets/icon152.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{URL::to('assets/icon144.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{URL::to('assets/icon120.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{URL::to('assets/icon114.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{URL::to('assets/icon76.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{URL::to('assets/icon72.png')}}">
-		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{URL::to('assets/icon57.png')}}">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{URL::to('assets/icon152.png')}}">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{URL::to('assets/icon144.png')}}">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{URL::to('assets/icon120.png')}}">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{URL::to('assets/icon114.png')}}">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{URL::to('assets/icon76.png')}}">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{URL::to('assets/icon72.png')}}">
+		<link rel="apple-touch-icon" sizes="57x57" href="{{URL::to('assets/icon57.png')}}">
 
 		<!-- Twitter (https://cards-dev.twitter.com/validator) -->
 		@if ($object->web_image() != "")

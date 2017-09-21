@@ -3,10 +3,11 @@
 
 <div class="wrapper {{$chapter->book->url_slug}}">
 	<progress value="0">
-		<div class="progress-container">
-			<span class="progress-bar"></span>
-		</div>
 	</progress>
+
+	<div class="progress-container">
+		<span class="progress-bar"></span>
+	</div>
 
 	<div class="container center-block">
 		@if ($chapter->number != '') <div class="order">{{$chapter->number}}</div> @endif

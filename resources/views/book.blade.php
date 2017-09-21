@@ -15,13 +15,13 @@
 		<div class="row">
 			<div class="hidden-xs col-sm-3">
 				<div class="static-book">
-					<img src="{{URL::to($book->web_cover_image())}}" class="img-thumbnail img-responsive" alt="Book cover" width="100%" height="100%">
+					<img src="{{URL::to($book->web_cover_image())}}" class="img-thumbnail img-responsive" alt="Book cover" style="width: 100%; height: 100%;">
 				</div>
 				<figure class="flippy-book">
 					<!-- Front -->
 					<ul class="flippy-front">
 						<li>
-							<img src="{{URL::to($book->web_cover_image())}}" alt="Book cover" width="100%" height="100%">
+							<img src="{{URL::to($book->web_cover_image())}}" alt="Book cover" style="width: 100%; height: 100%;">
 						</li>
 						<li></li>
 					</ul>
@@ -31,8 +31,8 @@
 						<li></li>
 						<li>
 							<div>
-								<img class="img-thumbnail" src="{{URL::to($book->web_portrait_image())}}" alt="Author's portrait" width="100%" height="100%">
-								<img src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" width="100%" height="100%">
+								<img class="img-thumbnail" src="{{URL::to($book->web_portrait_image())}}" alt="Author's portrait" style="width: 100%; height: 100%;">
+								<img src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" style="width: 100%; height: 100%;">
 							</div>
 						</li>
 						<li></li>
@@ -114,15 +114,13 @@
 		<div class="row audible">
 			<div class="col-lg-10 col-md-10 col-sm-9 col-xs-6">
 				<iframe
-					width="100%"
+					style="width: 100%; overflow:hidden; border: 0px;"
 					height="120"
-					scrolling="no"
-					frameborder="no"
 					src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/{{$book->soundcloud_id}}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false">
 				</iframe>
 			</div>
 			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
-				<span class="metadata">Download two audiobooks for free with your <a href="https://www.amazon.com/dp/B00NB86OYE/?tag=laikareads-20" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</a>
+				<span class="metadata">Download two audiobooks for free with your <a href="https://www.amazon.com/dp/B00NB86OYE/?tag=laikareads-20" target="_blank">30-day Audible trial</a>. Listen anywhere. Cancel anytime.</span>
 			</div>
 		</div>
 		@endif
