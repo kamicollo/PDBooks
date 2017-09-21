@@ -1,6 +1,6 @@
 // BROWSERS
 // Safari
-if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+if (isIE() || isSafari()) {
 	$(".static-book").show();
 } else {
 	$(".flippy-book").show();
@@ -57,7 +57,28 @@ window.fbAsyncInit = function() {
 
 
 // FUNCTIONS //
-// ANIMATIONS
+function isIE() {
+	var ua = window.navigator.userAgent;
+
+	if (ua.indexOf("MSIE ") > 0 ||
+		ua.indexOf("Trident/") > 0 ||
+		ua.indexOf("Edge/") > 0) {
+		console.log(ua);
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function isSafari() {
+	if (navigator.userAgent.search("Safari") >= 0 &&
+		navigator.userAgent.search("Chrome") < 0) {
+			return true;
+	} else {
+		return false;
+	}
+}
+
 function goTo(element) {
 	var top = $("#" + element).offset().top - 60;
     $("html, body").animate({ scrollTop: top }, 750);
