@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder {
         $this->call(TheAdventuresOfHuckleberryFinnSeeder::class);
         $this->call(TheHoundOfTheBaskervillesSeeder::class);
         $this->call(TheAdventuresOfSherlockHolmesSeeder::class);
+		$this->call(TheYellowWallpaperSeeder::class);
     }
 }

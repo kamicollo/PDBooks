@@ -31,8 +31,13 @@
 						<li></li>
 						<li>
 							<div>
+								@if ($book->web_portrait_image())
 								<img class="img-thumbnail" src="{{URL::to($book->web_portrait_image())}}" alt="Author's portrait" style="width: 100%; height: 100%;">
+								@endif
+
+								@if ($book->web_signature_image())
 								<img src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" style="width: 100%; height: 100%;">
+								@endif
 							</div>
 						</li>
 						<li></li>
@@ -78,8 +83,14 @@
 
 				@include("share")
 
+				@if (!empty($book->description_quote))
 				<blockquote><?php echo $book->description_quote; ?></blockquote>
+				@else
+				<p></p>
+				@endif
+
 				<p><?php echo $book->description; ?> <?php echo $book->description_source; ?></p>
+
 				@if ($book->chapters->count() > 0)
 				<a class="btn pull-left" href="{{route('chapter', [$book->getRouteKey(), $book->firstChapter()])}}">Start Reading</a>
 				<a class="btn pull-left" onclick="return false;" onmousedown="goTo('chapters');" href="#chapters">See Table of Contents</a>

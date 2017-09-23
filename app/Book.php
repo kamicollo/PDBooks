@@ -91,7 +91,14 @@ class Book extends Model {
 	}
 
 	public function web_cover_image() {
-		return 'images/' . $this->url_slug . '/cover.jpg';
+		$cover_path = 'images/' . $this->url_slug . '/cover.jpg';
+		$default_cover_path = 'assets/cover.jpg';
+
+		if (file_exists(public_path($cover_path))) {
+			return $cover_path;
+		} else {
+			return $default_cover_path;
+		}
 	}
 
 	public function web_background_image() {
@@ -106,15 +113,27 @@ class Book extends Model {
 		} elseif (file_exists(public_path($jpg_path))) {
 			return $jpg_path;
 		} else {
-			throw new \ErrorException('Background image not found for ' . $this->title);
+			return "";
 		}
 	}
 
 	public function web_portrait_image() {
-		return 'images/' . $this->url_slug . '/portrait.jpg';
+		$portrait_path = 'images/' . $this->url_slug . '/portrait.jpg';
+
+		if (file_exists(public_path($portrait_path))) {
+			return $portrait_path;
+		} else {
+			return "";
+		}
 	}
 
 	public function web_signature_image() {
-		return 'images/' . $this->url_slug . '/signature.png';
+		$signature_path = 'images/' . $this->url_slug . '/signature.png';
+
+		if (file_exists(public_path($signature_path))) {
+			return $signature_path;
+		} else {
+			return "";
+		}
 	}
 }

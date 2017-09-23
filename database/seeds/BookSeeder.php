@@ -123,6 +123,25 @@ class BookSeeder extends Seeder {
             'country' => "United Kingdom"
         ]);
 
+		DB::table('books')->insert([
+            'title' => "The Yellow Wallpaper",
+            'author' => "Charlotte Perkins Gilman",
+            'first_publication_date' => date_create("1892"),
+            'genre' => "Gender Issues",
+            'isbn' => "9781558611580",
+            'illustrator' => "",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/286957.The_Yellow_Wall_Paper",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "The Yellow Wallpaper is a 6,000-word short story by American writer Charlotte Perkins Gilman, first published in January 1892 in The New England Magazine. It is regarded as an important early work of American feminist literature, illustrating attitudes in the 19th century toward women's health, both physical and mental.",
+            'description_quote' => '<p></p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Yellow_Wallpaper">Wikipedia</a>',
+            'url_slug' => "the-yellow-wallpaper",
+            'soundcloud_id' => "164996001",
+            'country' => "United States",
+        ]);
+
         // DB::table('books')->insert([
         //     'title' => "",
         //     'author' => "",
@@ -138,7 +157,7 @@ class BookSeeder extends Seeder {
         //     'description_quote' => '<p>“”</p>',
         //     'description_source' => '<a target="_blank" href=""></a>',
         //     'url_slug' => "",
-        //     'soundclound_id' => "",
+        //     'soundcloud_id' => "",
         //     'country' => "",
         // ]);
     }
