@@ -5,6 +5,7 @@
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# book: http://ogp.me/ns/book#">
 		<meta charset="utf-8">
 		<link rel="canonical" href="{{$object->web_url()}}">
+		<meta name="robots" content="noarchive">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- Viewport -->
@@ -65,27 +66,9 @@
 		@endif
 
 		<!-- Fonts -->
-		<!-- Alls books -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
-
-		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight:700" rel="stylesheet">
-		<!-- Alice in Wonderland -->
-		<!-- Through the Looking-Glass -->
-		<!-- The Hound of the Baskervilles -->
-		<!-- The Adventures of Sherlock Holmes -->
-
-		<link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
-		<!-- Alice in Wonderland -->
-		<!-- Through the Looking-Glass -->
-		<!-- The Adventures of Tom Sawyer -->
-		<!-- The Adventures of Huckleberry Finn -->
-
-		<link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
-		<!-- The Hound of the Baskervilles -->
-
-		<link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-		<!-- The Hound of the Baskervilles -->
-
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+		@include("fonts")
+		
 		<!-- Styling -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="{{URL::to('css/app.css')}}" />
@@ -126,10 +109,10 @@
 		<script src="{{URL::to('js/jquery.dotdotdot.min.js')}}"></script>
 		<!-- Bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- Modernizr -->
-		<script src="{{URL::to('js/modernizr-custom.js')}}" type="text/javascript"></script>
 		<!-- JavaScript -->
 		<script src="{{URL::to('js/app.js')}}" type="text/javascript"></script>
+		<!-- Modernizr -->
+		<script src="{{URL::to('js/modernizr-custom.js')}}" type="text/javascript"></script>
 		<!-- Twitter -->
 		<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<!-- Facebook -->
