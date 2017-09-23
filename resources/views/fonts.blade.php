@@ -10,47 +10,47 @@
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "alice-in-wonderland")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "alice-in-wonderland")
 <script>
 	WebFont.load({
 		google: {
-			families: ["Zeyada", "Zilla Slab Highlight"]
+			families: ["Zeyada", "Zilla Slab Highlight:700"]
 		}
 	});
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "through-the-looking-glass")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "through-the-looking-glass")
 <script>
 	WebFont.load({
 		google: {
-			families: ["Zeyada", "Zilla Slab Highlight"]
+			families: ["Zeyada", "Zilla Slab Highlight:700"]
 		}
 	});
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "the-adventures-of-sherlock-holmes")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-adventures-of-sherlock-holmes")
 <script>
 	WebFont.load({
 		google: {
-			families: ["Zilla Slab Highlight"]
+			families: ["Zilla Slab Highlight:700"]
 		}
 	});
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "the-hound-of-the-baskervilles")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-hound-of-the-baskervilles")
 <script>
 	WebFont.load({
 		google: {
-			families: ["Caveat", "Jim Nightshade", "Zilla Slab Highlight"]
+			families: ["Caveat", "Jim Nightshade", "Zilla Slab Highlight:700"]
 		}
 	});
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "the-adventures-of-tom-sawyer")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-adventures-of-tom-sawyer")
 <script>
 	WebFont.load({
 		google: {
@@ -60,7 +60,7 @@
 </script>
 @endif
 
-@if ($bodyclass == "chapter" && $chapter->book->url_slug = "the-adventures-of-huckleberry-finn")
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-adventures-of-huckleberry-finn")
 <script>
 	WebFont.load({
 		google: {

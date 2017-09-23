@@ -22,7 +22,7 @@
 	<div class="container featured">
 		<h3 id="explore">Start Reading Now</h3>
 		<?php $books = App\Book::orderBy('title', 'asc')->get(); ?>
-		@for ($i=0; $i < $books->count(); $i++)
+		@for ($i = 0; $i < $books->count(); $i++)
 		@if ($i == 0)
 		<div class="row">
 		@elseif ($i % 6 == 0)
