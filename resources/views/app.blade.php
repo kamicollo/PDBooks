@@ -4,11 +4,7 @@
 <html lang="en">
 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# book: http://ogp.me/ns/book#">
 		<meta charset="utf-8">
-
-		<!-- Search (https://www.google.com/webmasters/tools/googlebot-fetch) -->
-		<!-- <meta name="robots" content="noindex"> -->
 		<link rel="canonical" href="{{$object->web_url()}}">
-
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<!-- Viewport -->
