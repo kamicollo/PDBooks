@@ -20,7 +20,7 @@
 	"@context": "http://schema.org",
 	"@type": "WebSite",
 	"url": "http://laikareads.com",
-	"name": "Laika Reads",
+	"name": "Laika Reads"
 }
 </script>
 
@@ -60,8 +60,8 @@
 		// "datePublished": TODO,
 		"aggregateRating": {
 			"@type": "AggregateRating",
-			"ratingValue": "{{number_format($book->goodreads_avg_rating, 2)}}",
-			"reviewCount": "{{number_format($book->goodreads_count_ratings)}}"
+			"ratingValue": "{{$book->goodreads_avg_rating}}",
+			"reviewCount": "{{$book->goodreads_count_ratings}}"
 		},
 		"description": "{{$object->web_description()}}",
 		"potentialAction": {
