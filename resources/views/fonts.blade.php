@@ -10,7 +10,7 @@
 </script>
 @endif
 
-@if ($chapter->book->url_slug == "alice-in-wonderland")
+@if ($bodyclass == "alice-in-wonderland")
 <script>
 	WebFont.load({
 		google: {
