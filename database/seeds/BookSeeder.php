@@ -162,6 +162,25 @@ class BookSeeder extends Seeder {
         ]);
 
 		DB::table('books')->insert([
+            'title' => "Pride and Prejudice",
+            'author' => "Jane Austen",
+            'first_publication_date' => date_create("1813-01-28"),
+            'genre' => "Romance",
+            'isbn' => "9780679783268",
+            'illustrator' => "Hugh Thomson",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/1885.Pride_and_Prejudice",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "Pride and Prejudice is a romance novel by Jane Austen, first published in 1813. The story charts the emotional development of the protagonist, Elizabeth Bennet, who learns the error of making hasty judgments and comes to appreciate the difference between the superficial and the essential. The comedy of the writing lies in the depiction of manners, education, marriage and money in the British Regency.",
+            'description_quote' => '<p>“A lady\'s imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.”</p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Pride_and_Prejudice">Wikipedia</a>',
+            'url_slug' => "pride-and-prejudice",
+            'soundcloud_id' => "236481392",
+            'country' => "United Kingdom"
+        ]);
+
+		DB::table('books')->insert([
             'title' => "Sense and Sensibility",
             'author' => "Jane Austen",
             'first_publication_date' => date_create("1811"),

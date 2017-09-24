@@ -457,6 +457,62 @@ class AffiliateSeeder extends Seeder {
             'cover_image' => 'images/the-awakening/6.jpg'
         ]);
 
+		// Pride and Prejudice
+		DB::table('affiliates')->insert([
+            'title' => "Pride and Prejudice: An Annotated Edition",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Pride-Prejudice-Annotated-Jane-Austen/dp/0674049160/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Pride-and-Prejudice-Jane-Austen-Patrici-Meyer-Spacks/9780674049161/?a_aid=ffed6a58",
+            'cover_image' => 'images/pride-and-prejudice/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Annotated Pride and Prejudice",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Annotated-Pride-Prejudice-Revised-Expanded/dp/0307950905/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Annotated-Pride-and-Prejudice-Jane-Austen-David-M-Shapard/9780307950901/?a_aid=ffed6a58",
+            'cover_image' => 'images/pride-and-prejudice/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Pride and Prejudice (Narrated by Rosamund Pike)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Pride-and-Prejudice/dp/B016LN4BYA/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/pride-and-prejudice/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Pride and Prejudice (Fourth Norton Critical Edition)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Prejudice-Fourth-Norton-Critical-Editions/dp/0393264882/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Pride-and-Prejudice-Jane-Austen-Donald-Gray-Mary--Favret/9780393264883/?a_aid=ffed6a58",
+            'cover_image' => 'images/pride-and-prejudice/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Pride and Prejudice (Ignatius Critical Edition)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Pride-Prejudice-Ignatius-Critical-Editions/dp/1586172638/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Pride-and-Prejudice-Jane-Austen/9781586172633/?a_aid=ffed6a58",
+            'cover_image' => 'images/pride-and-prejudice/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Pride and Prejudice (Penguin Classics)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Pride-Prejudice-Jane-Austen/dp/0141439513/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Pride-and-Prejudice-Jane-Austen-Vivien-Jones-Tony-Tanner/9780141439518/?a_aid=ffed6a58",
+            'cover_image' => 'images/pride-and-prejudice/6.jpg'
+        ]);
+
 		// Sense and Sensibility
 		DB::table('affiliates')->insert([
             'title' => "Sense and Sensibility: An Annotated Edition",
@@ -512,7 +568,6 @@ class AffiliateSeeder extends Seeder {
             'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-Jane-Austen-Ros-Ballaster-Tony-Tanner/9780141439662/?a_aid=ffed6a58",
             'cover_image' => 'images/sense-and-sensibility/6.jpg'
         ]);
-
 
 		// DB::table('affiliates')->insert([
         //     'title' => "",
