@@ -625,6 +625,62 @@ class AffiliateSeeder extends Seeder {
             'cover_image' => 'images/the-wizard-of-oz/6.jpg'
         ]);
 
+		// The Wind in the Willows
+		DB::table('affiliates')->insert([
+            'title' => "The Annotated Wind in the Willows",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Annotated-Wind-Willows-Books/dp/0393057747/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Annotated-Wind-in-the-Willows-Kenneth-Grahame-Brian-Jacques-Annie-Gauger/9780393057744/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wind-in-the-willows/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wind in the Willows: An Annotated Edition",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wind-Willows-Annotated-Kenneth-Grahame/dp/0674034473/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame-Seth-Lerer/9780674034471/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wind-in-the-willows/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wind in the Willows (Narrated by Michael Hordern)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/The-Wind-in-the-Willows/dp/B000VB49UK/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-wind-in-the-willows/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wind in the Willows (Illustrated by Don Daily)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wind-Willows-Kenneth-Grahame/dp/1604334789/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame/9781604334784/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wind-in-the-willows/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wind in the Willows (Sterling Illustrated Classics)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wind-Willows-Sterling-Illustrated-Classics/dp/1402782837/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame/9781402782831/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wind-in-the-willows/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wind in the Willows (Candlewick Illustrated Classic)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Wind in the Willows")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wind-Willows-Candlewick-Illustrated-Classics/dp/0763642118/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wind-in-the-Willows-Kenneth-Grahame-Ing-Moore/9780763642112/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wind-in-the-willows/6.jpg'
+        ]);
+
 		// DB::table('affiliates')->insert([
         //     'title' => "",
         //     'order' => 1,

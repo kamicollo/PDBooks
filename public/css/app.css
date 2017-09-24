@@ -344,6 +344,11 @@ table {
 	background-size: contain;
 }
 
+.book .the-wind-in-the-willows .jumbotron {
+	background-position: top right;
+	background-size: contain;
+}
+
 .book .jumbotron .author {
 	color: #eaeff3; /* white blue */
 	font-family: "Dancing Script", cursive;
@@ -759,6 +764,19 @@ p.end {
 /* The Wizard of Oz */
 .the-wizard-of-oz .sign {
 	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* The Wind in the Willows */
+.the-wind-in-the-willows .mumble {
+	word-wrap: break-word;
+}
+
+.the-wind-in-the-willows .poster {
+	background-color: grey;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 40px;
+	background-color: #dde5ec; /* grey blue */
 }
 
 /* 404 */

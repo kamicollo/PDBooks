@@ -200,6 +200,25 @@ class BookSeeder extends Seeder {
         ]);
 
 		DB::table('books')->insert([
+            'title' => "The Wind in the Willows",
+            'author' => "Kenneth Grahame",
+            'first_publication_date' => date_create("1908-06-15"),
+            'genre' => "Children's Classics",
+            'isbn' => "9780143039099",
+            'illustrator' => "Paul Bransom",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/5659.The_Wind_in_the_Willows",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "The Wind in the Willows is a children's novel by Kenneth Grahame, first published in 1908. Alternately slow moving and fast paced, it focuses on four anthropomorphised animals in a pastoral version of Edwardian England. The novel is notable for its mixture of mysticism, adventure, morality and camaraderie, and celebrated for its evocation of the nature of the Thames Valley.",
+            'description_quote' => '<p>“All this he saw, for one moment breathless and intense, vivid on the morning sky; and still, as he looked, he lived; and still, as he lived, he wondered.”</p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Wind_in_the_Willows">Wikipedia</a>',
+            'url_slug' => "the-wind-in-the-willows",
+            'soundcloud_id' => "30078285",
+            'country' => "United Kingdom"
+        ]);
+
+		DB::table('books')->insert([
             'title' => "The Wonderful Wizard of Oz",
             'author' => "L. Frank Baum",
             'first_publication_date' => date_create("1900-05-17"),

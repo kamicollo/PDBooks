@@ -19,7 +19,7 @@
 		</div>
 
 		<?php echo $chapter->content; ?>
-		<!-- <?php echo File::get(storage_path("books/the-yellow-wallpaper/1.html")); ?> -->
+		<!-- <?php echo File::get(storage_path("books/the-wind-in-the-willows/1.html")); ?> -->
 
 		@include("share")
 
