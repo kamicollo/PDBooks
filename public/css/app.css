@@ -269,6 +269,7 @@ table {
 /* Jumbatron */
 .book .jumbotron {
 	background-attachment: fixed;
+	background-color: #ffffff;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -290,29 +291,34 @@ table {
 }
 
 .book .jumbotron .overlay {
-	background-color: rgba(103, 130, 72, 0.80);
+	background-color: rgba(103, 130, 72, 0.85);
 	height: 100%;
 	overflow: hidden;
 	padding: 48px 0;
 }
 
-.book .the-adventures-of-tom-sawyer .jumbotron,
-.book .the-adventures-of-sherlock-holmes .jumbotron {
-	background-position: top;
+.book .alice-in-wonderland .jumbotron {
+	background-position: center;
 }
 
-.book .alice-in-wonderland .jumbotron,
-.book .the-adventures-of-huckleberry-finn .jumbotron,
-.book .the-hound-of-the-baskervilles .jumbotron {
-	background-position: center;
+.book .through-the-looking-glass .jumbotron {
+	background-position: 0 30%;
+}
+
+.book .the-adventures-of-tom-sawyer .jumbotron {
+	background-position: top;
 }
 
 .book .the-adventures-of-huckleberry-finn .jumbotron {
 	background-position: 0 30%;
 }
 
-.book .through-the-looking-glass .jumbotron {
-	background-position: 0 30%;
+.book .the-adventures-of-sherlock-holmes .jumbotron {
+	background-position: top;
+}
+
+.book .the-hound-of-the-baskervilles .jumbotron {
+	background-position: center;
 }
 
 .book .the-yellow-wallpaper .jumbotron {
@@ -327,6 +333,15 @@ table {
 
 .book .sense-and-sensibility .jumbotron {
 	background-position: center;
+}
+
+.book .pride-and-prejudice .jumbotron {
+	background-position: top;
+}
+
+.book .the-wizard-of-oz .jumbotron {
+	background-position: top right;
+	background-size: contain;
 }
 
 .book .jumbotron .author {
@@ -739,6 +754,11 @@ p.end {
 .the-awakening .writing {
 	font-family: "Caveat", cursive;
 	font-size: 22px;
+}
+
+/* The Wizard of Oz */
+.the-wizard-of-oz .sign {
+	font-family: "Zilla Slab Highlight", Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* 404 */

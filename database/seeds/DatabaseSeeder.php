@@ -23,5 +23,6 @@ class DatabaseSeeder extends Seeder {
 		$this->call(TheAwakeningSeeder::class);
 		$this->call(PrideAndPrejudiceSeeder::class);
 		$this->call(SenseAndSensibilitySeeder::class);
+		$this->call(TheWizardOfOzSeeder::class);
     }
 }

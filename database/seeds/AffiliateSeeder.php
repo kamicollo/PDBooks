@@ -505,11 +505,11 @@ class AffiliateSeeder extends Seeder {
         ]);
 
 		DB::table('affiliates')->insert([
-            'title' => "Pride and Prejudice (Penguin Classics)",
+            'title' => "Pride and Prejudice (Classics Reimagined)",
             'order' => 6,
             'book_id' => DB::table('books')->where('title', "Pride and Prejudice")->value('id'),
-            'amazon_link' => "https://www.amazon.com/Pride-Prejudice-Jane-Austen/dp/0141439513/?tag=laikareads-20",
-            'bd_link' => "https://www.bookdepository.com/Pride-and-Prejudice-Jane-Austen-Vivien-Jones-Tony-Tanner/9780141439518/?a_aid=ffed6a58",
+            'amazon_link' => "https://www.amazon.com/Classics-Reimagined-Pride-Prejudice-Austen/dp/1631593714/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Classics-Reimagined-Pride-and-Prejudice-Jane-Austen-Alice-Pattullo/9781631593710/?a_aid=ffed6a58",
             'cover_image' => 'images/pride-and-prejudice/6.jpg'
         ]);
 
@@ -567,6 +567,62 @@ class AffiliateSeeder extends Seeder {
             'amazon_link' => "https://www.amazon.com/Sense-Sensibility-Penguin-Classics-Austen/dp/0141439661/?tag=laikareads-20",
             'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-Jane-Austen-Ros-Ballaster-Tony-Tanner/9780141439662/?a_aid=ffed6a58",
             'cover_image' => 'images/sense-and-sensibility/6.jpg'
+        ]);
+
+		// The Wizard of Oz
+		DB::table('affiliates')->insert([
+            'title' => "The Wonderful Wizard of Oz (Classics Reimagined)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Classics-Reimagined-Wonderful-Wizard-Oz/dp/1592538991/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Classics-Reimagined-The-Wonderful-Wizard-of-Oz-Olimpi-Zagnoli-L-Frank-Baum/9781592538997/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wizard-of-oz/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wonderful Wizard of Oz (Illustrated by Michael Sieben)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wonderful-Wizard-Oz-Illustrations-Michael/dp/0062018086/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wonderful-Wizard-of-Oz-L-Frank-Baum-Michael-Sieben/9780062018083/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wizard-of-oz/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wonderful Wizard of Oz (Narrated by Anne Hathaway)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/The-Wonderful-Wizard-of-Oz/dp/B007IEHNMO/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-wizard-of-oz/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wizard of Oz (Penguin Classics Deluxe Edition)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wizard-Oz-Wonderful-Emerald-Classics/dp/0143106635/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wizard-of-Oz-Penguin-Classics-Deluxe-Edition-L-F-Baum/9780143106630/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wizard-of-oz/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wonderful Wizard of Oz (100th Anniversary Edition)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wonderful-Wizard-Oz-Anniversary-Wonder/dp/0060293233/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Wizard-of-Oz-L-F-Baum-Michael-Patrick-Hearn-W-W-Denslow/9780060293239/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wizard-of-oz/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Wonderful World of Oz (Penguin Classics)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Wonderful Wizard of Oz")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Wonderful-World-Oz-Emerald-20th-Century/dp/0141180854/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wonderful-World-of-Oz-L-F-Baum-Jack-David-Zipes/9780141180854/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-wizard-of-oz/6.jpg'
         ]);
 
 		// DB::table('affiliates')->insert([

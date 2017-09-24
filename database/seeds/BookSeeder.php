@@ -199,6 +199,25 @@ class BookSeeder extends Seeder {
             'country' => "United Kingdom"
         ]);
 
+		DB::table('books')->insert([
+            'title' => "The Wonderful Wizard of Oz",
+            'author' => "L. Frank Baum",
+            'first_publication_date' => date_create("1900-05-17"),
+            'genre' => "Children's Classics",
+            'isbn' => "9780140621679",
+            'illustrator' => "W.W. Denslow",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/236093.The_Wonderful_Wizard_of_Oz",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "The Wonderful Wizard of Oz is an American children's novel written by author L. Frank Baum and illustrated by W.W. Denslow, originally published by the George M. Hill Company in Chicago on May 17, 1900. It has since been reprinted on numerous occasions, most often under the title The Wizard of Oz, which is the title of the popular 1902 Broadway musical adaptation as well as the iconic 1939 musical film adaptation.",
+            'description_quote' => '<p>“There is no place like home.”</p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Wonderful_Wizard_of_Oz">Wikipedia</a>',
+            'url_slug' => "the-wizard-of-oz",
+            'soundcloud_id' => "85817251",
+            'country' => "United States"
+        ]);
+
 		// DB::table('books')->insert([
         //     'title' => "",
         //     'author' => "",

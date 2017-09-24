@@ -80,4 +80,14 @@
 </script>
 @endif
 
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-wizard-of-oz")
+<script>
+	WebFont.load({
+		google: {
+			families: ["Zilla Slab Highlight:700"]
+		}
+	});
+</script>
+@endif
+
 @show
