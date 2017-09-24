@@ -457,6 +457,62 @@ class AffiliateSeeder extends Seeder {
             'cover_image' => 'images/the-awakening/6.jpg'
         ]);
 
+		// Sense and Sensibility
+		DB::table('affiliates')->insert([
+            'title' => "Sense and Sensibility: An Annotated Edition",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sense-Sensibility-Annotated-Jane-Austen/dp/0674724550/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-An-Annotated-Edition-Jane-Austen/9780674724556/?a_aid=ffed6a58",
+            'cover_image' => 'images/sense-and-sensibility/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sense and Sensibility (The Cambridge Edition)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sense-Sensibility-Cambridge-Works-Austen/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-Jane-Austen-Edward-Copeland/9781107620551/?a_aid=ffed6a58",
+            'cover_image' => 'images/sense-and-sensibility/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sense and Sensibility (Narrated by Kate Winslet)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sense-and-Sensibility/dp/B000PUB1AS/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/sense-and-sensibility/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Annotated Sense and Sensibility",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Annotated-Sense-Sensibility-Jane-Austen/dp/0307390764/?tag=laikareads-20",
+            'bd_link' => "/?a_aid=ffed6a58",
+            'cover_image' => 'images/sense-and-sensibility/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sense and Sensibility (Ignatius Critical Edition)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sense-Sensibility-Ignatius-Critical-Editions/dp/1586178385/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-Jane-Austen/9781586178383/?a_aid=ffed6a58",
+            'cover_image' => 'images/sense-and-sensibility/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "Sense and Sensibility (Penguin Classics)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "Sense and Sensibility")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Sense-Sensibility-Penguin-Classics-Austen/dp/0141439661/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Sense-and-Sensibility-Jane-Austen-Ros-Ballaster-Tony-Tanner/9780141439662/?a_aid=ffed6a58",
+            'cover_image' => 'images/sense-and-sensibility/6.jpg'
+        ]);
+
 
 		// DB::table('affiliates')->insert([
         //     'title' => "",

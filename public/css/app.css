@@ -325,6 +325,10 @@ table {
 	background-size: auto;
 }
 
+.book .sense-and-sensibility .jumbotron {
+	background-position: center;
+}
+
 .book .jumbotron .author {
 	color: #eaeff3; /* white blue */
 	font-family: "Dancing Script", cursive;

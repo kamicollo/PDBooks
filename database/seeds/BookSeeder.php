@@ -161,6 +161,25 @@ class BookSeeder extends Seeder {
             'country' => "United States"
         ]);
 
+		DB::table('books')->insert([
+            'title' => "Sense and Sensibility",
+            'author' => "Jane Austen",
+            'first_publication_date' => date_create("1811"),
+            'genre' => "Romance",
+            'isbn' => "9780141439662",
+            'illustrator' => "Hugh Thomson",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/14935.Sense_and_Sensibility",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "Sense and Sensibility is a novel by Jane Austen, published in 1811. It was published anonymously; <i>By A Lady</i> appears on the cover page where the author's name might have been. It tells the story of the Dashwood sisters, Elinor and Marianne, both of age to marry.",
+            'description_quote' => '<p>“The more I know of the world, the more I am convinced that I shall never see a man whom I can really love. I require so much!”</p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/Sense_and_Sensibility">Wikipedia</a>',
+            'url_slug' => "sense-and-sensibility",
+            'soundcloud_id' => "213793616",
+            'country' => "United Kingdom"
+        ]);
+
 		// DB::table('books')->insert([
         //     'title' => "",
         //     'author' => "",
