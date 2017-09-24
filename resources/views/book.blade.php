@@ -36,7 +36,7 @@
 								@endif
 
 								@if ($book->web_signature_image())
-								<img src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" style="width: 100%; height: 100%;">
+								<img class="signature" src="{{URL::to($book->web_signature_image())}}" alt="Author's signature" style="width: 100%; height: 100%;">
 								@endif
 							</div>
 						</li>

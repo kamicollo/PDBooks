@@ -2095,6 +2095,10 @@ div.share {
 	border-radius: 0px 5px 5px 0px;
 }
 
+.flippy-page .signature {
+	padding: 10px 5px 0 5px;
+}
+
 /* 3: Opening the book */
 .flippy-front {
 	-webkit-transform: rotateY(-34deg) translateZ(8px);
