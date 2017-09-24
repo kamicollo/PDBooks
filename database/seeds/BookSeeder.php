@@ -135,7 +135,7 @@ class BookSeeder extends Seeder {
             'goodreads_avg_rating' => 0,
             'goodreads_count_ratings' => 0,
             'description' => "The Yellow Wallpaper is a 6,000-word short story by American writer Charlotte Perkins Gilman, first published in January 1892 in The New England Magazine. It is regarded as an important early work of American feminist literature, illustrating attitudes in the 19th century toward women's health, both physical and mental.",
-            'description_quote' => '<p></p>',
+            'description_quote' => '<p>“There are things in that paper that nobody knows but me, or ever will.”</p>',
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Yellow_Wallpaper">Wikipedia</a>',
             'url_slug' => "the-yellow-wallpaper",
             'soundcloud_id' => "164996001",

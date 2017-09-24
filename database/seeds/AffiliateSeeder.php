@@ -345,6 +345,62 @@ class AffiliateSeeder extends Seeder {
             'cover_image' => 'images/the-adventures-of-huckleberry-finn/6.jpg'
         ]);
 
+		// The Yellow Wallpaper
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wall Paper (Classic Reprint)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Yellow-Wall-Paper-Classic-Reprint/dp/1331495083/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Yellow-Wall-Paper-Classic-Reprint-Charlotte-Perkins-Stetson/9781331495086/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-yellow-wallpaper/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wall-Paper: A Sourcebook and Critical Edition",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Charlotte-Perkins-Gilmans-Yellow-Wall-Paper/dp/0415263581/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/Charlotte-Perkins-Gilmans-The-Yellow-Wall-Paper-Catherine-J-Golden/9780415263580/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-yellow-wallpaper/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wallpaper (Narrated by Jo Myddleton)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/The-Yellow-Wallpaper/dp/B0016L6L0K/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-yellow-wallpaper/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wall-Paper and Other Writings (Modern Library Classics)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Yellow-Wall-Paper-Writings-Library-Classics/dp/0679783407/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Yellow-Wallpaper-and-Other-Writings-Charlotte-Perkins-Gilman/9780679783404/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-yellow-wallpaper/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wallpaper and Selected Writings (Virago Modern Classics)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Yellow-Wallpaper-Selected-Writings-Classics/dp/1844085589/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Yellow-Wallpaper-And-Selected-Writings-Charlotte-Perkins-Gilman-Maggie-OFarrell/9781844085583/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-yellow-wallpaper/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Yellow Wallpaper and Other Stories: The Complete Gothic Collection",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Yellow Wallpaper")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Yellow-Wallpaper-Other-Stories-Collection/dp/0615594336/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Yellow-Wallpaper-and-Other-Stories-Charlotte-Perkins-Gilman-Aric-Cushing/9780615568393/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-yellow-wallpaper/6.jpg'
+        ]);
+
 		// The Awakening
 		DB::table('affiliates')->insert([
             'title' => "The Awakening and Other Stories (Oxford World's Classics)",
