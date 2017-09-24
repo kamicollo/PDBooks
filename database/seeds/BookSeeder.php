@@ -139,10 +139,29 @@ class BookSeeder extends Seeder {
             'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Yellow_Wallpaper">Wikipedia</a>',
             'url_slug' => "the-yellow-wallpaper",
             'soundcloud_id' => "164996001",
-            'country' => "United States",
+            'country' => "United States"
         ]);
 
-        // DB::table('books')->insert([
+		DB::table('books')->insert([
+            'title' => "The Awakening",
+            'author' => "Kate Chopin",
+            'first_publication_date' => date_create("1899-04-22"),
+            'genre' => "Gender Issues",
+            'isbn' => "9780543898081",
+            'illustrator' => "",
+            'translator' => "",
+            'goodreads_link' => "https://www.goodreads.com/book/show/58345.The_Awakening",
+            'goodreads_avg_rating' => 0,
+            'goodreads_count_ratings' => 0,
+            'description' => "The Awakening is a novel by Kate Chopin, first published in 1899. Set in New Orleans and on the Louisiana Gulf coast at the end of the 19th century, the plot centers on Edna Pontellier and her struggle between her increasingly unorthodox views on femininity and motherhood with the prevailing social attitudes of the turn-of-the-century American South. It is one of the earliest American novels that focuses on women's issues without condescension. It is also widely seen as a landmark work of early feminism, generating a mixed reaction from contemporary readers and critics.",
+            'description_quote' => '<p>“She was becoming herself and daily casting aside that fictitious self which we assume like a garment with which to appear before the world.”</p>',
+            'description_source' => '<a target="_blank" href="https://en.wikipedia.org/wiki/The_Awakening_(Chopin_novel)">Wikipedia</a>',
+            'url_slug' => "the-awakening",
+            'soundcloud_id' => "",
+            'country' => "United States"
+        ]);
+
+		// DB::table('books')->insert([
         //     'title' => "",
         //     'author' => "",
         //     'first_publication_date' => date_create(""),
@@ -158,7 +177,7 @@ class BookSeeder extends Seeder {
         //     'description_source' => '<a target="_blank" href=""></a>',
         //     'url_slug' => "",
         //     'soundcloud_id' => "",
-        //     'country' => "",
+        //     'country' => ""
         // ]);
     }
 }

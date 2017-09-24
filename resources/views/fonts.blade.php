@@ -70,4 +70,14 @@
 </script>
 @endif
 
+@if ($bodyclass == "chapter" && $chapter->book->url_slug == "the-awakening")
+<script>
+	WebFont.load({
+		google: {
+			families: ["Caveat"]
+		}
+	});
+</script>
+@endif
+
 @show

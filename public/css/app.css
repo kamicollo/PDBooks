@@ -278,6 +278,24 @@ table {
 	box-shadow: inset 0 0 10px #000000;
 }
 
+.book .jumbotron h1 {
+	color: #eaeff3; /* white blue */
+	font-size: 54px;
+}
+
+@media (max-width: 768px) {
+	.book .jumbotron h1 {
+		font-size: 36px;
+	}
+}
+
+.book .jumbotron .overlay {
+	background-color: rgba(103, 130, 72, 0.80);
+	height: 100%;
+	overflow: hidden;
+	padding: 48px 0;
+}
+
 .book .the-adventures-of-tom-sawyer .jumbotron,
 .book .the-adventures-of-sherlock-holmes .jumbotron {
 	background-position: top;
@@ -297,15 +315,14 @@ table {
 	background-position: 0 30%;
 }
 
-.book .jumbotron h1 {
-	color: #eaeff3; /* white blue */
-	font-size: 54px;
+.book .the-yellow-wallpaper .jumbotron {
+	background-repeat: repeat;
+	background-size: auto;
 }
 
-@media (max-width: 768px) {
-	.book .jumbotron h1 {
-		font-size: 36px;
-	}
+.book .the-awakening .jumbotron {
+	background-repeat: repeat;
+	background-size: auto;
 }
 
 .book .jumbotron .author {
@@ -313,13 +330,6 @@ table {
 	font-family: "Dancing Script", cursive;
 	font-size: 36px;
 	text-align: center;
-}
-
-.book .jumbotron .overlay {
-	background-color: rgba(103, 130, 72, 0.80);
-	height: 100%;
-	overflow: hidden;
-	padding: 48px 0;
 }
 
 blockquote {
@@ -719,6 +729,12 @@ p.end {
 
 .the-adventures-of-huckleberry-finn .fin {
 	text-align: center;
+}
+
+/* The Awakening */
+.the-awakening .writing {
+	font-family: "Caveat", cursive;
+	font-size: 22px;
 }
 
 /* 404 */

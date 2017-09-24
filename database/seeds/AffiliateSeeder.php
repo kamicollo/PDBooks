@@ -344,5 +344,72 @@ class AffiliateSeeder extends Seeder {
             'bd_link' => "https://www.bookdepository.com/Adventures-of-Huckleberry-Finn-Mark-Twain/9780553210798/?a_aid=ffed6a58",
             'cover_image' => 'images/the-adventures-of-huckleberry-finn/6.jpg'
         ]);
+
+		// The Awakening
+		DB::table('affiliates')->insert([
+            'title' => "The Awakening and Other Stories (Oxford World's Classics)",
+            'order' => 1,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Awakening-Stories-Oxford-Worlds-Classics/dp/0199536945/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Awakening-Kate-Chopin-Pamel-Knights/9780199536948/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-awakening/1.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Awakening (Third Norton Critical Edition)",
+            'order' => 2,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Awakening-Third-Norton-Critical-Editions/dp/0393617319/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Awakening-Kate-Chopin-Margo-Culley/9780393617313/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-awakening/2.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Awakening (Narrated byGrace Conlin)",
+            'order' => 3,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Awakening-Kate-Chopin/dp/0786176431/?tag=laikareads-20",
+            'bd_link' => "",
+			'type' => "audible",
+            'cover_image' => 'images/the-awakening/3.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Awakening and Selected Short Fiction (Barnes & Noble Classics Series)",
+            'order' => 4,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Awakening-Selected-Fiction-Barnes-Classics/dp/1593081138/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Awakening-and-Selected-Short-Fiction-Barnes--Noble-Classics-Series-Kate-Chopin-Rachel-Adams/9781593081133/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-awakening/4.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Awakening and Selected Stories (Modern Library Classics)",
+            'order' => 5,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/Awakening-Selected-Stories-Library-Classics/dp/0679783334/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Wakening-and-Other-Stories-Kate-Chopin-Nin-Baym-Kaye-Gibbons/9780679783336/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-awakening/5.jpg'
+        ]);
+
+		DB::table('affiliates')->insert([
+            'title' => "The Complete Works of Kate Chopin (Southern Literary Studies)",
+            'order' => 6,
+            'book_id' => DB::table('books')->where('title', "The Awakening")->value('id'),
+            'amazon_link' => "https://www.amazon.com/gp/product/0807131512/?tag=laikareads-20",
+            'bd_link' => "https://www.bookdepository.com/The-Complete-Works-of-Kate-Chopin-Kate-Chopin-Send-All-Correspondance-Emily-Toth-Per-Seyersted-Edmund-Wilson/9780807131510/?a_aid=ffed6a58",
+            'cover_image' => 'images/the-awakening/6.jpg'
+        ]);
+
+
+		// DB::table('affiliates')->insert([
+        //     'title' => "",
+        //     'order' => 1,
+        //     'book_id' => DB::table('books')->where('title', "")->value('id'),
+        //     'amazon_link' => "/?tag=laikareads-20",
+        //     'bd_link' => "/?a_aid=ffed6a58",
+		// 	'type' => "audible",
+        //     'cover_image' => 'images//1.jpg'
+        // ]);
     }
 }
